@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FoodProperties : MonoBehaviour
 {
+    [SerializeField] int id; // the for the food product in the database
     [SerializeField] int kcal; // the amount of kcal for the food product
     [SerializeField] float proteinPer100; // the amount of protein for the food product per 100 g/ml
     [SerializeField] float carbsPer100; // the amount of carbs for the food product per 100 g/ml
