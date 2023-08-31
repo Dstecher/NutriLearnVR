@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2410297256251660400}
   m_Layer: 0
   m_Name: Garlic_01
-  m_TagString: Untagged
+  m_TagString: FoodProduct
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261,6 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b8fc379eec1ac4296fa7eee244730c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 110
   kcal: 0
   proteinPer100: 0
   carbsPer100: 0
