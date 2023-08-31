@@ -10,13 +10,6 @@ public class DatabaseReader : MonoBehaviour
     public TextAsset textAssetData;
     public bool activateDebug;
 
-    [System.Serializable]
-    public class FoodProductList
-    {
-        public FoodProduct[] foodProcuct;
-        public int tableSize;
-    }
-
     public FoodProductList foodProductList = new FoodProductList();
 
     // Start is called before the first frame update
