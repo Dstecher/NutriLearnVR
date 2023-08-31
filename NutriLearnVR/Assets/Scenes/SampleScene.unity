@@ -1763,8 +1763,9 @@ GameObject:
   m_Component:
   - component: {fileID: 738818944}
   - component: {fileID: 738818945}
+  - component: {fileID: 738818946}
   m_Layer: 0
-  m_Name: FoodProductDatabaseReader
+  m_Name: FoodController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1797,9 +1798,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textAssetData: {fileID: 4900000, guid: 0a4f8300db3491e4abd71b959eb6797a, type: 3}
-  activateDebug: 1
+  activateDebug: 0
   foodProductList:
     foodProcuct: []
+    tableSize: 0
+--- !u!114 &738818946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738818943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7109327774765c4469472752f8dd4abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateDebug: 0
 --- !u!1 &790250797
 GameObject:
   m_ObjectHideFlags: 0

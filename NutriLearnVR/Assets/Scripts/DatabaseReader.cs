@@ -33,7 +33,7 @@ public class DatabaseReader : MonoBehaviour
             if (activateDebug) Debug.Log("[DEBUG] Product name string: " + data[9 * (i + 1) + 1]);
             foodProductList.foodProcuct[i].productName = data[9 * (i + 1) + 1];
             if (activateDebug) Debug.Log("[DEBUG] Product cals string: " + data[9 * (i + 1) + 2]);
-            foodProductList.foodProcuct[i].cals = float.Parse(data[9 * (i + 1) + 2]);
+            foodProductList.foodProcuct[i].cals = int.Parse(data[9 * (i + 1) + 2]);
             if (activateDebug) Debug.Log("[DEBUG] Product fats string: " + data[9 * (i + 1) + 3]);
             foodProductList.foodProcuct[i].fats = float.Parse(data[9 * (i + 1) + 3]);
             if (activateDebug) Debug.Log("[DEBUG] Product carbs string: " + data[9 * (i + 1) + 4]);
@@ -53,8 +53,8 @@ public class DatabaseReader : MonoBehaviour
         }
     }
 
-    public bool checkID()
+    public FoodProductList GetFoodProductList()
     {
-        return true;
+        return foodProductList;
     }
 }
