@@ -262,9 +262,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  kcal: 0
+  weight: 625
+  productName: 
+  kcalPer100: 0
   proteinPer100: 0
   carbsPer100: 0
   fatsPer100: 0
-  weight: 0
   isLiquid: 0
+  calories: 0
+  protein: 0
+  carbs: 0
+  fats: 0

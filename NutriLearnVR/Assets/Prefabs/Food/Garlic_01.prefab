@@ -261,10 +261,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b8fc379eec1ac4296fa7eee244730c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 110
-  kcal: 0
+  id: 109
+  weight: 120
+  productName: 
+  kcalPer100: 0
   proteinPer100: 0
   carbsPer100: 0
   fatsPer100: 0
-  weight: 0
   isLiquid: 0
+  calories: 0
+  protein: 0
+  carbs: 0
+  fats: 0
