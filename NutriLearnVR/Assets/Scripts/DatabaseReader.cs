@@ -9,23 +9,12 @@ public class DatabaseReader : MonoBehaviour
     /// </summary>
     public TextAsset textAssetData;
     public bool activateDebug;
-    
-    [System.Serializable]
-    public class FoodProduct
-    {
-        public int id;
-        public string name;
-        public float cals;
-        public float fats;
-        public float carbs;
-        public float protein;
-        public bool isLiquid;
-    }
 
     [System.Serializable]
     public class FoodProductList
     {
         public FoodProduct[] foodProcuct;
+        public int tableSize;
     }
 
     public FoodProductList foodProductList = new FoodProductList();
@@ -40,16 +29,16 @@ public class DatabaseReader : MonoBehaviour
     {
         string[] data = textAssetData.text.Split(new string[] {";", "\n"}, System.StringSplitOptions.None);
 
-        int tableSize = data.Length / 9 - 1;
-        foodProductList.foodProcuct = new FoodProduct[tableSize];
+        foodProductList.tableSize = data.Length / 9 - 1;
+        foodProductList.foodProcuct = new FoodProduct[foodProductList.tableSize];
 
-        for (int i = 0; i < tableSize; i++)
+        for (int i = 0; i < foodProductList.tableSize; i++)
         {
             foodProductList.foodProcuct[i] = new FoodProduct();
             if (activateDebug) Debug.Log("[DEBUG] Product ID string: " + data[9 * (i + 1)]);
             foodProductList.foodProcuct[i].id = int.Parse(data[9 * (i + 1)]);
             if (activateDebug) Debug.Log("[DEBUG] Product name string: " + data[9 * (i + 1) + 1]);
-            foodProductList.foodProcuct[i].name = data[9 * (i + 1) + 1];
+            foodProductList.foodProcuct[i].productName = data[9 * (i + 1) + 1];
             if (activateDebug) Debug.Log("[DEBUG] Product cals string: " + data[9 * (i + 1) + 2]);
             foodProductList.foodProcuct[i].cals = float.Parse(data[9 * (i + 1) + 2]);
             if (activateDebug) Debug.Log("[DEBUG] Product fats string: " + data[9 * (i + 1) + 3]);
@@ -69,5 +58,10 @@ public class DatabaseReader : MonoBehaviour
                 foodProductList.foodProcuct[i].isLiquid = false;
             }
         }
+    }
+
+    public bool checkID()
+    {
+        return true;
     }
 }
