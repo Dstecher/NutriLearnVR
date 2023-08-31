@@ -16,16 +16,10 @@ public class FoodProperties : MonoBehaviour
     [SerializeField] public bool isLiquid; // determines whether the food product is liquid or not (for displaying g/ml correctly)
 
     
-    private int calories; // the amount of kcals for the food product
-    private float protein; // the amount of protein for the food product
-    private float carbs; // the amount of protein for the food product
-    private float fats; // the amount of protein for the food product
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        // TODO: if info per 100 is not null: calculate correct macros for product
-    }
+    public int calories; // the amount of kcals for the food product
+    public float protein; // the amount of protein for the food product
+    public float carbs; // the amount of protein for the food product
+    public float fats; // the amount of protein for the food product
 
     /// <summary>
     /// Sets the specific values for the current food product based on the weight and values for 100g/ml stored in the database
@@ -41,9 +35,9 @@ public class FoodProperties : MonoBehaviour
         float weightRatio = weight / 100;
 
         calories = (int)Math.Round(weightRatio * kcalPer100);
-        protein = weightRatio * proteinPer100;
-        carbs = weightRatio * carbsPer100;
-        fats = weightRatio * fatsPer100;
+        protein = Mathf.Floor(weightRatio * proteinPer100 * 10) / 10;
+        carbs = Mathf.Floor(weightRatio * carbsPer100 * 10) / 10;
+        fats = Mathf.Floor(weightRatio * fatsPer100 * 10) / 10;
     }
 
     public void setName(string pName)
