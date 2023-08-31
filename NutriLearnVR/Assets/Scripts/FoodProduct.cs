@@ -7,7 +7,7 @@ public class FoodProduct
 {
     public int id;
         public string productName;
-        public float cals;
+        public int cals;
         public float fats;
         public float carbs;
         public float protein;
