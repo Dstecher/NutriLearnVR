@@ -7,25 +7,25 @@
 6;Apfel, roh;52;0,3;11,6;0,3;pro 100g essbarer Anteil;Früchte/Früchte frisch;
 7;Apfelmus, gezuckert (Konserve);89;0,3;20,5;0,3;pro 100g essbarer Anteil;Früchte/Früchte gekocht (inkl. Konserven);
 8;Apfelmus, ungezuckert (Konserve);55;0,3;11,7;0,3;pro 100g essbarer Anteil;Früchte/Früchte gekocht (inkl. Konserven);
-9;Apfelsaft;50;0,1;11,9;0,2;pro 100 ml;"Früchte/Fruchtsäfte;Alkoholfreie Getränke/Frucht- und Gemüsesäfte";1,04
+9;Apfelsaft;50;0,1;11,9;0,2;pro 100 ml;Früchte/Fruchtsäfte/Alkoholfreie Getränke/Frucht- und Gemüsesäfte;1,04
 10;Aprikose, roh;44;0,1;9;0,8;pro 100g essbarer Anteil;Früchte/Früchte frisch;
 11;Aubergine, roh;21;0,1;2,4;1,1;pro 100g essbarer Anteil;Gemüse/Gemüse frisch;
 12;Auberginenscheiben, paniert, zubereitet;136;5,8;14,6;4,7;pro 100g essbarer Anteil;Gerichte/Sonstige salzige/rezente Gerichte;
 13;Aufschnitt (Durchschnitt);276;24,2;0,7;13,9;pro 100g essbarer Anteil;Fleisch- und Wurstwaren/Brühwurstware;
-14;Avocado, roh;158;15,1;1,2;1,6;pro 100g essbarer Anteil;"Gemüse/Gemüse frisch;Nüsse, Samen und Ölfrüchte";
-15;Bäckerhefe, gepresst;96;1,2;1,1;16,7;pro 100g essbarer Anteil;"Verschiedenes/Hefe;Verschiedenes/Backzutaten";
-16;Balsamicoessig;128;<0.6;25,8;0,7;pro 100g essbarer Anteil;Verschiedenes/Salz, Gewürze und Aromen;
+14;Avocado, roh;158;15,1;1,2;1,6;pro 100g essbarer Anteil;Gemüse/Gemüse frisch/Nüsse, Samen und Ölfrüchte;
+15;Bäckerhefe, gepresst;96;1,2;1,1;16,7;pro 100g essbarer Anteil;Verschiedenes/Hefe/Verschiedenes/Backzutaten;
+16;Balsamicoessig;128;0,6;25,8;0,7;pro 100g essbarer Anteil;Verschiedenes/Salz, Gewürze und Aromen;
 17;Banane, roh;89;0,1;19,7;1,1;pro 100g essbarer Anteil;Früchte/Früchte frisch;
 18;Basilikum, roh;46;0,8;5,1;3,1;pro 100g essbarer Anteil;Gemüse/Kräuter;
 19;Bauernbrot;241;2;44,3;9,2;pro 100g essbarer Anteil;Brote, Flocken und Frühstückscerealien/Brote und Brotwaren;
 20;Beeren (Durchschnitt), roh;40;0,5;6,3;0,7;pro 100g essbarer Anteil;Früchte/Früchte frisch;
 21;Birne, roh;54;0,3;10,9;0,5;pro 100g essbarer Anteil;Früchte/Früchte frisch;
-22;Birnensaft;52;0,3;12,1;0,5;pro 100 ml;"Früchte/Fruchtsäfte;Alkoholfreie Getränke/Frucht- und Gemüsesäfte";1,04
+22;Birnensaft;52;0,3;12,1;0,5;pro 100 ml;Früchte/Fruchtsäfte/Alkoholfreie Getränke/Frucht- und Gemüsesäfte;1,04
 23;Blattsalat (Durchschnitt), roh ;19;0,3;1,6;1,6;pro 100g essbarer Anteil;Gemüse/Gemüse frisch;
 24;Blauschimmelkäse (Durchschnitt);360;31,5;0,2;19,1;pro 100g essbarer Anteil;Milch und Milchprodukte/Hartkäse;
 25;Blumenkohl, roh;26;0,7;2,1;1,8;pro 100g essbarer Anteil;Gemüse/Gemüse frisch;
 26;Bohne, grün, roh;32;0,2;4,1;1,9;pro 100g essbarer Anteil;Gemüse/Gemüse frisch;
-27;Bratbutter;885;98,3;0;0,1;pro 100g essbarer Anteil;"Fette und Öle/Fette;Milch und Milchprodukte/Rahm und Butter";0,9
+27;Bratbutter;885;98,3;0;0,1;pro 100g essbarer Anteil;Fette und Öle/Fette/Milch und Milchprodukte/Rahm und Butter;0,9
 28;Broccoli, roh;39;0,6;3,2;3,6;pro 100g essbarer Anteil;Gemüse/Gemüse frisch;
 29;Brombeere, roh;47;0,7;6,5;1,1;pro 100g essbarer Anteil;Früchte/Früchte frisch;
 30;Brot (Durchschnitt);264;4,6;44,6;9,2;pro 100g essbarer Anteil;Brote, Flocken und Frühstückscerealien/Brote und Brotwaren;
@@ -67,17 +67,17 @@
 66;Fisch (Durchschnitt), Filet, gedämpft (ohne Zusatz von Fett und Salz);146;7,5;0;19,6;pro 100g essbarer Anteil;Fisch;
 67;Fischstäbchen (paniert und vorfritiert), gebraten in HOLL-Rapsöl;300;18,6;16,6;16;pro 100g essbarer Anteil;Fisch/Meeresfische;
 68;Fischstäbchen, paniert und vorfritiert;230;11,7;15,3;15,5;pro 100g essbarer Anteil;Fisch/Meeresfische;
-69;Fleisch (Durchschnitt exkl. Innereien), roh ;146;6,7;0;21,4;pro 100g essbarer Anteil;"Fleisch und Innereien/Kalb;Fleisch und Innereien/Geflügel;Fleisch und Innereien/Lamm, Schaf;Fleisch und Innereien/Rind;Fleisch und Innereien/Schwein;Fleisch und Innereien/Wild";
+69;Fleisch (Durchschnitt exkl. Innereien), roh ;146;6,7;0;21,4;pro 100g essbarer Anteil;Fleisch und Innereien/Kalb/Fleisch und Innereien/Geflügel/Fleisch und Innereien/Lamm, Schaf/Fleisch und Innereien/Rind/Fleisch und Innereien/Schwein/Fleisch und Innereien/Wild;
 70;Fleischlasagne, zubereitet;141;6;12,3;8,8;pro 100g essbarer Anteil;Gerichte/Italienische Gerichte;
 71;Forelle, roh;127;7;0;16;pro 100g essbarer Anteil;Fisch/Süsswasserfische;
 72;Frischkäse, Doppelrahm;351;32,1;4,5;11,1;pro 100g essbarer Anteil;Milch und Milchprodukte/Frischkäse und Quark;
 73;Fruchtsaft-Schorle (Durchschnitt, 60% Saft - 40% Wasser), ungezuckert;31;0,1;7,4;0,2;pro 100 ml;Alkoholfreie Getränke/Frucht- und Gemüsesäfte;1
-74;Fruchtsaft (Durchschnitt), ungezuckert;52;0,1;12,3;0,4;pro 100 ml;"Früchte/Fruchtsäfte;Alkoholfreie Getränke/Frucht- und Gemüsesäfte";1
+74;Fruchtsaft (Durchschnitt), ungezuckert;52;0,1;12,3;0,4;pro 100 ml;Früchte/Fruchtsäfte/Alkoholfreie Getränke/Frucht- und Gemüsesäfte;1
 75;Frühlingsrolle, frittiert;224;11,2;23,1;6,5;pro 100g essbarer Anteil;Gerichte/Asiatische Gerichte;
 76;Garnele, gekocht;46;0,5;1,3;9;pro 100g essbarer Anteil;Fisch/Meeresfrüchte, Krusten- und Schalentiere;
 77;Garnele, roh;56;0,6;1,2;11,4;pro 100g essbarer Anteil;Fisch/Meeresfrüchte, Krusten- und Schalentiere;
 78;Geflügelfleisch (Durchschnitt exkl. Innereien), roh;134;5,3;0,1;21,6;pro 100g essbarer Anteil;Fleisch und Innereien/Geflügel;
-79;Gehacktes (Durchschnitt aus Rind, Kalb, Schwein, Poulet), roh;143;6,2;0;21,6;pro 100g essbarer Anteil;"Fleisch und Innereien/Kalb;Fleisch und Innereien/Rind;Fleisch und Innereien/Schwein;Fleisch und Innereien/Geflügel";
+79;Gehacktes (Durchschnitt aus Rind, Kalb, Schwein, Poulet), roh;143;6,2;0;21,6;pro 100g essbarer Anteil;Fleisch und Innereien/Kalb/Fleisch und Innereien/Rind/Fleisch und Innereien/Schwein/Fleisch und Innereien/Geflügel;
 80;Gemüselasagne, zubereitet;133;7,6;11,2;4,4;pro 100g essbarer Anteil;Gerichte/Italienische Gerichte;
 81;Getreideriegel mit Schokoladeüberzug;459;20,2;58;8,5;pro 100g essbarer Anteil;Süssigkeiten/Riegel;
 82;Gummibonbon mit Fruchtessenz;341;0;78,6;6,6;pro 100g essbarer Anteil;Süssigkeiten/Bonbons, Frucht- und Kaugummi;
@@ -101,7 +101,7 @@
 100;Joghurt, nature;66;3,6;4,5;3,9;pro 100g essbarer Anteil;Milch und Milchprodukte/Joghurt und Sauermilch;1,1
 101;Joghurt, Vanille;98;3;14;3,7;pro 100g essbarer Anteil;Milch und Milchprodukte/Joghurt und Sauermilch;1,1
 102;Johannisbeere, schwarz, roh;71;0,9;9,7;1,3;pro 100g essbarer Anteil;Früchte/Früchte frisch;
-103;Johannisbeerkuchen, hausgemacht (mit süssem Mürbeteig);216;11,7;22,6;3,5;pro 100g essbarer Anteil;"Süssigkeiten/Kuchen, Torten und Cake;Gerichte/Kuchen und Gratins";
+103;Johannisbeerkuchen, hausgemacht (mit süssem Mürbeteig);216;11,7;22,6;3,5;pro 100g essbarer Anteil;Süssigkeiten/Kuchen, Torten und Cake/Gerichte/Kuchen und Gratins;
 104;Kalbfleisch (Durchschnitt exkl. Innereien, Kotelett), roh;128;4,8;0;21,1;pro 100g essbarer Anteil;Fleisch und Innereien/Kalb;
 105;Möhre, roh;42;0,4;7,6;0,6;pro 100g essbarer Anteil;Gemüse/Gemüse frisch;
 106;Käsekuchen, gebacken (mit Kuchenteig);303;20,8;14,5;14,3;pro 100g essbarer Anteil;Gerichte/Kuchen und Gratins;
@@ -117,7 +117,7 @@
 116;Kürbis, roh;28;0,1;4,6;1,1;pro 100g essbarer Anteil;Gemüse/Gemüse frisch;
 117;Kürbiskerne;615;49,1;4,7;35,6;pro 100g essbarer Anteil;Nüsse, Samen und Ölfrüchte;
 118;Lachs, geräuchert;167;8,2;0;23,2;pro 100g essbarer Anteil;Fisch/Meeresfische;
-119;Latte macchiato, ungezuckert;47;2,8;3,2;2,2;pro 100 ml;"Milch und Milchprodukte/Milch- und Joghurtgetränke;Alkoholfreie Getränke/Kaffee";0,88
+119;Latte macchiato, ungezuckert;47;2,8;3,2;2,2;pro 100 ml;Milch und Milchprodukte/Milch- und Joghurtgetränke/Alkoholfreie Getränke/Kaffee;0,88
 120;Lebkuchen mit Schokoladeüberzug;444;18,9;60,2;6,5;pro 100g essbarer Anteil;Süssigkeiten/Sonstige süsse Backwaren;
 121;Linse, geschält, gekocht (ohne Zugabe von Fett und Salz);134;0,6;19;11;pro 100g essbarer Anteil;Getreideprodukte, Hülsenfrüchte und Kartoffeln/Hülsenfrüchte;
 122;Lyoner;244;21,8;0,5;11,5;pro 100g essbarer Anteil;Fleisch- und Wurstwaren/Brühwurstware;
@@ -127,7 +127,7 @@
 126;Mandel, geröstet, gesalzen;649;55,2;7,2;25,6;pro 100g essbarer Anteil;Salzige Snacks/Gesalzene Nüsse, Samen, Kerne;
 127;Mango, roh;68;0,6;14,3;0,6;pro 100g essbarer Anteil;Früchte/Früchte frisch;
 128;Mangold, roh;23;0,2;2,7;2,1;pro 100g essbarer Anteil;Gemüse/Gemüse frisch;
-129;Margarine, 35 - 40 % Fett;357;39;1,1;0,3;pro 100g essbarer Anteil;"Fette und Öle/Fette;Fette und Öle/Fette";
+129;Margarine, 35 - 40 % Fett;357;39;1,1;0,3;pro 100g essbarer Anteil;Fette und Öle/Fette/Fette und Öle/Fette;
 130;Marmorkuchen;356;17,1;42,6;7,4;pro 100g essbarer Anteil;Süssigkeiten/Kuchen, Torten und Cake;
 131;Marzipan;474;17,6;68,6;8;pro 100g essbarer Anteil;Süssigkeiten/Sonstige Süssigkeiten;
 132;Mayonnaise;742;81,7;0,5;1,1;pro 100g essbarer Anteil;Fette und Öle/Mayonnaisen;0,9
@@ -138,7 +138,7 @@
 137;Mineralwasser Vittel;0;0;0;0;pro 100 ml;Alkoholfreie Getränke/Mineralwasser;1
 138;Mineralwasser Volvic;0;0;0;0;pro 100 ml;Alkoholfreie Getränke/Mineralwasser;1
 139;Mortadella;314;27,3;0,8;16,1;pro 100g essbarer Anteil;Fleisch- und Wurstwaren/Brühwurstware;
-140;Mozzarella;256;19,5;0,7;19,5;pro 100g essbarer Anteil;"Milch und Milchprodukte/Weichkäse;Milch und Milchprodukte/Frischkäse und Quark";
+140;Mozzarella;256;19,5;0,7;19,5;pro 100g essbarer Anteil;Milch und Milchprodukte/Weichkäse/Milch und Milchprodukte/Frischkäse und Quark;
 141;Müeslimischung, Getreideflocken mit Früchten und Nüssen, gezuckert ;365;5,6;62,2;11,4;pro 100g essbarer Anteil;Brote, Flocken und Frühstückscerealien/Müeslimischungen und Frühstückscerealien;
 142;Nasi Goreng, zubereitet;125;1,8;16,1;10,8;pro 100g essbarer Anteil;Gerichte/Asiatische Gerichte;
 143;Nektarine, roh;55;0,3;11,3;1;pro 100g essbarer Anteil;Früchte/Früchte frisch;
@@ -146,10 +146,10 @@
 145;Olive, schwarz;176;17,2;0,8;1,4;pro 100g essbarer Anteil;Nüsse, Samen und Ölfrüchte;
 146;Olivenöl;810;90;0;0;pro 100 ml;Fette und Öle/Öle;0,9
 147;Orange, roh;45;0,2;8;0,8;pro 100g essbarer Anteil;Früchte/Früchte frisch;
-148;Orangensaft;44;0,1;10;0,6;pro 100 ml;"Früchte/Fruchtsäfte;Alkoholfreie Getränke/Frucht- und Gemüsesäfte";1,04
+148;Orangensaft;44;0,1;10;0,6;pro 100 ml;Früchte/Fruchtsäfte/Alkoholfreie Getränke/Frucht- und Gemüsesäfte;1,04
 149;Paprika (Gewürz);358;13;34,9;14,8;pro 100g essbarer Anteil;Verschiedenes/Salz, Gewürze und Aromen;
 150;Paranuss;698;66,5;4,2;17;pro 100g essbarer Anteil;Nüsse, Samen und Ölfrüchte;
-151;Parmesan;401;31;Sp.;30,5;pro 100g essbarer Anteil;Milch und Milchprodukte/Hartkäse;
+151;Parmesan;401;31;0,3;30,5;pro 100g essbarer Anteil;Milch und Milchprodukte/Hartkäse;
 152;Pestosauce, grün;430;42,5;6,6;3,9;pro 100g essbarer Anteil;Verschiedenes/Saucen;
 153;Pestosauce, rot;398;35,8;10,8;5,7;pro 100g essbarer Anteil;Verschiedenes/Saucen;
 154;Petersilie, roh;58;0,5;7,4;3,9;pro 100g essbarer Anteil;Gemüse/Kräuter;
@@ -176,9 +176,9 @@
 175;Ratatouille, zubereitet;45;2,2;4;1,4;pro 100g essbarer Anteil;Gemüse/Gemüse gekocht (inkl. Konserven);
 176;Reibkäse;406;32,1;0;29,3;pro 100g essbarer Anteil;Milch und Milchprodukte/Hartkäse;
 177;Reis unpoliert, gekocht in Salzwasser (unjodiert);126;1;25,7;2,7;pro 100g essbarer Anteil;Getreideprodukte, Hülsenfrüchte und Kartoffeln/Reis;
-178;"Rind, Entrecôte, ""medium"" gebraten (ohne Zusatz von Fett und Salz)";162;4,6;0;30,2;pro 100g essbarer Anteil;Fleisch und Innereien/Rind;
+178;Rind, Entrecôte, medium gebraten (ohne Zusatz von Fett und Salz);162;4,6;0;30,2;pro 100g essbarer Anteil;Fleisch und Innereien/Rind;
 179;Rind, Entrecôte, roh;133;4,5;0;23,2;pro 100g essbarer Anteil;Fleisch und Innereien/Rind;
-180;"Rind, Filet, ""medium"" gebraten (ohne Zustatz von Fett und Salz)";128;2;0;27,7;pro 100g essbarer Anteil;Fleisch und Innereien/Rind;
+180;Rind, Filet, medium gebraten (ohne Zustatz von Fett und Salz);128;2;0;27,7;pro 100g essbarer Anteil;Fleisch und Innereien/Rind;
 181;Rind, Filet, roh;105;2;0;21,9;pro 100g essbarer Anteil;Fleisch und Innereien/Rind;
 182;Rinderhack, gebraten (ohne Zusatz von Fett und Salz);211;8,9;0;32,6;pro 100g essbarer Anteil;Fleisch und Innereien/Rind;
 183;Rinderhack, roh;154;7,5;0;21,6;pro 100g essbarer Anteil;Fleisch und Innereien/Rind;
@@ -186,14 +186,14 @@
 185;Rösti (Fertig-Rösti), ungebraten;150;5,7;20,7;2,6;pro 100g essbarer Anteil;Getreideprodukte, Hülsenfrüchte und Kartoffeln/Kartoffeln;
 186;Rucola, roh;28;0,7;2,1;2,6;pro 100g essbarer Anteil;Gemüse/Gemüse frisch;
 187;Rührei, zubereitet;147;10,8;1,3;11,2;pro 100g essbarer Anteil;Gerichte/Sonstige salzige/rezente Gerichte;
-188;Salami;422;37,1;Sp.;22;pro 100g essbarer Anteil;Fleisch- und Wurstwaren/Rohwurstware;
+188;Salami;422;37,1;3;22;pro 100g essbarer Anteil;Fleisch- und Wurstwaren/Rohwurstware;
 189;Salatsauce italienisch, hausgemacht (mit Olivenöl);464;50,7;1,4;0,4;pro 100 ml;Fette und Öle/Salatsaucen;1,1
 190;Salatsauce, italienisch;309;32,1;4,9;0,1;pro 100g essbarer Anteil;Fette und Öle/Salatsaucen;1,1
 191;Salz, Meersalz, Fleur de sel;0;0;0;0;pro 100g essbarer Anteil;Verschiedenes/Salz, Gewürze und Aromen;
 192;Sandwich (Baguette) mit Mozzarella;163;6,2;20,1;6;pro 100g essbarer Anteil;Gerichte/Sandwiches;
 193;Sandwich (Baguette) mit Schinken;131;3,7;17,3;6,3;pro 100g essbarer Anteil;Gerichte/Sandwiches;
 194;Sauerkraut, in Essig eingelegt;19;0,3;1,7;1,3;pro 100g essbarer Anteil;Gemüse/Gemüse gekocht (inkl. Konserven);
-195;Sauerrahm;336;35;2,8;2,4;pro 100g essbarer Anteil;"Fette und Öle/Rahm;Milch und Milchprodukte/Rahm und Butter";1
+195;Sauerrahm;336;35;2,8;2,4;pro 100g essbarer Anteil;Fette und Öle/Rahm/Milch und Milchprodukte/Rahm und Butter;1
 196;Schnittlauch, roh;30;0,6;1,9;3;pro 100g essbarer Anteil;Gemüse/Kräuter;
 197;Schnitzelbrot mit Cocktailsauce;262;11,2;25,1;14,6;pro 100g essbarer Anteil;Gerichte/Sandwiches;
 198;Schokolade, dunkel (bitter);537;31,8;53,4;5,7;pro 100g essbarer Anteil;Süssigkeiten/Schokolade und Kakaoerzeugnisse;
@@ -224,13 +224,13 @@
 223;Vegetarisches Gehacktes/Geschnetzeltes, aus Mykoprotein, roh;92;2,3;1,6;13,4;pro 100g essbarer Anteil;Fleischersatzprodukte;
 224;Vinaigrette (mit Rapsöl);255;25,2;2,1;4,6;pro 100 ml;Fette und Öle/Salatsaucen;1,1
 225;Vollmilch, pasteurisiert;68;4;4,7;3,2;pro 100 ml;Milch und Milchprodukte/Milch;1
-226;Wassermelone, roh;37;Sp.;8,3;0,7;pro 100g essbarer Anteil;Früchte/Früchte frisch;
+226;Wassermelone, roh;37;0,2;8,3;0,7;pro 100g essbarer Anteil;Früchte/Früchte frisch;
 227;Weissbrot;242;0,8;48,9;8,5;pro 100g essbarer Anteil;Brote, Flocken und Frühstückscerealien/Brote und Brotwaren;
 228;Wienerli;242;20,4;0,6;13,9;pro 100g essbarer Anteil;Fleisch- und Wurstwaren/Brühwurstware;
 229;Worcester Sauce (Durchschnitt von Markenprodukten);96;0,8;21,5;0,8;pro 100 ml;Verschiedenes/Saucen;1
 230;Zimtstern;505;25,9;50,9;14,2;pro 100g essbarer Anteil;Süssigkeiten/Guetzli;
 231;Zitrone, roh;23;0,5;2,9;0,8;pro 100g essbarer Anteil;Früchte/Früchte frisch;
-232;Zitronensaft;28;0,2;2,5;0,4;pro 100 ml;"Früchte/Fruchtsäfte;Alkoholfreie Getränke/Frucht- und Gemüsesäfte";1
+232;Zitronensaft;28;0,2;2,5;0,4;pro 100 ml;Früchte/Fruchtsäfte/Alkoholfreie Getränke/Frucht- und Gemüsesäfte;1
 233;Zucker, braun;390;0;97,6;0;pro 100g essbarer Anteil;Süssigkeiten/Zucker und Süssstoffe;
 234;Zucker, weiss;400;0;100;0;pro 100g essbarer Anteil;Süssigkeiten/Zucker und Süssstoffe;
 235;Zwieback;421;7,8;74,6;11,6;pro 100g essbarer Anteil;Brote, Flocken und Frühstückscerealien/Knäckebrote, Zwieback, Crackers und Waffeln;
