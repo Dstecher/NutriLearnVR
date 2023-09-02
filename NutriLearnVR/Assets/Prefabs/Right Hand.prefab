@@ -348,15 +348,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2246059517714595443}
-  m_LocalRotation: {x: 0.00065184006, y: -0.0016115459, z: 0.71264, w: 0.7015279}
+  m_LocalRotation: {x: 0.0015991055, y: 0.0006789905, z: -0.7126366, w: 0.70153123}
   m_LocalPosition: {x: 0.005814378, y: 0.056675866, z: 0.00012815837}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 6017233267186854280}
   - {fileID: 6434917286572314545}
   m_Father: {fileID: 152882070601457928}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.184, y: -0.076, z: 90.9}
+  m_LocalEulerAnglesHint: {x: 0.184, y: -0.076, z: -90.9}
 --- !u!1 &2503465551269789394
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 387683974631153851}
   - component: {fileID: 3629826244044563226}
   m_Layer: 0
-  m_Name: Left Hand
+  m_Name: Right Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d6e84b8e0a79bc40b2fc197565a0b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handType: 0
+  handType: 1
   thumbMoveSpeed: 0.08
 --- !u!1 &4939602434975489462
 GameObject:
