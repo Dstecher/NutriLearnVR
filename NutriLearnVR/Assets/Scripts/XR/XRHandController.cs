@@ -54,7 +54,15 @@ public class XRHandController : MonoBehaviour
         List<InputDevice> inputDevices = new List<InputDevice>();
         InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, inputDevices);
 
-        return inputDevices[0];
+        if (inputDevices.Count == 0)
+        {
+            Debug.Log("[DEBUG] No XR device could be recognized. Please connect a device and make sure it can be accessed to continue.");
+            return new InputDevice();
+        }
+        else
+        {
+            return inputDevices[0];
+        }
     }
 
     void AnimateHand()
