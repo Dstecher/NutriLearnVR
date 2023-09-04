@@ -37,8 +37,11 @@ public class TeleportationManager : MonoBehaviour
     {
         if (!_isActive)
             return;
-    	
+
         if (_thumbstick.triggered)
+            return;
+
+        if (Vector2.Distance(_thumbstick.ReadValue<Vector2>(), new Vector2(0.0f, 1.0f)) < 0.75)
             return;
 
         if (!rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
