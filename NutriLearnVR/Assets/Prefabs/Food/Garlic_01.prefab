@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1922876808}
   - component: {fileID: 1922876807}
   - component: {fileID: 2410297256251660400}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Garlic_01
   m_TagString: FoodProduct
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1

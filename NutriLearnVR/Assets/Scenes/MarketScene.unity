@@ -3570,10 +3570,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Garlic_01
       objectReference: {fileID: 0}
-    - target: {fileID: 1144544420532368, guid: 09fa2c2c28a9e484e85c93cf23748f9a, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 4474213668398412, guid: 09fa2c2c28a9e484e85c93cf23748f9a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4422,11 +4418,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestProduct
       objectReference: {fileID: 0}
-    - target: {fileID: 939261063929878291, guid: e407d86c4c789d043af3d5b9e7d2ea88,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 939261063929878292, guid: e407d86c4c789d043af3d5b9e7d2ea88,
         type: 3}
       propertyPath: m_InteractionManager
@@ -4578,10 +4569,6 @@ PrefabInstance:
     - target: {fileID: 1336107517388176, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
       propertyPath: m_Name
       value: Cucumber_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1336107517388176, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
       propertyPath: m_RootOrder

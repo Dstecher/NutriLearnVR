@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1838237251041994722}
   - component: {fileID: 78425846870229248}
   - component: {fileID: 3308829038373117366}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cucumber_01
   m_TagString: FoodProduct
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
