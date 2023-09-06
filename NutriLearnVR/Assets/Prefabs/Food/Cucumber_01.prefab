@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1838237251041994722}
   - component: {fileID: 78425846870229248}
   - component: {fileID: 3308829038373117366}
+  - component: {fileID: 1609226076033918926}
   m_Layer: 7
   m_Name: Cucumber_01
   m_TagString: FoodProduct
@@ -293,3 +294,32 @@ MonoBehaviour:
   protein: 0
   carbs: 0
   fats: 0
+--- !u!114 &1609226076033918926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336107517388176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f88f3d9aa7c9c848a3218ee74947ae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  verticalCanvasDistance: 0.25
+  nutrientInformationCanvas: {fileID: 9004832185476033724, guid: 4cbca8ff4c8250f45b4760d53d73774d,
+    type: 3}
+  showButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Show Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: eb9e7f24-e4a4-4494-813f-479dfe3be9a9
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -3100717042197214743, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
