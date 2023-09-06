@@ -24,8 +24,6 @@ public class MainMenuManager : MonoBehaviour
         {
             Debug.Log("The button was pressed");
             menuCanvas.SetActive(!menuCanvas.activeSelf);
-
-            
         }
 
         menuCanvas.transform.position = head.position + new Vector3(head.forward.x, head.forward.y, head.forward.z).normalized * menuDistance;
