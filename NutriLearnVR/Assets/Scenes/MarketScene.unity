@@ -1435,6 +1435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 838363583}
+  - component: {fileID: 838363584}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -1459,6 +1460,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &838363584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838363582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dee9083f47ae64386b7f79282c4764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 1955707447}
+  menuDistance: 2
+  menuCanvas: {fileID: 1920580397}
+  showButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Show Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: efc26268-66b7-457c-b9c1-ed9591a39448
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 5797348487716164338, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!1 &1008742912
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,6 +3713,12 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &1920580397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7505696771182429184, guid: 6614c1dadcd78e44f931d62f6859217b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7505696771195261538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1922876804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3750,6 +3785,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4474213668398412, guid: 09fa2c2c28a9e484e85c93cf23748f9a,
     type: 3}
   m_PrefabInstance: {fileID: 1922876804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1955707447 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8307275946659317465, guid: 31db13b62663d694cb7f45f2bf6ee733,
+    type: 3}
+  m_PrefabInstance: {fileID: 8307275946144505968}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1957714175
 GameObject:
@@ -4616,6 +4657,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 838363583}
     m_Modifications:
+    - target: {fileID: 1311207807065011491, guid: f01c6fcc91bbf554bacf34ca80796214,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.1221313
+      objectReference: {fileID: 0}
     - target: {fileID: 1311207807208855790, guid: f01c6fcc91bbf554bacf34ca80796214,
         type: 3}
       propertyPath: m_Name
