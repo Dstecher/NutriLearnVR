@@ -22,7 +22,6 @@ public class MainMenuManager : MonoBehaviour
     {
         if (showButton.action.WasPressedThisFrame())
         {
-            Debug.Log("The button was pressed");
             menuCanvas.SetActive(!menuCanvas.activeSelf);
         }
 
