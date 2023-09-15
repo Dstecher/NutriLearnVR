@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class FoodSelectable : MonoBehaviour
 {
 
     public GameObject selectionController;
 
-    private 
+    private XRGrabInteractable grabInteractable;
 
     // Start is called before the first frame update
     void Start()
