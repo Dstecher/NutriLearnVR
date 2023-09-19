@@ -21,15 +21,25 @@ public class SelectionController : MonoBehaviour
     }
 
     // TODO: Call this function only when the corresponding event is called, e.g. the item is selected and button pressed
-    void AddItemToSelection(FoodProperties foodProperties)
+    public void AddItemToSelection(FoodProperties foodProperties)
     {
+        GameObject currentFoodProduct = new GameObject();
+
         if (selectionTable != null)
         {
             userSelection.Add(foodProperties);
 
+            // first destroy all childs from the item
+            foreach (Transform child in foodProperties.gameObject.transform)
+            {
+                Debug.Log("Destroyed " + child.gameObject.name);
+                Destroy(child.gameObject);
+            }
+
             // spawn the item somewhere on (above) the selection table
             // INFO: The spawn range should be somewhere between ([-1.5, 1.5], 2, [-0.6, 0.6])
-            Instantiate(foodProperties.gameObject, new Vector3(selectionTable.gameObject.transform.position.x + Random.Range(-1.5f, 1.5f), selectionTable.gameObject.transform.position.y + 2, selectionTable.gameObject.transform.position.z + Random.Range(-0.6f, 0.6f)), Quaternion.identity, selectionTable.gameObject.transform);
+            currentFoodProduct = Instantiate(foodProperties.gameObject, new Vector3(selectionTable.gameObject.transform.position.x + Random.Range(-1.5f, 1.5f), selectionTable.gameObject.transform.position.y + 2, selectionTable.gameObject.transform.position.z + Random.Range(-0.6f, 0.6f)), Quaternion.identity, selectionTable.gameObject.transform) as GameObject;
+            currentFoodProduct.GetComponent<Rigidbody>().useGravity = true;
 
             // despawn the item from the hand
             Destroy(foodProperties.gameObject);
