@@ -1364,6 +1364,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "SelectFood",
+                    "type": "Button",
+                    "id": "b65fd113-ec43-4850-9bea-3ef18b87bc0a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1507,6 +1516,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "NutrientLabel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "158b71ad-8c28-4e62-a409-a25b7e7b51c0",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectFood",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
