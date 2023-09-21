@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 939261063929878292}
   - component: {fileID: 1918443199817760565}
   - component: {fileID: 8350207463774689569}
+  - component: {fileID: 8203012772808935929}
   m_Layer: 7
   m_Name: TestProduct
   m_TagString: FoodProduct
@@ -33,6 +34,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.14427066, y: 9.846601, z: 6.132644}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,6 +58,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -136,6 +139,7 @@ MonoBehaviour:
     m_Bits: 1
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
+  m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
   m_AllowGazeSelect: 0
@@ -166,6 +170,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
     m_PersistentCalls:
       m_Calls: []
   m_Activated:
@@ -303,3 +319,30 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -3100717042197214743, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+--- !u!114 &8203012772808935929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939261063929878291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2100d2192cf9c94684e152272d225d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectionController: {fileID: 0}
+  selectionButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Selection Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 719237b4-d7d4-46ca-a117-658ce2a99948
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1440010442231905767, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  activateDebug: 0
