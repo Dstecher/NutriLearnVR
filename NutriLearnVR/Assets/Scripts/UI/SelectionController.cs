@@ -53,7 +53,29 @@ public class SelectionController : MonoBehaviour
 
     public void RemoveItemFromSelection(FoodProperties foodProperties)
     {
-        userSelection.Remove(foodProperties);
+        foreach (FoodProperties selectedProperties in userSelection)
+        {
+            if (selectedProperties.id == foodProperties.id)
+            {
+                userSelection.Remove(selectedProperties);
+                Debug.Log("Removed properties");
+                break;
+            }
+        }
+        
+        //userSelection.Remove(foodProperties); // This does not happen correctly as the reference is not correct.
+
+        FoodProperties[] propertyComponents = GetComponents<FoodProperties>();
+        foreach (FoodProperties selectedProperties in propertyComponents)
+        {
+            Debug.Log("Checked a component");
+            if (selectedProperties.id == foodProperties.id)
+            {
+                Destroy(selectedProperties);
+                Debug.Log("Removed properties");
+            }
+        }
+
         Destroy(foodProperties.gameObject); // remove the Food Product from the scene as well (should be laying on the referenced selection table)
     }
 

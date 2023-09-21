@@ -5324,6 +5324,11 @@ PrefabInstance:
       objectReference: {fileID: 1955707447}
     - target: {fileID: 5113076625249096522, guid: f89c4abd638b29f43bff133c5605e4cf,
         type: 3}
+      propertyPath: activateDebug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5113076625249096522, guid: f89c4abd638b29f43bff133c5605e4cf,
+        type: 3}
       propertyPath: selectionController
       value: 
       objectReference: {fileID: 0}
