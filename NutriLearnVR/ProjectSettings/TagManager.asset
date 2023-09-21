@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FoodProduct
   - UserSelection
+  - Hand
   layers:
   - Default
   - TransparentFX

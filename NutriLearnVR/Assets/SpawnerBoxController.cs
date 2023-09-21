@@ -1,25 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
+/// <summary>
+/// Controller for the SpawnerBox GameObject
+/// </summary>
 public class SpawnerBoxController : MonoBehaviour
 {
-
     [SerializeField] GameObject spawnObject;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider other) 
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other) {
-        Debug.Log($"The name of the collider object is {other.gameObject.name}");
+        Debug.Log("This is the other collider: " + other.gameObject.name);
+        if (other.gameObject.tag == "Hand")
+        {
+            Transform handTransform = other.transform;
+            Debug.Log("Instantiating at " + handTransform.position);
+            Instantiate(spawnObject, new Vector3(handTransform.position.x, handTransform.position.y + 0.5f, handTransform.position.z), Quaternion.identity);
+        }
     }
 }

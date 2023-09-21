@@ -20,6 +20,10 @@ public class NutrientInformationManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (head == null)
+        {
+            head = GameObject.FindGameObjectWithTag("MainCamera").transform;
+        }
         // Create Nutrient information label for object
         canvasInstance = Instantiate(nutrientInformationCanvas, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + verticalCanvasDistance, gameObject.transform.position.z), Quaternion.identity, gameObject.transform) as GameObject;
         UpdateNutrientInformation();
