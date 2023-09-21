@@ -13,6 +13,7 @@ public class FoodSelectable : MonoBehaviour
 
     private XRGrabInteractable grabInteractable;
     private bool isGrabbed = false;
+    private bool isSelected = false; // displays if the current object is selected
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,9 @@ public class FoodSelectable : MonoBehaviour
     {
         if (isGrabbed)
         {
+
+            if (activateDebug) Debug.Log("[DEBUG] The object is currently selected: " + isSelected);
+
             if (selectionButton.action.WasPressedThisFrame())
             {
                 // Get the FoodProperties first
@@ -49,7 +53,14 @@ public class FoodSelectable : MonoBehaviour
                 // Add the current object to the selection
                 if (foodProperties)
                 {
-                    selectionController.AddItemToSelection(foodProperties);
+                    if (!isSelected)
+                    {
+                        selectionController.AddItemToSelection(foodProperties);
+                    }
+                    else
+                    {
+                        selectionController.RemoveItemFromSelection(foodProperties);
+                    }
                 }
                 else
                 {
@@ -57,5 +68,10 @@ public class FoodSelectable : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void ChangeSelectionStatus(bool status)
+    {
+        isSelected = status; // Typically, this will never have to be set to false as it is the default value when instantiating a new object
     }
 }

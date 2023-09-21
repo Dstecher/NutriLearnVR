@@ -40,6 +40,7 @@ public class SelectionController : MonoBehaviour
             // INFO: The spawn range should be somewhere between ([-1.5, 1.5], 2, [-0.6, 0.6])
             currentFoodProduct = Instantiate(foodProperties.gameObject, new Vector3(selectionTable.gameObject.transform.position.x + Random.Range(-1.5f, 1.5f), selectionTable.gameObject.transform.position.y + 2, selectionTable.gameObject.transform.position.z + Random.Range(-0.6f, 0.6f)), Quaternion.identity, selectionTable.gameObject.transform) as GameObject;
             currentFoodProduct.GetComponent<Rigidbody>().useGravity = true;
+            currentFoodProduct.GetComponent<FoodSelectable>().ChangeSelectionStatus(true);
 
             // despawn the item from the hand
             Destroy(foodProperties.gameObject);
@@ -50,13 +51,13 @@ public class SelectionController : MonoBehaviour
         }
     }
 
-    void RemoveItemFromSelection(FoodProperties foodProperties)
+    public void RemoveItemFromSelection(FoodProperties foodProperties)
     {
         userSelection.Remove(foodProperties);
         Destroy(foodProperties.gameObject); // remove the Food Product from the scene as well (should be laying on the referenced selection table)
     }
 
-    void ClearSelection()
+    public void ClearSelection()
     {
         // INFO: Technically, this could essentially be also achieved by using userSelection.Clear(), however, this would not despawn the items.
         foreach (FoodProperties foodProperties in userSelection)
