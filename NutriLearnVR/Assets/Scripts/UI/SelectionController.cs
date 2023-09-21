@@ -27,12 +27,12 @@ public class SelectionController : MonoBehaviour
 
         if (selectionTable != null)
         {
-            userSelection.Add(foodProperties);
+            FoodProperties newProperties = foodProperties.CreateCopy(foodProperties, gameObject);
+            userSelection.Add(newProperties);
 
             // first destroy all childs from the item
             foreach (Transform child in foodProperties.gameObject.transform)
             {
-                Debug.Log("Destroyed " + child.gameObject.name);
                 Destroy(child.gameObject);
             }
 

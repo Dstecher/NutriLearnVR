@@ -69,4 +69,27 @@ public class FoodProperties : MonoBehaviour
     {
         isLiquid = liquid;
     }
+
+    public FoodProperties CreateCopy(FoodProperties foodProperties, GameObject attachParent)
+    {
+        FoodProperties tempProperties = attachParent.AddComponent<FoodProperties>();
+
+        tempProperties.id = foodProperties.id;
+        tempProperties.weight = foodProperties.weight;
+        tempProperties.productName = foodProperties.productName;
+        tempProperties.kcalPer100 = foodProperties.kcalPer100;
+        tempProperties.proteinPer100 = foodProperties.proteinPer100;
+        tempProperties.carbsPer100 = foodProperties.carbsPer100;
+        tempProperties.fatsPer100 = foodProperties.fatsPer100;
+        tempProperties.isLiquid = foodProperties.isLiquid;
+
+        // For the following specific properties, getters/setters have to be used in case they are made private again
+        tempProperties.calories = foodProperties.calories;
+        tempProperties.protein = foodProperties.protein;
+        tempProperties.carbs = foodProperties.carbs;
+        tempProperties.fats = foodProperties.fats;
+
+        return tempProperties;
+    }
+
 }
