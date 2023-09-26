@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -14,12 +15,19 @@ public class NutrientInformationManager : MonoBehaviour
     [SerializeField] public float verticalCanvasDistance;
     [SerializeField] public GameObject nutrientInformationCanvas;
     [SerializeField] public InputActionProperty showButton;
+    [SerializeField] public bool activateDebug = false;
     private bool displayLabel = true;
     private GameObject canvasInstance;
+    private XRGrabInteractable grabInteractable;
+    private bool isGrabbed = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        grabInteractable = gameObject.GetComponent<XRGrabInteractable>();
+        grabInteractable.onSelectEntered.AddListener(OnGrab);
+        grabInteractable.onSelectExited.AddListener(OnRelease);
+
         if (head == null)
         {
             head = GameObject.FindGameObjectWithTag("MainCamera").transform;
@@ -29,13 +37,28 @@ public class NutrientInformationManager : MonoBehaviour
         UpdateNutrientInformation();
     }
 
+    private void OnGrab(XRBaseInteractor interactor)
+    {
+        isGrabbed = true;
+        if (activateDebug) Debug.Log("Object grabbed");
+    }
+
+    private void OnRelease(XRBaseInteractor interactor)
+    {
+        isGrabbed = false;
+        if (activateDebug) Debug.Log("Object released");
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (showButton.action.WasPressedThisFrame())
+        if (isGrabbed)
         {
-            displayLabel = !displayLabel;
-            canvasInstance.SetActive(displayLabel);
+            if (showButton.action.WasPressedThisFrame())
+            {
+                displayLabel = !displayLabel;
+                canvasInstance.SetActive(displayLabel);
+            }
         }
         if (!displayLabel) return;
 
@@ -53,7 +76,14 @@ public class NutrientInformationManager : MonoBehaviour
         itemNameText.text = foodProperties.productName;
 
         TextMeshProUGUI itemWeightText = canvasInstance.transform.Find("ItemWeightText").gameObject.GetComponent<TextMeshProUGUI>();
-        itemWeightText.text = $"Gewicht pro Stück: ca. {foodProperties.weight.ToString()} g";
+        if (foodProperties.isLiquid)
+        {
+            itemWeightText.text = $"Volumen pro Stück: ca. {foodProperties.weight.ToString()} ml";
+        }
+        else
+        {
+            itemWeightText.text = $"Gewicht pro Stück: ca. {foodProperties.weight.ToString()} g";
+        }
 
         TextMeshProUGUI itemCaloriesSpecific = canvasInstance.transform.Find("ItemCaloriesSpecific").gameObject.GetComponent<TextMeshProUGUI>();
         itemCaloriesSpecific.text = foodProperties.calories.ToString();
