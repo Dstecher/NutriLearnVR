@@ -313,10 +313,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8307275946715783723}
+  - component: {fileID: 5240761785678499049}
   - component: {fileID: 8307275946715783696}
   - component: {fileID: 8307275946715783724}
-  - component: {fileID: 8307275946715783697}
   - component: {fileID: 8307275946715783726}
   - component: {fileID: 8307275946715783725}
   - component: {fileID: 447198864}
@@ -327,15 +326,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8307275946715783723
-RectTransform:
+--- !u!4 &5240761785678499049
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8307275946715783722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.2, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -343,11 +342,6 @@ RectTransform:
   m_Father: {fileID: 8307275947094893028}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.2, y: 0.2}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8307275946715783696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,27 +569,6 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
---- !u!223 &8307275946715783697
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8307275946715783722}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!114 &8307275946715783726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -745,7 +718,7 @@ Transform:
   m_Children:
   - {fileID: 8307275946659317465}
   - {fileID: 8307275948018923193}
-  - {fileID: 8307275946715783723}
+  - {fileID: 5240761785678499049}
   - {fileID: 8307275948020271238}
   - {fileID: 8307275947363085820}
   m_Father: {fileID: 8307275946148204427}
@@ -2589,7 +2562,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 8307275946715783723}
+    m_TransformParent: {fileID: 5240761785678499049}
     m_Modifications:
     - target: {fileID: 3475118261464492563, guid: 1f4d373a613d0466fbd8849470265852,
         type: 3}
