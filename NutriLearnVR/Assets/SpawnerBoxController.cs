@@ -14,25 +14,21 @@ public class SpawnerBoxController : XRBaseInteractable
     [SerializeField] Transform rightHandTransform;
     private Transform initiateTransform;
 
-    /*private void OnTriggerEnter(Collider other) 
-    {
-        Debug.Log("This is the other collider: " + other.gameObject.name);
-        if (other.gameObject.tag == "Hand")
-        {
-            Transform handTransform = other.transform;
-            Debug.Log("Instantiating at " + handTransform.position);
-            Instantiate(spawnObject, new Vector3(handTransform.position.x, handTransform.position.y + 0.5f, handTransform.position.z), Quaternion.identity);
-        }
-    }*/
+    private float nextSpawn = 0.1f;
+    [SerializeField] float spawnDelay = 0.25f;
+    [SerializeField] public bool activateDebug = false;
 
+    // INFO: For some reason, the event is called twice in most cases. To prevent this, a cooldown was implemented
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
+        if (Time.time < nextSpawn) return; // cancel function call if cooldown has not passed
+
         // first determine, which (hand) transform is closer to the SpawnerBox position to know which hand to instantiate the object in
         Transform boxTransform = gameObject.GetComponent<Transform>();
         float leftDistance = Vector3.Distance(boxTransform.position, leftHandTransform.position);
         float rightDistance = Vector3.Distance(boxTransform.position, rightHandTransform.position);
 
-        Debug.Log($"The left hand distance is {leftDistance}, while the right hand distance is " + rightDistance);
+        if (activateDebug) Debug.Log($"The left hand distance is {leftDistance}, while the right hand distance is " + rightDistance);
 
         if (leftDistance < rightDistance)
         {
@@ -45,14 +41,16 @@ public class SpawnerBoxController : XRBaseInteractable
 
         // Instantiate object
         GameObject newObject = Instantiate(spawnObject, initiateTransform.position, Quaternion.identity);
-        Debug.Log("Instantiated the object");
+        if (activateDebug) Debug.Log("Instantiated the object");
         
         // Get grab interactable from prefab
         XRGrabInteractable objectInteractable = newObject.GetComponent<XRGrabInteractable>();
         
         // Select object into same interactor
         interactionManager.SelectEnter(args.interactorObject, objectInteractable);
-        Debug.Log("Selected the object");
+        if (activateDebug) Debug.Log("Selected the object");
+
+        nextSpawn = Time.time + spawnDelay; // update cooldown
         
         base.OnSelectEntered(args);
     }

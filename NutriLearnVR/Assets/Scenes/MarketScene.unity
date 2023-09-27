@@ -2617,6 +2617,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5210685743309668296, guid: 0ca0cb5b052540d4091ebef3bd178891,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 21cad812ea84cef40aaa29ff07ed3b42, type: 2}
+    - target: {fileID: 5242876648116904369, guid: 0ca0cb5b052540d4091ebef3bd178891,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 21cad812ea84cef40aaa29ff07ed3b42, type: 2}
+    - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
+        type: 3}
+      propertyPath: spawnDelay
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: spawnObject
@@ -2633,6 +2648,22 @@ PrefabInstance:
       propertyPath: rightHandTransform
       value: 
       objectReference: {fileID: 8307275946144505969}
+    - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
+        type: 3}
+      propertyPath: grabButton.m_Reference
+      value: 
+      objectReference: {fileID: 15759602096507913, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
+        type: 3}
+      propertyPath: grabButton.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
+        type: 3}
+      propertyPath: grabButton.m_Action.m_Name
+      value: Grab Button
+      objectReference: {fileID: 0}
     - target: {fileID: 8009816049670309849, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: m_Name
