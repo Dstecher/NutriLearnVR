@@ -17,6 +17,7 @@ public class NutrientInformationManager : MonoBehaviour
     [SerializeField] public InputActionProperty showButton;
     [SerializeField] public bool activateDebug = false;
     private bool displayLabel = true;
+    private bool labelActive = false;
     private GameObject canvasInstance;
     private XRGrabInteractable grabInteractable;
     private bool isGrabbed = false;
@@ -52,15 +53,16 @@ public class NutrientInformationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isGrabbed)
-        {
-            if (showButton.action.WasPressedThisFrame())
-            {
-                displayLabel = !displayLabel;
-                canvasInstance.SetActive(displayLabel);
-            }
-        }
+
+        if (showButton.action.WasPressedThisFrame()) displayLabel = !displayLabel;
         if (!displayLabel) return;
+        
+        if (labelActive == isGrabbed) return;
+
+        if (!labelActive && isGrabbed) labelActive = true;
+        if (labelActive && !isGrabbed) labelActive = false;
+
+        canvasInstance.SetActive(labelActive);
 
         canvasInstance.transform.position = gameObject.transform.position + new Vector3(0, verticalCanvasDistance, 0);
         canvasInstance.transform.LookAt(new Vector3(head.position.x, canvasInstance.transform.position.y, head.position.z));

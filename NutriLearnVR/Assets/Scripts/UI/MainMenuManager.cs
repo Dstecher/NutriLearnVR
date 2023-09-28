@@ -9,12 +9,16 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] public Transform head;
     [SerializeField] public float menuDistance = 2;
     [SerializeField] public GameObject menuCanvas;
+
+    [SerializeField] public GameObject selectionCanvas;
+
     [SerializeField] public InputActionProperty showButton;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        selectionCanvas.gameObject.SetActive(true); // turn on selection canvas on start to keep it inactive during scene building
     }
 
     // Update is called once per frame
