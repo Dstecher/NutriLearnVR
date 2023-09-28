@@ -15,7 +15,7 @@ public class SpawnerBoxController : XRBaseInteractable
     private Transform initiateTransform;
 
     private float nextSpawn = 0.1f;
-    [SerializeField] float spawnDelay = 0.25f;
+    [SerializeField] float spawnDelay = 0.75f;
     [SerializeField] public bool activateDebug = false;
 
     // INFO: For some reason, the event is called twice in most cases. To prevent this, a cooldown was implemented
