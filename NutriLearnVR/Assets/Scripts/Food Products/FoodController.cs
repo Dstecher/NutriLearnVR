@@ -29,10 +29,10 @@ public class FoodController : MonoBehaviour
 
             // Make sure that the product exists in database by comparing IDs (due to ID convention this should be equal to index in array)
             if (foodProperties.id > foodProductList.tableSize - 1) return;
-            if (foodProductList.foodProcuct[foodProperties.id].id == foodProperties.id)
+            if (foodProductList.foodProduct[foodProperties.id].id == foodProperties.id)
             {
                 if (activateDebug) Debug.Log("[DEBUG] Found food product with ID " + foodProperties.id);
-                FoodProduct foodProductDB = foodProductList.foodProcuct[foodProperties.id]; // Store current food product from database
+                FoodProduct foodProductDB = foodProductList.foodProduct[foodProperties.id]; // Store current food product from database
 
                 // Set all necessary data in scene product
                 foodProperties.setName(foodProductDB.productName);
@@ -49,6 +49,20 @@ public class FoodController : MonoBehaviour
             {
                 Debug.Log("[ERROR] Something went wrong when comparing IDs. Please re-check for food product with ID " + foodProperties.id);
             }
+        }
+    }
+
+    public FoodProduct getFoodProductByID(int foodProductID)
+    {
+        if (foodProductID == null || foodProductList == null) return null; // Caused by script execution order; should only be called for manual instantiate calls
+        if (foodProductList.foodProduct[foodProductID].id == foodProductID)
+        {
+            return foodProductList.foodProduct[foodProductID];
+        }
+        else
+        {
+            Debug.Log("[ERROR] Something went wrong when comparing IDs. Please re-check for food product with ID " + foodProductID);
+            return null;
         }
     }
 }

@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class FoodProperties : MonoBehaviour
 {
+    [SerializeField] public FoodController foodController;
+
     [SerializeField] public int id; // the for the food product in the database
     [SerializeField] public float weight; // the weight OR volume of the food product in g/ml (handled using the same variable here but entered correspondingly based on specific product model)
     [SerializeField] public string productName; // the name of the food product
@@ -38,6 +40,26 @@ public class FoodProperties : MonoBehaviour
         protein = Mathf.Floor(weightRatio * proteinPer100 * 10) / 10;
         carbs = Mathf.Floor(weightRatio * carbsPer100 * 10) / 10;
         fats = Mathf.Floor(weightRatio * fatsPer100 * 10) / 10;
+    }
+
+    public void Awake()
+    {
+        // Set the FoodController reference
+        foodController = GameObject.Find("Items/FoodController").GetComponent<FoodController>();
+
+        FoodProduct foodProduct = foodController.getFoodProductByID(id);
+
+        if (foodProduct == null) return; // This means that Awake was called after loading the scene; The intended use is after manual instantiate calls
+
+        setName(foodProduct.productName);
+        setCalories(foodProduct.cals);
+        setProtein(foodProduct.protein);
+        setCarbs(foodProduct.carbs);
+        setFats(foodProduct.fats);
+        setLiquid(foodProduct.isLiquid);
+
+        // Compute specific values for the displayed (singular) food product
+        setSpecificValues();
     }
 
     public void setName(string pName)

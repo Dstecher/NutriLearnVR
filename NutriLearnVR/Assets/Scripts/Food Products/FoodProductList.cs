@@ -5,6 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class FoodProductList
 {
-    public FoodProduct[] foodProcuct;
+    public FoodProduct[] foodProduct;
     public int tableSize;
 }
