@@ -14,13 +14,12 @@ public class SelectionController : MonoBehaviour
         userSelection = new List<FoodProperties>();
     }
 
-    List<FoodProperties> GetUserSelection()
+    public List<FoodProperties> GetUserSelection()
     {
         return userSelection;
         // TODO: Add specific food product information in the selection UI
     }
 
-    // TODO: Call this function only when the corresponding event is called, e.g. the item is selected and button pressed
     public void AddItemToSelection(FoodProperties foodProperties)
     {
         GameObject currentFoodProduct = new GameObject();
