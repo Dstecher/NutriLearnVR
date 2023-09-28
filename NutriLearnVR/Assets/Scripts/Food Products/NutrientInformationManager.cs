@@ -16,14 +16,20 @@ public class NutrientInformationManager : MonoBehaviour
     [SerializeField] public GameObject nutrientInformationCanvas;
     [SerializeField] public InputActionProperty showButton;
     [SerializeField] public bool activateDebug = false;
-    private bool displayLabel = true;
     private bool labelActive = false;
     private GameObject canvasInstance;
     private XRGrabInteractable grabInteractable;
     private bool isGrabbed = false;
+    
+    private NutrientLabelController nutrientLabelController;
 
     // Start is called before the first frame update
     void Start()
+    {
+        UpdateNutrientInformation();
+    }
+
+    void Awake()
     {
         grabInteractable = gameObject.GetComponent<XRGrabInteractable>();
         grabInteractable.onSelectEntered.AddListener(OnGrab);
@@ -35,7 +41,7 @@ public class NutrientInformationManager : MonoBehaviour
         }
         // Create Nutrient information label for object
         canvasInstance = Instantiate(nutrientInformationCanvas, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + verticalCanvasDistance, gameObject.transform.position.z), Quaternion.identity, gameObject.transform) as GameObject;
-        UpdateNutrientInformation();
+        nutrientLabelController = GameObject.Find("Items").GetComponent<NutrientLabelController>();
     }
 
     private void OnGrab(XRBaseInteractor interactor)
@@ -53,11 +59,14 @@ public class NutrientInformationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (activateDebug) Debug.Log($"This is the current nutrient controller object {nutrientLabelController} with the bool value {nutrientLabelController.GetDisplayLabelStatus()}");
 
-        if (showButton.action.WasPressedThisFrame()) displayLabel = !displayLabel;
-        if (!displayLabel) return;
-        
-        if (labelActive == isGrabbed) return;
+        if (showButton.action.WasPressedThisFrame()) nutrientLabelController.ChangeDisplayLabelStatus();
+        if (!nutrientLabelController.GetDisplayLabelStatus())
+        {
+            canvasInstance.SetActive(false);
+            return;
+        }
 
         if (!labelActive && isGrabbed) labelActive = true;
         if (labelActive && !isGrabbed) labelActive = false;
