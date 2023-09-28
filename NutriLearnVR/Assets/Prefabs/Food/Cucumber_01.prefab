@@ -300,6 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b8fc379eec1ac4296fa7eee244730c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodController: {fileID: 0}
   id: 82
   weight: 90
   productName: 
@@ -341,6 +342,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -3100717042197214743, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  activateDebug: 0
 --- !u!114 &5113076625249096522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,3 +369,4 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -1440010442231905767, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  activateDebug: 0
