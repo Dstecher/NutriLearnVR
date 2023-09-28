@@ -302,7 +302,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334105610}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &290079524
 BoxCollider:
@@ -1623,7 +1623,6 @@ Transform:
   - {fileID: 738818944}
   - {fileID: 1253706741}
   - {fileID: 1922876805}
-  - {fileID: 3424988096822249470}
   - {fileID: 290079523}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -2922,94 +2921,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d146d482d0d306e4fa349b5eaf19356e, type: 3}
---- !u!1001 &3424988096822249469
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1334105610}
-    m_Modifications:
-    - target: {fileID: 1336107517388176, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_Name
-      value: Cucumber_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.264
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 78425846870229248, guid: f89c4abd638b29f43bff133c5605e4cf,
-        type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1072221727}
-    - target: {fileID: 1609226076033918926, guid: f89c4abd638b29f43bff133c5605e4cf,
-        type: 3}
-      propertyPath: head
-      value: 
-      objectReference: {fileID: 1955707447}
-    - target: {fileID: 5113076625249096522, guid: f89c4abd638b29f43bff133c5605e4cf,
-        type: 3}
-      propertyPath: activateDebug
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5113076625249096522, guid: f89c4abd638b29f43bff133c5605e4cf,
-        type: 3}
-      propertyPath: selectionController
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5113076625249096522, guid: f89c4abd638b29f43bff133c5605e4cf,
-        type: 3}
-      propertyPath: selectionButton.m_Action.m_Name
-      value: Selection Button
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f89c4abd638b29f43bff133c5605e4cf, type: 3}
---- !u!4 &3424988096822249470 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4496628612075550, guid: f89c4abd638b29f43bff133c5605e4cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 3424988096822249469}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3941960340790222952
 PrefabInstance:
   m_ObjectHideFlags: 0
