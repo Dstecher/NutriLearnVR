@@ -16,7 +16,7 @@ public class FoodSelectable : MonoBehaviour
     private bool isSelected = false; // displays if the current object is selected
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         grabInteractable = gameObject.GetComponent<XRGrabInteractable>();
         grabInteractable.onSelectEntered.AddListener(OnGrab);
