@@ -18,6 +18,8 @@ public class SpawnerBoxController : XRBaseInteractable
     [SerializeField] float spawnDelay = 0.75f;
     [SerializeField] public bool activateDebug = false;
 
+    private int counter = 0;
+
     // INFO: For some reason, the event is called twice in most cases. To prevent this, a cooldown was implemented
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
@@ -40,8 +42,12 @@ public class SpawnerBoxController : XRBaseInteractable
         }
 
         // Instantiate object
+        // INFO: The debugs here are mainly used to understand issues with duplicate instantiations happenning randomly from time to time; they seem to be sometimes fixed by application restarts
+        if (activateDebug) Debug.Log($"The counter before the instantiate is {counter}.");
         GameObject newObject = Instantiate(spawnObject, initiateTransform.position, Quaternion.identity);
+        counter++;
         if (activateDebug) Debug.Log("Instantiated the object");
+        if (activateDebug) Debug.Log($"The counter after the instantiate is {counter}.");
         
         // Get grab interactable from prefab
         XRGrabInteractable objectInteractable = newObject.GetComponent<XRGrabInteractable>();
