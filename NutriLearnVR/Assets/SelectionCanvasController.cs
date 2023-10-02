@@ -13,10 +13,14 @@ public class SelectionCanvasController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI proteinText;
     [SerializeField] private TextMeshProUGUI fatsText;
 
+    [SerializeField] private TextMeshProUGUI extendedText;
+
     private int calsSum;
     private float carbsSum;
     private float proteinSum;
     private float fatsSum;
+    private string extendedString;
+    private bool showExtendedText = true;
 
     // Start is called before the first frame update
     void Start()
@@ -39,11 +43,15 @@ public class SelectionCanvasController : MonoBehaviour
     /// </summary>
     void UpdateSelectionCanvas()
     {
+        // Show extended Selection UI based on bool value by adjusting parent state (UI Sprite element)
+        extendedText.transform.parent.gameObject.SetActive(showExtendedText);
+
         // Reset sum values to only compute the sums once per selection
         calsSum = 0;
         carbsSum = 0f;
         proteinSum = 0f;
         fatsSum = 0f;
+        extendedString = "------------------------------------------------------------------------";
 
         List<FoodProperties> userSelection = selectionController.GetUserSelection();
 
@@ -56,11 +64,13 @@ public class SelectionCanvasController : MonoBehaviour
             fatsSum += foodProperties.fats;
 
             //TODO: Make the UI extendable and scalable with content & add all the values from the selection to the text area line-wise
+            extendedString += $"• {foodProperties.productName}     ({foodProperties.carbs} g, {foodProperties.protein} g, {foodProperties.fats} g)\n";
         }
 
         calsText.text = $"{calsSum}";
         carbsText.text = $"{carbsSum} g";
         proteinText.text = $"{proteinSum} g";
         fatsText.text = $"{fatsSum} g";
+        extendedText.text = extendedString;
     }
 }
