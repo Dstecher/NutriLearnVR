@@ -299,6 +299,19 @@ MonoBehaviour:
   proteinText: {fileID: 3999188624448837151}
   fatsText: {fileID: 3999188626309240361}
   extendedText: {fileID: 33429190010860214}
+  extendedSelectionButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Extended Selection Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 5ba58c97-66a2-4045-9bcf-780c687ea35d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8841085048332840342, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!1 &3981445820314147650
 GameObject:
   m_ObjectHideFlags: 0

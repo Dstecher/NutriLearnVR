@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class SelectionCanvasController : MonoBehaviour
 {
@@ -15,12 +16,14 @@ public class SelectionCanvasController : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI extendedText;
 
+    [SerializeField] public InputActionProperty extendedSelectionButton;
+
     private int calsSum;
     private float carbsSum;
     private float proteinSum;
     private float fatsSum;
     private string extendedString;
-    private bool showExtendedText = true;
+    private bool showExtendedText = false;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,8 @@ public class SelectionCanvasController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (extendedSelectionButton.action.WasPressedThisFrame()) showExtendedText = !showExtendedText;
+
         gameObject.transform.rotation = Camera.main.transform.rotation;
         gameObject.transform.position = Camera.main.transform.position;
 
@@ -63,7 +68,6 @@ public class SelectionCanvasController : MonoBehaviour
             proteinSum += foodProperties.protein;
             fatsSum += foodProperties.fats;
 
-            //TODO: Make the UI extendable and scalable with content & add all the values from the selection to the text area line-wise
             extendedString += $"• {foodProperties.productName}     ({foodProperties.carbs} g, {foodProperties.protein} g, {foodProperties.fats} g)\n";
         }
 

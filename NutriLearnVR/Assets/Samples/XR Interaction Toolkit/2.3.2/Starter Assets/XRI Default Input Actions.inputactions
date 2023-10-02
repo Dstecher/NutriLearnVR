@@ -648,6 +648,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ShowExtendedSelection",
+                    "type": "Button",
+                    "id": "d0df8990-d198-485c-91a7-215db16f37fb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -791,6 +800,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "MainMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fd35c954-cc49-4ff1-802f-9d7477a69864",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShowExtendedSelection",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
