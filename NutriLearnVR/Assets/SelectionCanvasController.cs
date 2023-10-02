@@ -72,9 +72,9 @@ public class SelectionCanvasController : MonoBehaviour
         }
 
         calsText.text = $"{calsSum}";
-        carbsText.text = $"{carbsSum} g";
-        proteinText.text = $"{proteinSum} g";
-        fatsText.text = $"{fatsSum} g";
+        carbsText.text = $"{carbsSum.ToString("f1")} g";
+        proteinText.text = $"{proteinSum.ToString("f1")} g";
+        fatsText.text = $"{fatsSum.ToString("f1")} g";
         extendedText.text = extendedString;
     }
 }
