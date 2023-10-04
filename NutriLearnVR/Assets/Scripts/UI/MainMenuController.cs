@@ -5,6 +5,7 @@ using UnityEngine;
 public class MainMenuController : MonoBehaviour
 {
     [SerializeField] GameObject currentCanvas;
+    [SerializeField] GameObject mainContentUI;
     [SerializeField] GameObject controlsUI;
 
     public void CloseUI()
@@ -14,7 +15,7 @@ public class MainMenuController : MonoBehaviour
 
     public void ShowControlsUI()
     {
-        if (currentCanvas) currentCanvas.SetActive(false);
+        if (mainContentUI) mainContentUI.SetActive(false);
         if (controlsUI) controlsUI.SetActive(true);
     }
 
