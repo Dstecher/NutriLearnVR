@@ -1323,6 +1323,7 @@ MonoBehaviour:
   currentCanvas: {fileID: 7505696771182429184}
   mainContentUI: {fileID: 8926238530020635172}
   controlsUI: {fileID: 5723051409278138250}
+  closeButtonText: {fileID: 5337671991419866220}
 --- !u!1 &7505696771219818484
 GameObject:
   m_ObjectHideFlags: 0
