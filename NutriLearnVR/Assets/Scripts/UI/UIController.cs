@@ -1,22 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField] GameObject currentCanvas;
-    [SerializeField] GameObject controlsUI;
+    [SerializeField] public Transform head;
+    [SerializeField] public float menuDistance = 2;
+    [SerializeField] public GameObject menuCanvas;
 
-    public void CloseUI()
+    [SerializeField] public GameObject selectionCanvas;
+
+    [SerializeField] public InputActionProperty showButton;
+
+
+    // Start is called before the first frame update
+    void Start()
     {
-        if (currentCanvas) currentCanvas.SetActive(false);
+        selectionCanvas.gameObject.SetActive(true); // turn on selection canvas on start to keep it inactive during scene building
     }
 
-    public void ShowControlsUI()
+    // Update is called once per frame
+    void Update()
     {
-        if (currentCanvas) currentCanvas.SetActive(false);
-        if (controlsUI) controlsUI.SetActive(true);
+        if (showButton.action.WasPressedThisFrame())
+        {
+            menuCanvas.SetActive(!menuCanvas.activeSelf);
+        }
+
+        menuCanvas.transform.position = head.position + new Vector3(head.forward.x, head.forward.y, head.forward.z).normalized * menuDistance;
+        menuCanvas.transform.LookAt(new Vector3(head.position.x, head.position.y, head.position.z));
+        menuCanvas.transform.forward *= -1;
     }
-
-
 }
