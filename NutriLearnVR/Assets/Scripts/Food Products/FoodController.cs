@@ -54,7 +54,7 @@ public class FoodController : MonoBehaviour
 
     public FoodProduct getFoodProductByID(int foodProductID)
     {
-        if (foodProductID == null || foodProductList == null) return null; // Caused by script execution order; should only be called for manual instantiate calls
+        if (foodProductID == -1 || foodProductList == null) return null; // Caused by script execution order; should only be called for manual instantiate calls
         if (foodProductList.foodProduct[foodProductID].id == foodProductID)
         {
             return foodProductList.foodProduct[foodProductID];
