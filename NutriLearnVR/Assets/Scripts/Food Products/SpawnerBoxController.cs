@@ -15,8 +15,9 @@ public class SpawnerBoxController : XRBaseInteractable
     private Transform initiateTransform;
 
     private float nextSpawn = 0.1f;
-    [SerializeField] float spawnDelay = 0.75f;
+    [SerializeField] float spawnDelay = 0.5f;
     [SerializeField] public bool activateDebug = false;
+    [SerializeField] private DebugContainer debugContainer;
 
     private int counter = 0;
 
@@ -31,6 +32,7 @@ public class SpawnerBoxController : XRBaseInteractable
         float rightDistance = Vector3.Distance(boxTransform.position, rightHandTransform.position);
 
         if (activateDebug) Debug.Log($"The left hand distance is {leftDistance}, while the right hand distance is " + rightDistance);
+        if (activateDebug) debugContainer.AddDebug($"The left hand distance is {leftDistance}, while the right hand distance is " + rightDistance);
 
         if (leftDistance < rightDistance)
         {
@@ -44,10 +46,13 @@ public class SpawnerBoxController : XRBaseInteractable
         // Instantiate object
         // INFO: The debugs here are mainly used to understand issues with duplicate instantiations happenning randomly from time to time; they seem to be sometimes fixed by application restarts
         if (activateDebug) Debug.Log($"The counter before the instantiate is {counter}.");
+        if (activateDebug) debugContainer.AddDebug($"The counter before the instantiate is {counter}.");
         GameObject newObject = Instantiate(spawnObject, initiateTransform.position, Quaternion.identity);
         counter++;
         if (activateDebug) Debug.Log("Instantiated the object");
+        if (activateDebug) debugContainer.AddDebug("Instantiated the object");
         if (activateDebug) Debug.Log($"The counter after the instantiate is {counter}.");
+        if (activateDebug) debugContainer.AddDebug($"The counter after the instantiate is {counter}.");
         
         // Get grab interactable from prefab
         XRGrabInteractable objectInteractable = newObject.GetComponent<XRGrabInteractable>();
@@ -55,6 +60,7 @@ public class SpawnerBoxController : XRBaseInteractable
         // Select object into same interactor
         interactionManager.SelectEnter(args.interactorObject, objectInteractable);
         if (activateDebug) Debug.Log("Selected the object");
+        if (activateDebug) debugContainer.AddDebug("Selected the object");
 
         nextSpawn = Time.time + spawnDelay; // update cooldown
         
