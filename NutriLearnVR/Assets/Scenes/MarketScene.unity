@@ -1422,6 +1422,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 21cad812ea84cef40aaa29ff07ed3b42, type: 2}
+    - target: {fileID: 6674076860244506684, guid: 0ca0cb5b052540d4091ebef3bd178891,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: spawnDelay

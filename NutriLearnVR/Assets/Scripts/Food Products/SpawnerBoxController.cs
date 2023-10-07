@@ -20,10 +20,12 @@ public class SpawnerBoxController : XRBaseInteractable
     [SerializeField] private DebugContainer debugContainer;
 
     private int counter = 0;
+    private int updateCounter = 0;
 
     // INFO: For some reason, the event is called twice in most cases. To prevent this, a cooldown was implemented
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
+        if (activateDebug) debugContainer.AddDebug($"Called OnSelectEntered with current time {Time.time} and nextSpawn value {nextSpawn}");
         if (Time.time < nextSpawn) return; // cancel function call if cooldown has not passed
 
         // first determine, which (hand) transform is closer to the SpawnerBox position to know which hand to instantiate the object in
@@ -65,5 +67,14 @@ public class SpawnerBoxController : XRBaseInteractable
         nextSpawn = Time.time + spawnDelay; // update cooldown
         
         base.OnSelectEntered(args);
+    }
+
+    private void FixedUpdate() 
+    {
+        if (updateCounter % 250 == 0)
+        {
+            if (activateDebug) debugContainer.AddDebug($"SpawnerBoxController works with current updateCounter value of {updateCounter}");
+        }
+        updateCounter++;
     }
 }
