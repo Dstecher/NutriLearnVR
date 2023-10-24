@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 5325554946080998959}
   m_Layer: 0
   m_Name: Radieschen_low
-  m_TagString: Untagged
+  m_TagString: FoodProduct
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

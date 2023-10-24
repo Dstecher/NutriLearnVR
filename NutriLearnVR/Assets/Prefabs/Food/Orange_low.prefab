@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: -9158592868726474680}
   m_Layer: 0
   m_Name: Orange_low
-  m_TagString: Untagged
+  m_TagString: FoodProduct
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
