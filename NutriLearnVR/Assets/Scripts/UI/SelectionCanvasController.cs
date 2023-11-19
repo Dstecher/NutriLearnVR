@@ -77,4 +77,12 @@ public class SelectionCanvasController : MonoBehaviour
         fatsText.text = $"{fatsSum.ToString("f1")} g";
         extendedText.text = extendedString;
     }
+
+    public void GetScoreValues(out int returnCals, out float returnCarbs, out float returnProtein, out float returnFats)
+    {
+        returnCals = calsSum;
+        returnCarbs = carbsSum;
+        returnProtein = proteinSum;
+        returnFats = fatsSum;
+    }
 }
