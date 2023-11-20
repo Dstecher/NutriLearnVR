@@ -27,10 +27,14 @@ public class UIController : MonoBehaviour
         if (showButton.action.WasPressedThisFrame())
         {
             menuCanvas.SetActive(!menuCanvas.activeSelf);
+            
+            menuCanvas.transform.position = head.position + new Vector3(head.forward.x, head.forward.y, head.forward.z).normalized * menuDistance;
+            menuCanvas.transform.LookAt(new Vector3(head.position.x, head.position.y, head.position.z));
+            menuCanvas.transform.forward *= -1;
         }
 
-        menuCanvas.transform.position = head.position + new Vector3(head.forward.x, head.forward.y, head.forward.z).normalized * menuDistance;
-        menuCanvas.transform.LookAt(new Vector3(head.position.x, head.position.y, head.position.z));
-        menuCanvas.transform.forward *= -1;
+        //menuCanvas.transform.position = head.position + new Vector3(head.forward.x, head.forward.y, head.forward.z).normalized * menuDistance;
+        //menuCanvas.transform.LookAt(new Vector3(head.position.x, head.position.y, head.position.z));
+        //menuCanvas.transform.forward *= -1;
     }
 }
