@@ -28,6 +28,7 @@ public class ScoreCalculator : MonoBehaviour
     void Awake()
     {
         bMRCalculator = GetComponent<BMRCalculator>();
+        selectionCanvasController = selectionCanvasReference.GetComponent<SelectionCanvasController>();
     }
 
     // Update is called once per frame
