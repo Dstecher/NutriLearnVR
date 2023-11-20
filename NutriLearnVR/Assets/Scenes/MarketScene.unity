@@ -140,7 +140,7 @@ PrefabInstance:
     - target: {fileID: 3968472025792827744, guid: de93c1ebfdfc7a748b7a4a4e486ac392,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8484959548176580273, guid: de93c1ebfdfc7a748b7a4a4e486ac392,
         type: 3}
@@ -5368,7 +5368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 146120, guid: c4e389e44d96da64ea974ab237ce1a9a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 148190, guid: c4e389e44d96da64ea974ab237ce1a9a, type: 3}
       propertyPath: m_IsActive
@@ -8298,9 +8298,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3480323114227561390, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
+      propertyPath: distance
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480323114227561390, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
       propertyPath: positionSource
       value: 
       objectReference: {fileID: 1955707447}
+    - target: {fileID: 3480323114227561390, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: verticalOffset
+      value: -0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: grabRayReference
@@ -8398,9 +8408,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5989653967736893770, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
+      propertyPath: distance
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989653967736893770, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
       propertyPath: positionSource
       value: 
       objectReference: {fileID: 1955707447}
+    - target: {fileID: 5989653967736893770, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: verticalOffset
+      value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: selectionCanvasReference
+      value: 
+      objectReference: {fileID: 2039833131}
     - target: {fileID: 7206543542970205169, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: m_OnFocusSelectAll
@@ -8509,7 +8534,7 @@ PrefabInstance:
     - target: {fileID: 7505696771182429185, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.992
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7505696771182429185, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
@@ -8539,7 +8564,7 @@ PrefabInstance:
     - target: {fileID: 7505696771182429185, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.798
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7505696771182429185, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
@@ -8558,13 +8583,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8558478307249070953, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
+      propertyPath: distance
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558478307249070953, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
       propertyPath: positionSource
       value: 
       objectReference: {fileID: 1955707447}
     - target: {fileID: 8558478307249070953, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: verticalOffset
-      value: -0.5
+      value: -0.35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6614c1dadcd78e44f931d62f6859217b, type: 3}
