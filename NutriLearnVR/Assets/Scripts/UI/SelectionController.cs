@@ -61,29 +61,58 @@ public class SelectionController : MonoBehaviour
                 break;
             }
         }
-        
-        //userSelection.Remove(foodProperties); // This does not happen correctly as the reference is not correct.
 
         FoodProperties[] propertyComponents = GetComponents<FoodProperties>();
         foreach (FoodProperties selectedProperties in propertyComponents)
         {
-            Debug.Log("Checked a component");
+            Debug.Log("Checked the component " + selectedProperties);
             if (selectedProperties.id == foodProperties.id)
             {
                 Destroy(selectedProperties);
                 Debug.Log("Removed properties");
             }
         }
-
+        Debug.Log("This is the removed object: " + foodProperties.gameObject);
+        // TODO: This currently also removes the UserSelection GameObject when called from ClearSelection(), which has to be prevented
         Destroy(foodProperties.gameObject); // remove the Food Product from the scene as well (should be laying on the referenced selection table)
+    }
+
+    public void RemoveItemFromSelectionForClearing(FoodProperties foodProperties)
+    {
+        foreach (FoodProperties selectedProperties in userSelection)
+        {
+            if (selectedProperties.id == foodProperties.id)
+            {
+                userSelection.Remove(selectedProperties);
+                Debug.Log("Removed properties");
+                break;
+            }
+        }
+        FoodProperties[] propertyComponents = GetComponents<FoodProperties>();
+        foreach (FoodProperties selectedProperties in propertyComponents)
+        {
+            Debug.Log("Checked the component " + selectedProperties);
+            if (selectedProperties.id == foodProperties.id)
+            {
+                Destroy(selectedProperties);
+                Debug.Log("Removed properties");
+            }
+        }
     }
 
     public void ClearSelection()
     {
         // INFO: Technically, this could essentially be also achieved by using userSelection.Clear(), however, this would not despawn the items.
-        foreach (FoodProperties foodProperties in userSelection)
+        /**foreach (FoodProperties foodProperties in userSelection)
         {
             RemoveItemFromSelection(foodProperties);
+        }*/
+
+        for (int i = userSelection.Count - 1; i >= 0; i--)
+        {
+            RemoveItemFromSelectionForClearing(userSelection[i]);
         }
+        userSelection = new List<FoodProperties>();
+        //TODO: Call the garbage collector
     }
 }
