@@ -31,13 +31,9 @@ public class BMRCalculator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("This is the selected gender: " + genderReference.value);
-        //Debug.Log("This is the selected age: " + ageReference.text);
-        //Debug.Log("This is the selected height: " + heightReference.text);
-        //Debug.Log("This is the selected weight: " + weightReference.text);
 
         // Make sure that all values have an input. Else skip further computations
-        if (ageReference.text != null && heightReference.text != null && weightReference.text != null)
+        if (ageReference.text != "" && heightReference.text != "" && weightReference.text != "")
         {
             switch(genderReference.value)
             {
