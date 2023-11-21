@@ -111,7 +111,7 @@ public class BMRCalculator : MonoBehaviour
             carbosNeedsTotal = (bmrResult * carbosPercentageFromTotal) / 4; // 1g carbs equals 4 cals
             fatNeedsTotal = (bmrResult * fatPercentageFromTotal) / 9; // 1g fats equals 9 cals
 
-            outputTextBMR.text = Mathf.RoundToInt(bmrResult).ToString();
+            outputTextBMR.text = Mathf.RoundToInt(bmrResult).ToString() + "kcal/Tag";
             outputTextRatio.text = carbosNeedsTotal.ToString("F1") + " g Kohlenhydrate\n"
                                     + proteinNeedsTotal.ToString("F1") + "g Proteine\n"
                                     + fatNeedsTotal.ToString("F1") + "g Fette";
