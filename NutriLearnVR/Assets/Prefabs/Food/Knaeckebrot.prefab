@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8081330988486298422}
   - component: {fileID: 5154787737850217619}
   - component: {fileID: 6948363091999125593}
+  - component: {fileID: 1031708395511512508}
+  - component: {fileID: 8202562893942712795}
   m_Layer: 0
   m_Name: Knaeckebrot
   m_TagString: Untagged
@@ -83,3 +85,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1031708395511512508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8893895797975110028}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19814514, y: 0.13353805, z: 0.14914724}
+  m_Center: {x: 0.0004972076, y: 0.067213394, z: 0.0024569468}
+--- !u!54 &8202562893942712795
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8893895797975110028}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

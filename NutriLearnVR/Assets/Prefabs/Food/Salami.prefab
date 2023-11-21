@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6416935564263625529}
   - component: {fileID: 7972026034936487068}
   - component: {fileID: 5280088178305198166}
+  - component: {fileID: -6463530204415921504}
+  - component: {fileID: 4270741307583661120}
   m_Layer: 0
   m_Name: Salami
   m_TagString: Untagged
@@ -83,3 +85,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-6463530204415921504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5928523030777121155}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19813323, y: 0.11389922, z: 0.16419612}
+  m_Center: {x: -0.00011792492, y: 0.057464823, z: 0.002918357}
+--- !u!54 &4270741307583661120
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5928523030777121155}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

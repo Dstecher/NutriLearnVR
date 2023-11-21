@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7870470363121128831}
   - component: {fileID: 6527506473920764634}
   - component: {fileID: 9039476261143768592}
+  - component: {fileID: 1499257675615976702}
+  - component: {fileID: 5663147741324189051}
   m_Layer: 0
   m_Name: Mais
   m_TagString: Untagged
@@ -83,3 +85,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1499257675615976702
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7382059170283081669}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1158795, y: 0.123981476, z: 0.0681402}
+  m_Center: {x: -0.0003598043, y: 0.062271673, z: 0.00033785953}
+--- !u!54 &5663147741324189051
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7382059170283081669}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

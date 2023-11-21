@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2496224026498915648}
   - component: {fileID: 1516452018561766117}
   - component: {fileID: 3670277953936991791}
+  - component: {fileID: 5476498371260552017}
+  - component: {fileID: 9125057670809317724}
   m_Layer: 0
   m_Name: Knuspermuesli
   m_TagString: Untagged
@@ -84,6 +86,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5476498371260552017
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3021790187403544570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18616524, y: 0.12648767, z: 0.1647765}
+  m_Center: {x: 0.0003082566, y: 0.063661754, z: 0.004583314}
+--- !u!54 &9125057670809317724
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3021790187403544570}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &8926083868081140586
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4863502300739868313}
   - component: {fileID: 8417643346094856508}
   - component: {fileID: 5995853852509400566}
+  - component: {fileID: 5852976143701458113}
+  - component: {fileID: 3356671395329487925}
   m_Layer: 0
   m_Name: Crepe_Nutella
   m_TagString: Untagged
@@ -83,3 +85,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5852976143701458113
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5203189462264532003}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19834885, y: 0.13266139, z: 0.14936155}
+  m_Center: {x: 0.0016556494, y: 0.06641322, z: 0.0025627122}
+--- !u!54 &3356671395329487925
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5203189462264532003}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
