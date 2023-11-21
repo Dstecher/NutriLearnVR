@@ -105,7 +105,7 @@ public class BMRCalculator : MonoBehaviour
             }
 
             proteinNeedsTotal = proteinNeedsPerKG * int.Parse(weightReference.text);
-            proteinPercentageFromTotal = Mathf.Round(bmrResult / (proteinNeedsTotal * 4) * 100) / 100; // 1g protein equals 4 cals; rounded to 2 decimals
+            proteinPercentageFromTotal = Mathf.Round((proteinNeedsTotal * 4) / bmrResult * 100) / 100; // 1g protein equals 4 cals; rounded to 2 decimals
             carbosPercentageFromTotal = 1 - proteinPercentageFromTotal - fatPercentageFromTotal;
 
             carbosNeedsTotal = (bmrResult * carbosPercentageFromTotal) / 4; // 1g carbs equals 4 cals
