@@ -4911,7 +4911,7 @@ MonoBehaviour:
   mainContentUI: {fileID: 8926238530020635172}
   controlsUI: {fileID: 5723051409278138250}
   userUI: {fileID: 8055466628282180360}
-  scoreUI: {fileID: 0}
+  scoreUI: {fileID: 6809621888547849108}
   closeButtonText: {fileID: 5337671991419866220}
   userSelectionReference: {fileID: 0}
   grabRayControllerReference: {fileID: 0}
