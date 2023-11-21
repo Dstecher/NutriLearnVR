@@ -55,7 +55,7 @@ public class ScoreCalculator : MonoBehaviour
         // prevent error messages from early computations
         if (!float.IsNaN(score))
         {
-            scoreOutputField.text = score.ToString("F2") + " / 1000 Punkte";
+            scoreOutputField.text = score.ToString("F0") + " / 1000 Punkte";
 
             scoreOutputField.color = colorGradient.Evaluate(score/1000f);
         }
