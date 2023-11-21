@@ -50,7 +50,7 @@ public class ScoreCalculator : MonoBehaviour
 
         score = 1000 * (1 - (Mathf.Pow((carbDiff), 2) + proteinDiff + fatDiff));
 
-        scoreOutputField.text = $"{score} / 1000 Punkte";
+        scoreOutputField.text = score.ToString("F2") + " / 1000 Punkte";
         scoreOutputField.color = Color.Lerp(Color.red, Color.green, score/1000f);
     }
 
