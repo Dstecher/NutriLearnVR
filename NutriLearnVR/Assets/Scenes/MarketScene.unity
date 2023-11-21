@@ -4930,6 +4930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334105610}
   - component: {fileID: 1334105611}
+  - component: {fileID: 1334105612}
   m_Layer: 7
   m_Name: Items
   m_TagString: Untagged
@@ -4999,6 +5000,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92755a3e7df1a134e897cbe3da1b6714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1334105612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334105609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff52825a6694ead459f4ace5e631b051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1348038482
@@ -8423,9 +8436,84 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
+      propertyPath: colorGradient.ctime1
+      value: 32768
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.ctime2
+      value: 49151
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.ctime3
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.key1.g
+      value: 0.63016516
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.key2.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.key2.g
+      value: 0.99501103
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.key2.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.key3.b
+      value: 0.016897917
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.key3.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
       propertyPath: selectionCanvasReference
       value: 
       objectReference: {fileID: 2039833131}
+    - target: {fileID: 6583187446338056069, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: colorGradient.m_NumColorKeys
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7206543542970205169, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: m_OnFocusSelectAll
