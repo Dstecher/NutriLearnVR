@@ -74,4 +74,14 @@ public class FoodSelectable : MonoBehaviour
     {
         isSelected = status; // Typically, this will never have to be set to false as it is the default value when instantiating a new object
     }
+
+    public bool IsSelected()
+    {
+        return isSelected;
+    }
+
+    public bool IsGrabbed()
+    {
+        return isGrabbed;
+    }
 }
