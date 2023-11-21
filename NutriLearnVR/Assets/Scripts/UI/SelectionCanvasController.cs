@@ -13,8 +13,10 @@ public class SelectionCanvasController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI carbsText;
     [SerializeField] private TextMeshProUGUI proteinText;
     [SerializeField] private TextMeshProUGUI fatsText;
-
     [SerializeField] private TextMeshProUGUI extendedText;
+
+    [SerializeField] private BMRCalculator bmrCalculator;
+    [SerializeField] private Gradient colorGradient;
 
     [SerializeField] public InputActionProperty extendedSelectionButton;
 
@@ -25,10 +27,13 @@ public class SelectionCanvasController : MonoBehaviour
     private string extendedString;
     private bool showExtendedText = false;
 
+    private float carbsDiffRatio;
+    private float proteinDiffRatio;
+    private float fatDiffRatio;
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -69,6 +74,17 @@ public class SelectionCanvasController : MonoBehaviour
             fatsSum += foodProperties.fats;
 
             extendedString += $"• {foodProperties.productName}     ({foodProperties.carbs} g, {foodProperties.protein} g, {foodProperties.fats} g)\n";
+        }
+
+        carbsDiffRatio =  Mathf.Abs((carbsSum / calsSum) - bmrCalculator.GetCarbRatio()) / bmrCalculator.GetCarbRatio();
+        proteinDiffRatio =  Mathf.Abs((proteinSum / calsSum) - bmrCalculator.GetProteinRatio()) / bmrCalculator.GetProteinRatio();
+        fatDiffRatio =  Mathf.Abs((fatsSum / calsSum) - bmrCalculator.GetFatRatio()) / bmrCalculator.GetFatRatio();
+
+        if (!float.IsNaN(carbsDiffRatio) && !float.IsNaN(proteinDiffRatio) && !float.IsNaN(fatDiffRatio))
+        {
+            carbsText.color = colorGradient.Evaluate(carbsDiffRatio);
+            proteinText.color = colorGradient.Evaluate(proteinDiffRatio);
+            fatsText.color = colorGradient.Evaluate(fatDiffRatio);
         }
 
         calsText.text = $"{calsSum}";
