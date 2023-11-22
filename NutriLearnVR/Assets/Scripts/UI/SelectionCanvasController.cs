@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.UIElements;
 using TMPro;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class SelectionCanvasController : MonoBehaviour
 {
@@ -80,7 +81,7 @@ public class SelectionCanvasController : MonoBehaviour
         proteinDiffRatio =  Mathf.Abs((proteinSum / calsSum) - bmrCalculator.GetProteinRatio()) / bmrCalculator.GetProteinRatio();
         fatDiffRatio =  Mathf.Abs((fatsSum / calsSum) - bmrCalculator.GetFatRatio()) / bmrCalculator.GetFatRatio();
 
-        if (!float.IsNaN(carbsDiffRatio) && !float.IsNaN(proteinDiffRatio) && !float.IsNaN(fatDiffRatio))
+        if (!float.IsNaN(carbsDiffRatio) && !float.IsNaN(proteinDiffRatio) && !float.IsNaN(fatDiffRatio) && SceneManager.GetActiveScene().name != "MarketSceneReduced")
         {
             carbsText.color = colorGradient.Evaluate(carbsDiffRatio);
             proteinText.color = colorGradient.Evaluate(proteinDiffRatio);

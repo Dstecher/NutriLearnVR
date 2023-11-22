@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class NutrientInformationManager : MonoBehaviour
 {
@@ -71,7 +72,7 @@ public class NutrientInformationManager : MonoBehaviour
         if (!labelActive && isGrabbed) labelActive = true;
         if (labelActive && !isGrabbed) labelActive = false;
 
-        canvasInstance.SetActive(labelActive);
+        if (SceneManager.GetActiveScene().name != "MarketSceneReduced") canvasInstance.SetActive(labelActive); // only show NutrientLabels if scene is not reduced
 
         canvasInstance.transform.position = gameObject.transform.position + new Vector3(0, verticalCanvasDistance, 0);
         canvasInstance.transform.LookAt(new Vector3(head.position.x, canvasInstance.transform.position.y, head.position.z));
