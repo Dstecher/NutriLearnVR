@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodController: {fileID: 0}
-  id: 170
+  id: 179
   weight: 550
   productName: 
   kcalPer100: 0
