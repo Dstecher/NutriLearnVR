@@ -102,4 +102,14 @@ public class SelectionCanvasController : MonoBehaviour
         returnProtein = proteinSum;
         returnFats = fatsSum;
     }
+
+    public float GetMeanSelectionNutriScore()
+    {
+        return selectionController.GetMeanSelectionNutriScore();
+    }
+
+    public int GetUserSelectionLength()
+    {
+        return selectionController.GetUserSelection().Count;
+    }
 }

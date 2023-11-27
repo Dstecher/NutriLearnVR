@@ -314,17 +314,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -515,17 +515,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -668,17 +668,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -821,17 +821,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -974,17 +974,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -1127,17 +1127,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -1280,17 +1280,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -1433,17 +1433,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -1671,17 +1671,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -1824,17 +1824,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -2127,17 +2127,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -2280,17 +2280,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -2335,6 +2335,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2592014600787486232, guid: 0ca0cb5b052540d4091ebef3bd178891,
     type: 3}
   m_PrefabInstance: {fileID: 437640013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &445529916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5240761785678499049, guid: 31db13b62663d694cb7f45f2bf6ee733,
+    type: 3}
+  m_PrefabInstance: {fileID: 8307275946144505968}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &460327212
 PrefabInstance:
@@ -2433,17 +2439,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -2586,17 +2592,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -2739,17 +2745,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -3102,17 +3108,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -3255,17 +3261,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -3414,17 +3420,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -3567,17 +3573,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -3726,17 +3732,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -4079,17 +4085,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -4232,17 +4238,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -4385,17 +4391,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -4538,17 +4544,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -4691,17 +4697,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -4844,17 +4850,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -4997,17 +5003,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -5291,17 +5297,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -5444,17 +5450,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -5597,17 +5603,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -5750,17 +5756,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -5903,17 +5909,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -6056,17 +6062,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -6209,17 +6215,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -6362,17 +6368,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -6515,17 +6521,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -6668,17 +6674,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -6821,17 +6827,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -7020,17 +7026,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -7260,17 +7266,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -7413,17 +7419,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -7710,17 +7716,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -7938,17 +7944,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -8091,17 +8097,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -8244,17 +8250,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -8431,17 +8437,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -8486,6 +8492,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2592014600787486232, guid: 0ca0cb5b052540d4091ebef3bd178891,
     type: 3}
   m_PrefabInstance: {fileID: 1400732722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1408794822 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8307275948018923193, guid: 31db13b62663d694cb7f45f2bf6ee733,
+    type: 3}
+  m_PrefabInstance: {fileID: 8307275946144505968}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1420287730
 PrefabInstance:
@@ -8584,17 +8596,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -8737,17 +8749,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -8890,17 +8902,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -9325,17 +9337,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -9661,17 +9673,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -9814,17 +9826,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -9967,17 +9979,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -10201,17 +10213,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -10354,17 +10366,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -10683,17 +10695,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -10836,17 +10848,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -10989,17 +11001,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -11322,17 +11334,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -11475,17 +11487,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -11652,17 +11664,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -11805,17 +11817,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -11958,17 +11970,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -12111,17 +12123,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -12351,17 +12363,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -12504,17 +12516,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -12657,17 +12669,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference
@@ -12810,17 +12822,17 @@ PrefabInstance:
         type: 3}
       propertyPath: debugContainer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1567647877}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: leftHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1408794822}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: rightHandTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 445529916}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: grabButton.m_Reference

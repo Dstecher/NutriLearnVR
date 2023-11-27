@@ -17,7 +17,6 @@ public class SelectionController : MonoBehaviour
     public List<FoodProperties> GetUserSelection()
     {
         return userSelection;
-        // TODO: Add specific food product information in the selection UI
     }
 
     public void AddItemToSelection(FoodProperties foodProperties)
@@ -114,5 +113,27 @@ public class SelectionController : MonoBehaviour
         }
         userSelection = new List<FoodProperties>();
         //TODO: Call the garbage collector
+    }
+
+    public float GetMeanSelectionNutriScore()
+    {
+        int foodProductCounter = 0;
+        int nutriScoreSum = 0;
+
+        foreach (FoodProperties selectionProperties in userSelection)
+        {
+            nutriScoreSum += selectionProperties.nutriScore;
+            foodProductCounter++;
+        }
+
+        if (foodProductCounter != 0) 
+        {
+            float result = (float) nutriScoreSum / (float) foodProductCounter;
+            return result;
+        }
+        else
+        {
+            return 0; // Initial state
+        }
     }
 }
