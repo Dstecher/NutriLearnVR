@@ -18,7 +18,7 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        selectionCanvas.gameObject.SetActive(true); // turn on selection canvas on start to keep it inactive during scene building
+        
     }
 
     // Update is called once per frame
@@ -45,5 +45,10 @@ public class UIController : MonoBehaviour
         //menuCanvas.transform.position = head.position + new Vector3(head.forward.x, head.forward.y, head.forward.z).normalized * menuDistance;
         //menuCanvas.transform.LookAt(new Vector3(head.position.x, head.position.y, head.position.z));
         //menuCanvas.transform.forward *= -1;
+    }
+
+    public void ActivateSelectionCanvas()
+    {
+        selectionCanvas.gameObject.SetActive(true); // turn on selection canvas (initiated after scene startup routine in MainMenuController)
     }
 }

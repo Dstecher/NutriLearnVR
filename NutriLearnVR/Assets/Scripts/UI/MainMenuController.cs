@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 
 public class MainMenuController : MonoBehaviour
 {
+    [SerializeField] public Transform head;
     [SerializeField] GameObject currentCanvas;
     [SerializeField] GameObject mainContentUI;
     [SerializeField] GameObject controlsUI;
@@ -14,8 +15,10 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private Text closeButtonText;
     [SerializeField] GameObject userSelectionReference;
     [SerializeField] GameObject grabRayControllerReference;
+    [SerializeField] private UIController uiControllerReference;
 
     private GameObject currentlyActiveUI;
+    private bool sceneStart = true;
 
     public void CloseUI()
     {
@@ -23,7 +26,23 @@ public class MainMenuController : MonoBehaviour
         {
             if (currentCanvas) currentCanvas.SetActive(false);
         }
-        else 
+        else if (sceneStart)
+        {
+            if (currentlyActiveUI == userUI)
+            {
+                currentlyActiveUI.SetActive(false);
+                mainContentUI.SetActive(true);
+                currentlyActiveUI = mainContentUI;
+                sceneStart = false;
+                currentCanvas.SetActive(false);
+                uiControllerReference.ActivateSelectionCanvas(); // after finishing scene start routine, activate selectionUI 
+            }
+            if (currentlyActiveUI == controlsUI)
+            {
+                ShowUserUIInSceneStartRoutine();
+            }
+        }
+        else
         {
             currentlyActiveUI.SetActive(false);
             mainContentUI.SetActive(true);
@@ -48,6 +67,14 @@ public class MainMenuController : MonoBehaviour
         closeButtonText.text = "←   zurück";
     }
 
+    public void ShowUserUIInSceneStartRoutine()
+    {
+        if (controlsUI) controlsUI.SetActive(false);
+        if (userUI) userUI.SetActive(true);
+        currentlyActiveUI = userUI;
+        closeButtonText.text = "←   schließen";
+    }
+
     public void ShowScoreUI()
     {
         if (mainContentUI) mainContentUI.SetActive(false);
@@ -68,5 +95,14 @@ public class MainMenuController : MonoBehaviour
     public void SwitchGrabRay()
     {
         if (grabRayControllerReference != null) grabRayControllerReference.GetComponent<GrabRayController>().SwitchGrabRayValue();
+    }
+
+    void Start()
+    {
+        if (sceneStart)
+        {
+            // if the scene is started initially, start by displaying controls UI
+            ShowControlsUI();
+        }
     }
 }

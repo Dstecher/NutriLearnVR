@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2bdef237542df54c81d57ab7d58bf64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  head: {fileID: 0}
+  head: {fileID: 1955707447}
 --- !u!223 &230802860
 Canvas:
   m_ObjectHideFlags: 0
@@ -16064,9 +16064,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 1955707447}
+    - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
       propertyPath: grabRayReference
       value: 
       objectReference: {fileID: 8307275946144505971}
+    - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: uiControllerReference
+      value: 
+      objectReference: {fileID: 838363584}
     - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: userSelectionReference
@@ -16300,7 +16310,7 @@ PrefabInstance:
     - target: {fileID: 7505696771182429184, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7505696771182429185, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
@@ -16390,7 +16400,7 @@ PrefabInstance:
     - target: {fileID: 7505696771182429185, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 2.135
       objectReference: {fileID: 0}
     - target: {fileID: 7505696771182429185, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}

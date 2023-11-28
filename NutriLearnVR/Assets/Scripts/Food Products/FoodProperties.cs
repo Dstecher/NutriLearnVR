@@ -36,7 +36,7 @@ public class FoodProperties : MonoBehaviour
         if (weight == 0 || kcalPer100 == 0 && proteinPer100 == 0f && carbsPer100 == 0f && fatsPer100 == 0f)
         {
             //TODO: This line is sometimes called after selecting an object for some reason; even though the values for the NutrientLabels are filled correctly.
-            Debug.Log("[ALERT] Database entries for food product with ID " + id + " were loaded incorrectly!!");
+            // Debug.Log("[ALERT] Database entries for food product with ID " + id + " were loaded incorrectly!!"); // commented out since some calls were wrong here and there was not enough time to fix these calls
             return;
         }
         

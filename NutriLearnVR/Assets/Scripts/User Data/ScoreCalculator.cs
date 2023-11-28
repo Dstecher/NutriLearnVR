@@ -48,7 +48,7 @@ public class ScoreCalculator : MonoBehaviour
             if (selectionCanvasController != null && scoreUIReference.activeSelf)
             {
                 if (selectionCanvasController.GetUserSelectionLength() > 0) CalculateNutriScoreBasedUserScore();
-                if (score == 99.0f) Debug.Log("[ERROR] There was an error trying to compute the score!");
+                if (score == 99.0f) Debug.Log("[ERROR] There was an error trying to compute the score or an user input is missing!");
 
                 Debug.Log("[INFO] The currently achieved score is " + score);
             }
