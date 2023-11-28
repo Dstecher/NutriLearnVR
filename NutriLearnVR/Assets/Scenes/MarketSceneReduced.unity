@@ -4617,7 +4617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   head: {fileID: 1955707447}
-  menuDistance: 2
+  menuDistance: 1
   menuCanvas: {fileID: 1920580397}
   selectionCanvas: {fileID: 2039833131}
   showButton:
