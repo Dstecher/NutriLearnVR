@@ -287,10 +287,15 @@ MonoBehaviour:
   carbsPer100: 0
   fatsPer100: 0
   isLiquid: 0
+  saturatedFatPer100: 0
+  sugarPer100: 0
+  nutriScore: 0
   calories: 0
   protein: 0
   carbs: 0
   fats: 0
+  saturatedFat: 0
+  sugar: 0
 --- !u!114 &-1205592705792363559
 MonoBehaviour:
   m_ObjectHideFlags: 0

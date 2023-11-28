@@ -16,12 +16,17 @@ public class FoodProperties : MonoBehaviour
     [SerializeField] public float carbsPer100; // the amount of carbs for the food product per 100 g/ml
     [SerializeField] public float fatsPer100; // the amount of fats for the food product per 100 g/ml
     [SerializeField] public bool isLiquid; // determines whether the food product is liquid or not (for displaying g/ml correctly)
+    [SerializeField] public float saturatedFatPer100; // the amount of saturated fat for the food product per 100 g/ml
+    [SerializeField] public float sugarPer100; // the amount of sugar for the food product per 100 g/ml
+    [SerializeField] public int nutriScore; // the nutri score that was calculated for the given food product
 
     
     public int calories; // the amount of kcals for the food product
     public float protein; // the amount of protein for the food product
     public float carbs; // the amount of protein for the food product
     public float fats; // the amount of protein for the food product
+    public float saturatedFat; // the amount of saturated fat for the food product
+    public float sugar; // the amount of sugar for the food product
 
     /// <summary>
     /// Sets the specific values for the current food product based on the weight and values for 100g/ml stored in the database
@@ -41,6 +46,8 @@ public class FoodProperties : MonoBehaviour
         protein = Mathf.Floor(weightRatio * proteinPer100 * 10) / 10;
         carbs = Mathf.Floor(weightRatio * carbsPer100 * 10) / 10;
         fats = Mathf.Floor(weightRatio * fatsPer100 * 10) / 10;
+        saturatedFat = Mathf.Floor(weightRatio * saturatedFatPer100 * 10) / 10;
+        sugar = Mathf.Floor(weightRatio * sugarPer100 * 10) / 10;
     }
 
     public void Awake()
@@ -58,6 +65,9 @@ public class FoodProperties : MonoBehaviour
         setCarbs(foodProduct.carbs);
         setFats(foodProduct.fats);
         setLiquid(foodProduct.isLiquid);
+        setSaturatedFat(foodProduct.saturatedFat);
+        setSugar(foodProduct.sugar);
+        setNutriScore(foodProduct.nutriScore);
 
         // Compute specific values for the displayed (singular) food product
         setSpecificValues();
@@ -93,6 +103,21 @@ public class FoodProperties : MonoBehaviour
         isLiquid = liquid;
     }
 
+    public void setSaturatedFat(float saturatedFat)
+    {
+        saturatedFatPer100 = saturatedFat;
+    }
+
+    public void setSugar(float sugar)
+    {
+        sugarPer100 = sugar;
+    }
+
+    public void setNutriScore(int score)
+    {
+        nutriScore = score;
+    }
+
     public FoodProperties CreateCopy(FoodProperties foodProperties, GameObject attachParent)
     {
         FoodProperties tempProperties = attachParent.AddComponent<FoodProperties>();
@@ -105,12 +130,17 @@ public class FoodProperties : MonoBehaviour
         tempProperties.carbsPer100 = foodProperties.carbsPer100;
         tempProperties.fatsPer100 = foodProperties.fatsPer100;
         tempProperties.isLiquid = foodProperties.isLiquid;
+        tempProperties.saturatedFatPer100 = foodProperties.saturatedFatPer100;
+        tempProperties.sugarPer100 = foodProperties.sugarPer100;
+        tempProperties.nutriScore = foodProperties.nutriScore;
 
         // For the following specific properties, getters/setters have to be used in case they are made private again
         tempProperties.calories = foodProperties.calories;
         tempProperties.protein = foodProperties.protein;
         tempProperties.carbs = foodProperties.carbs;
         tempProperties.fats = foodProperties.fats;
+        tempProperties.saturatedFat = foodProperties.saturatedFat;
+        tempProperties.sugar = foodProperties.sugar;
 
         return tempProperties;
     }

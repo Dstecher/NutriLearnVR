@@ -14,6 +14,8 @@ public class SelectionCanvasController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI carbsText;
     [SerializeField] private TextMeshProUGUI proteinText;
     [SerializeField] private TextMeshProUGUI fatsText;
+    [SerializeField] private TextMeshProUGUI sugarText;
+    [SerializeField] private TextMeshProUGUI saturatedFatsText;
     [SerializeField] private TextMeshProUGUI extendedText;
 
     [SerializeField] private BMRCalculator bmrCalculator;
@@ -25,6 +27,8 @@ public class SelectionCanvasController : MonoBehaviour
     private float carbsSum;
     private float proteinSum;
     private float fatsSum;
+    private float sugarSum;
+    private float saturatedFatsSum;
     private string extendedString;
     private bool showExtendedText = false;
 
@@ -62,6 +66,8 @@ public class SelectionCanvasController : MonoBehaviour
         carbsSum = 0f;
         proteinSum = 0f;
         fatsSum = 0f;
+        sugarSum = 0f;
+        saturatedFatsSum = 0f;
         extendedString = "------------------------------------------------------------------------";
 
         List<FoodProperties> userSelection = selectionController.GetUserSelection();
@@ -73,10 +79,13 @@ public class SelectionCanvasController : MonoBehaviour
             carbsSum += foodProperties.carbs;
             proteinSum += foodProperties.protein;
             fatsSum += foodProperties.fats;
+            sugarSum += foodProperties.sugar;
+            saturatedFatsSum += foodProperties.saturatedFat;
 
-            extendedString += $"• {foodProperties.productName}     ({foodProperties.carbs} g, {foodProperties.protein} g, {foodProperties.fats} g)\n";
+            extendedString += $"• {foodProperties.productName}:    {foodProperties.carbs} g ({foodProperties.sugar} g), {foodProperties.protein} g, {foodProperties.fats} g ({foodProperties.saturatedFat} g)\n";
         }
 
+        /*
         carbsDiffRatio =  Mathf.Abs((carbsSum / calsSum) - bmrCalculator.GetCarbRatio()) / bmrCalculator.GetCarbRatio();
         proteinDiffRatio =  Mathf.Abs((proteinSum / calsSum) - bmrCalculator.GetProteinRatio()) / bmrCalculator.GetProteinRatio();
         fatDiffRatio =  Mathf.Abs((fatsSum / calsSum) - bmrCalculator.GetFatRatio()) / bmrCalculator.GetFatRatio();
@@ -86,12 +95,14 @@ public class SelectionCanvasController : MonoBehaviour
             carbsText.color = colorGradient.Evaluate(carbsDiffRatio);
             proteinText.color = colorGradient.Evaluate(proteinDiffRatio);
             fatsText.color = colorGradient.Evaluate(fatDiffRatio);
-        }
+        }*/
 
         calsText.text = $"{calsSum}";
         carbsText.text = $"{carbsSum.ToString("f1")} g";
         proteinText.text = $"{proteinSum.ToString("f1")} g";
         fatsText.text = $"{fatsSum.ToString("f1")} g";
+        sugarText.text = $"{sugarSum.ToString("f1")} g";
+        saturatedFatsText.text = $"{saturatedFatsSum.ToString("f1")} g";
         extendedText.text = extendedString;
     }
 
@@ -101,5 +112,15 @@ public class SelectionCanvasController : MonoBehaviour
         returnCarbs = carbsSum;
         returnProtein = proteinSum;
         returnFats = fatsSum;
+    }
+
+    public float GetMeanSelectionNutriScore()
+    {
+        return selectionController.GetMeanSelectionNutriScore();
+    }
+
+    public int GetUserSelectionLength()
+    {
+        return selectionController.GetUserSelection().Count;
     }
 }
