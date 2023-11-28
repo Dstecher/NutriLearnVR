@@ -103,11 +103,17 @@ public class NutrientInformationManager : MonoBehaviour
         TextMeshProUGUI itemCarbsSpecific = canvasInstance.transform.Find("ItemCarbsSpecific").gameObject.GetComponent<TextMeshProUGUI>();
         itemCarbsSpecific.text = foodProperties.carbs.ToString();
 
+        TextMeshProUGUI itemSugarSpecific = canvasInstance.transform.Find("ItemSugarSpecific").gameObject.GetComponent<TextMeshProUGUI>();
+        itemSugarSpecific.text = foodProperties.sugar.ToString();
+
         TextMeshProUGUI itemProteinSpecific = canvasInstance.transform.Find("ItemProteinSpecific").gameObject.GetComponent<TextMeshProUGUI>();
         itemProteinSpecific.text = foodProperties.protein.ToString();
 
         TextMeshProUGUI itemFatSpecific = canvasInstance.transform.Find("ItemFatSpecific").gameObject.GetComponent<TextMeshProUGUI>();
         itemFatSpecific.text = foodProperties.fats.ToString();
+
+        TextMeshProUGUI itemSaturatedFatSpecific = canvasInstance.transform.Find("ItemSaturatedFatSpecific").gameObject.GetComponent<TextMeshProUGUI>();
+        itemSaturatedFatSpecific.text = foodProperties.saturatedFat.ToString();
 
         TextMeshProUGUI itemCaloriesPer100 = canvasInstance.transform.Find("ItemCaloriesPer100").gameObject.GetComponent<TextMeshProUGUI>();
         itemCaloriesPer100.text = foodProperties.kcalPer100.ToString();
@@ -115,10 +121,16 @@ public class NutrientInformationManager : MonoBehaviour
         TextMeshProUGUI itemCarbsPer100 = canvasInstance.transform.Find("ItemCarbsPer100").gameObject.GetComponent<TextMeshProUGUI>();
         itemCarbsPer100.text = foodProperties.carbsPer100.ToString();
 
+        TextMeshProUGUI itemSugarPer100 = canvasInstance.transform.Find("ItemSugarPer100").gameObject.GetComponent<TextMeshProUGUI>();
+        itemSugarPer100.text = foodProperties.sugarPer100.ToString();
+
         TextMeshProUGUI itemProteinPer100 = canvasInstance.transform.Find("ItemProteinPer100").gameObject.GetComponent<TextMeshProUGUI>();
         itemProteinPer100.text = foodProperties.proteinPer100.ToString();
 
         TextMeshProUGUI itemFatPer100 = canvasInstance.transform.Find("ItemFatPer100").gameObject.GetComponent<TextMeshProUGUI>();
         itemFatPer100.text = foodProperties.fatsPer100.ToString();
+
+        TextMeshProUGUI itemSaturatedFatPer100 = canvasInstance.transform.Find("ItemSaturatedFatPer100").gameObject.GetComponent<TextMeshProUGUI>();
+        itemSaturatedFatPer100.text = foodProperties.saturatedFatPer100.ToString();
     }
 }
