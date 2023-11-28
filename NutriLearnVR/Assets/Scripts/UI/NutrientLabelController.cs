@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NutrientLabelController : MonoBehaviour
 {
@@ -15,5 +16,13 @@ public class NutrientLabelController : MonoBehaviour
     public bool GetDisplayLabelStatus()
     {
         return displayLabelGlobal;
+    }
+
+    void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "MarketSceneReduced")
+        {
+            displayLabelGlobal = false; // always deactivate NutrientLabels in reduced market scene for user test
+        }
     }
 }
