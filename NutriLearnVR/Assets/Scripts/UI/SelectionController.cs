@@ -7,6 +7,7 @@ public class SelectionController : MonoBehaviour
 
     public List<FoodProperties> userSelection;
     [SerializeField] GameObject selectionTable;
+    [SerializeField] private GarbageCollector garbageCollectorReference;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class SelectionController : MonoBehaviour
         if (selectionTable != null)
         {
             FoodProperties newProperties = foodProperties.CreateCopy(foodProperties, gameObject);
-            userSelection.Add(newProperties);
+            //userSelection.Add(newProperties);
 
             // first destroy all childs from the item
             foreach (Transform child in foodProperties.gameObject.transform)
@@ -39,6 +40,8 @@ public class SelectionController : MonoBehaviour
             currentFoodProduct = Instantiate(foodProperties.gameObject, new Vector3(selectionTable.gameObject.transform.position.x + Random.Range(-1.5f, 1.5f), selectionTable.gameObject.transform.position.y + 2, selectionTable.gameObject.transform.position.z + Random.Range(-0.6f, 0.6f)), Quaternion.identity, selectionTable.gameObject.transform) as GameObject;
             currentFoodProduct.GetComponent<Rigidbody>().useGravity = true;
             currentFoodProduct.GetComponent<FoodSelectable>().ChangeSelectionStatus(true);
+
+            userSelection.Add(currentFoodProduct.GetComponent<FoodProperties>());
 
             // despawn the item from the hand
             Destroy(foodProperties.gameObject);
@@ -55,6 +58,7 @@ public class SelectionController : MonoBehaviour
         {
             if (selectedProperties.id == foodProperties.id)
             {
+                selectedProperties.GetComponent<FoodSelectable>().ChangeSelectionStatus(false);
                 userSelection.Remove(selectedProperties);
                 Debug.Log("Removed properties");
                 break;
@@ -82,6 +86,7 @@ public class SelectionController : MonoBehaviour
         {
             if (selectedProperties.id == foodProperties.id)
             {
+                selectedProperties.GetComponent<FoodSelectable>().ChangeSelectionStatus(false);
                 userSelection.Remove(selectedProperties);
                 Debug.Log("Removed properties");
                 break;
@@ -112,7 +117,8 @@ public class SelectionController : MonoBehaviour
             RemoveItemFromSelectionForClearing(userSelection[i]);
         }
         userSelection = new List<FoodProperties>();
-        //TODO: Call the garbage collector
+        
+        garbageCollectorReference.RemoveUnselectedFoodItems();
     }
 
     public float GetMeanSelectionNutriScore()

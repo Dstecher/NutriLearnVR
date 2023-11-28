@@ -13,7 +13,7 @@ public class FoodSelectable : MonoBehaviour
 
     private XRGrabInteractable grabInteractable;
     private bool isGrabbed = false;
-    private bool isSelected = false; // displays if the current object is selected
+    public bool isSelected = false; // displays if the current object is selected
 
     // Start is called before the first frame update
     void Awake()

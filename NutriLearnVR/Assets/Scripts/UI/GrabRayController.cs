@@ -8,7 +8,7 @@ public class GrabRayController : MonoBehaviour
     [SerializeField] private GameObject grabRayReference;
     [SerializeField] private GameObject mainMenuReference;
 
-    private bool showGrabRay;
+    private bool showGrabRay = false;
 
     public void SwitchGrabRayValue()
     {

@@ -14849,6 +14849,11 @@ PrefabInstance:
       propertyPath: selectionTable
       value: 
       objectReference: {fileID: 1114331335}
+    - target: {fileID: 318367613117907019, guid: 49368f5370a86034e8efe21a9a2c2112,
+        type: 3}
+      propertyPath: garbageCollectorReference
+      value: 
+      objectReference: {fileID: 507228658}
     - target: {fileID: 3488212282827469860, guid: 49368f5370a86034e8efe21a9a2c2112,
         type: 3}
       propertyPath: m_Name

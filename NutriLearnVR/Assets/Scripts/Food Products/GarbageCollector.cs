@@ -10,7 +10,7 @@ public class GarbageCollector : MonoBehaviour
         InvokeRepeating("RemoveUnselectedFoodItems", 30.0f, 15.0f); //Invoke after 30 seconds, every 15 seconds
     }
 
-    void RemoveUnselectedFoodItems()
+    public void RemoveUnselectedFoodItems()
     {
         int removedItemsCounter = 0;
 
