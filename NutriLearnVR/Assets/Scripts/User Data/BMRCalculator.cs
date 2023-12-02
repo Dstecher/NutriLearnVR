@@ -35,16 +35,18 @@ public class BMRCalculator : MonoBehaviour
         // Make sure that all values have an input. Else skip further computations
         if (ageReference.text != "" && heightReference.text != "" && weightReference.text != "")
         {
+            // Compute BMR based on: https://www.dge.de/gesunde-ernaehrung/faq/energiezufuhr/ (updated on Dec 2nd 2023)
+            // Get proteinNeedsPerKG (especially for adolescents) based on: 10.1038/sj.ejcn.1600977 (deprecated)
             switch(genderReference.value)
             {
                 case 0:
                     // diverse gender -> take mean of male and female gender
-                    bmrResult = 10 * int.Parse(weightReference.text) + 6.25f * int.Parse(heightReference.text) - 5 * int.Parse(ageReference.text) - 78;
-                    if (int.Parse(ageReference.text) < 14)
+                    bmrResult = (((0.047f * float.Parse(weightReference.text) + 1.009f - 0.01452f * float.Parse(ageReference.text) + 3.21f) * 239) + ((0.047f * float.Parse(weightReference.text) - 0.01452f * float.Parse(ageReference.text) + 3.21f) * 239)) / 2;
+                    if (float.Parse(ageReference.text) < 14)
                     {
                         proteinNeedsPerKG = 1.24f;
                     }
-                    else if (int.Parse(ageReference.text) > 17)
+                    else if (float.Parse(ageReference.text) > 17)
                     {
                         proteinNeedsPerKG = 1.05f;
                     }
@@ -55,12 +57,12 @@ public class BMRCalculator : MonoBehaviour
                     break;
                 case 1:
                     // male gender -> use male values
-                    bmrResult = 10 * int.Parse(weightReference.text) + 6.25f * int.Parse(heightReference.text) - 5 * int.Parse(ageReference.text) + 5;
-                    if (int.Parse(ageReference.text) < 14)
+                    bmrResult = (0.047f * float.Parse(weightReference.text) + 1.009f - 0.01452f * float.Parse(ageReference.text) + 3.21f) * 239;
+                    if (float.Parse(ageReference.text) < 14)
                     {
                         proteinNeedsPerKG = 1.24f;
                     }
-                    else if (int.Parse(ageReference.text) > 17)
+                    else if (float.Parse(ageReference.text) > 17)
                     {
                         proteinNeedsPerKG = 1.09f;
                     }
@@ -71,12 +73,12 @@ public class BMRCalculator : MonoBehaviour
                     break;
                 case 2:
                     // female gender -> use female values
-                    bmrResult = 10 * int.Parse(weightReference.text) + 6.25f * int.Parse(heightReference.text) - 5 * int.Parse(ageReference.text) - 161;
-                    if (int.Parse(ageReference.text) < 14)
+                    bmrResult = (0.047f * float.Parse(weightReference.text) - 0.01452f * float.Parse(ageReference.text) + 3.21f) * 239;
+                    if (float.Parse(ageReference.text) < 14)
                     {
                         proteinNeedsPerKG = 1.24f;
                     }
-                    else if (int.Parse(ageReference.text) > 17)
+                    else if (float.Parse(ageReference.text) > 17)
                     {
                         proteinNeedsPerKG = 1.01f;
                     }
@@ -88,12 +90,12 @@ public class BMRCalculator : MonoBehaviour
                 default:
                     // should not happen under normal circumstances; print error message, but compute diverse formula nontheless to prevent other errors from occurring!
                     Debug.Log("[ERROR] Something went wrong when trying to determine gender! Please check Dropdown selection.");
-                    bmrResult = 10 * int.Parse(weightReference.text) + 6.25f * int.Parse(heightReference.text) - 5 * int.Parse(ageReference.text) - 78;
-                    if (int.Parse(ageReference.text) < 14)
+                    bmrResult = (((0.047f * float.Parse(weightReference.text) + 1.009f - 0.01452f * float.Parse(ageReference.text) + 3.21f) * 239) + ((0.047f * float.Parse(weightReference.text) - 0.01452f * float.Parse(ageReference.text) + 3.21f) * 239)) / 2;
+                    if (float.Parse(ageReference.text) < 14)
                     {
                         proteinNeedsPerKG = 1.24f;
                     }
-                    else if (int.Parse(ageReference.text) > 17)
+                    else if (float.Parse(ageReference.text) > 17)
                     {
                         proteinNeedsPerKG = 1.05f;
                     }
@@ -104,7 +106,7 @@ public class BMRCalculator : MonoBehaviour
                     break;
             }
 
-            proteinNeedsTotal = proteinNeedsPerKG * int.Parse(weightReference.text);
+            proteinNeedsTotal = proteinNeedsPerKG * float.Parse(weightReference.text);
             proteinPercentageFromTotal = Mathf.Round((proteinNeedsTotal * 4) / bmrResult * 100) / 100; // 1g protein equals 4 cals; rounded to 2 decimals
             carbosPercentageFromTotal = 1 - proteinPercentageFromTotal - fatPercentageFromTotal;
 
@@ -115,6 +117,18 @@ public class BMRCalculator : MonoBehaviour
             outputTextRatio.text = carbosNeedsTotal.ToString("F1") + " g Kohlenhydrate\n"
                                     + proteinNeedsTotal.ToString("F1") + "g Proteine\n"
                                     + fatNeedsTotal.ToString("F1") + "g Fette";
+        }
+    }
+
+    public float GetUserWeight()
+    {
+        if (weightReference.text != "")
+        {
+            return float.Parse(weightReference.text);
+        }
+        else
+        {
+            return -1f;
         }
     }
 

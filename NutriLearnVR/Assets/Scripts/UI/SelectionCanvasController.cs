@@ -19,7 +19,8 @@ public class SelectionCanvasController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI extendedText;
 
     [SerializeField] private BMRCalculator bmrCalculator;
-    [SerializeField] private Gradient colorGradient;
+    [SerializeField] private Gradient colorGradientFatSugar; // full red on threshold, yellow for 80%; green below
+    [SerializeField] private Gradient colorGradientProtein; // full red below 0.6g/kg body weight, yellow for <0.8g/kg; green else
 
     [SerializeField] public InputActionProperty extendedSelectionButton;
 
@@ -35,10 +36,14 @@ public class SelectionCanvasController : MonoBehaviour
     private float carbsDiffRatio;
     private float proteinDiffRatio;
     private float fatDiffRatio;
+    private float saturatedFatRatio;
+    private float sugarRatio;
+    private float userWeight;
 
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -84,6 +89,16 @@ public class SelectionCanvasController : MonoBehaviour
 
             extendedString += $"• {foodProperties.productName}:    {foodProperties.carbs} g ({foodProperties.sugar} g), {foodProperties.protein} g, {foodProperties.fats} g ({foodProperties.saturatedFat} g)\n";
         }
+
+        userWeight = bmrCalculator.GetUserWeight();
+
+        sugarRatio = sugarSum * 4f / calsSum; // 1g sugar equals 4 calories
+        saturatedFatRatio = saturatedFatsSum * 9f / calsSum; // 1g saturated sugar equals 9 calories
+
+        // Colorize text fields:
+        sugarText.color = colorGradientFatSugar.Evaluate(sugarRatio / 0.25f); // 25% sugar is the unhealthy threshold after which the color should be red continuously!
+        saturatedFatsText.color = colorGradientFatSugar.Evaluate(saturatedFatRatio / 0.1f); // 10% saturated fat acids is the unhealthy threshold after which the color should be red continuously!
+        if (userWeight > 0) proteinText.color = colorGradientProtein.Evaluate(proteinSum / userWeight); // if the user has provided a weight, colorize text based on selected protein in g/kg body weight
 
         /*
         carbsDiffRatio =  Mathf.Abs((carbsSum / calsSum) - bmrCalculator.GetCarbRatio()) / bmrCalculator.GetCarbRatio();
