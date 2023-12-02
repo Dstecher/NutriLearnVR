@@ -16082,6 +16082,11 @@ PrefabInstance:
       objectReference: {fileID: 1955707447}
     - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
+      propertyPath: consoleLogger
+      value: 
+      objectReference: {fileID: 1334105613}
+    - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
       propertyPath: grabRayReference
       value: 
       objectReference: {fileID: 8307275946144505971}

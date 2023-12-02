@@ -16065,8 +16065,96 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.ctime1
+      value: 39321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.ctime2
+      value: 52428
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.ctime3
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key1.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key2.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key2.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key3.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
       propertyPath: colorGradient.m_NumColorKeys
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.ctime1
+      value: 52428
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.ctime2
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key1.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key2.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.m_NumColorKeys
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.m_NumColorKeys
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3968472025792827744, guid: 1f64b56f007b43a4aa5945305d0da730,
         type: 3}
@@ -16162,6 +16250,11 @@ PrefabInstance:
       propertyPath: head
       value: 
       objectReference: {fileID: 1955707447}
+    - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: consoleLogger
+      value: 
+      objectReference: {fileID: 507228661}
     - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: grabRayReference
