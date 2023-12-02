@@ -17,6 +17,8 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] GameObject grabRayControllerReference;
     [SerializeField] private UIController uiControllerReference;
 
+    [SerializeField] private ConsoleLogger consoleLogger;
+
     private GameObject currentlyActiveUI;
     private bool sceneStart = true;
 
@@ -81,6 +83,8 @@ public class MainMenuController : MonoBehaviour
         if (scoreUI) scoreUI.SetActive(true);
         currentlyActiveUI = scoreUI;
         closeButtonText.text = "←   zurück";
+
+        consoleLogger.NextTry();
     }
 
     private void Awake() {
