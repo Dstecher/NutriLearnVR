@@ -11,7 +11,8 @@ public class BMRCalculator : MonoBehaviour
     [SerializeField] private TMP_InputField heightReference;
     [SerializeField] private TMP_InputField weightReference;
     [SerializeField] private TextMeshProUGUI outputTextBMR;
-    [SerializeField] private TextMeshProUGUI outputTextRatio;
+    //[SerializeField] private TextMeshProUGUI outputTextRatio; // commented out because recommending compositions to a user is not advised!
+    [SerializeField] private TMP_Dropdown activityReference;
 
     private float bmrResult = 0;
     private float proteinNeedsPerKG = 0;
@@ -106,6 +107,26 @@ public class BMRCalculator : MonoBehaviour
                     break;
             }
 
+            // Update: 2nd December 2023 -> Adjust BMR based on physical activity levels (using average values from range provided by DGE)
+            switch(activityReference.value)
+            {
+                case 0:
+                    bmrResult *= 1.25f;
+                    break;
+                case 1:
+                    bmrResult *= 1.45f;
+                    break;
+                case 2:
+                    bmrResult *= 1.65f;
+                    break;
+                case 3:
+                    bmrResult *= 1.85f;
+                    break;
+                case 4:
+                    bmrResult *= 2.2f;
+                    break;
+            }
+
             proteinNeedsTotal = proteinNeedsPerKG * float.Parse(weightReference.text);
             proteinPercentageFromTotal = Mathf.Round((proteinNeedsTotal * 4) / bmrResult * 100) / 100; // 1g protein equals 4 cals; rounded to 2 decimals
             carbosPercentageFromTotal = 1 - proteinPercentageFromTotal - fatPercentageFromTotal;
@@ -114,9 +135,10 @@ public class BMRCalculator : MonoBehaviour
             fatNeedsTotal = (bmrResult * fatPercentageFromTotal) / 9; // 1g fats equals 9 cals
 
             outputTextBMR.text = Mathf.RoundToInt(bmrResult).ToString() + "kcal/Tag";
-            outputTextRatio.text = carbosNeedsTotal.ToString("F1") + " g Kohlenhydrate\n"
+            // commented out because recommending compositions to a user is not advised!
+            /*outputTextRatio.text = carbosNeedsTotal.ToString("F1") + " g Kohlenhydrate\n"
                                     + proteinNeedsTotal.ToString("F1") + "g Proteine\n"
-                                    + fatNeedsTotal.ToString("F1") + "g Fette";
+                                    + fatNeedsTotal.ToString("F1") + "g Fette";*/
         }
     }
 
