@@ -6590,7 +6590,6 @@ MonoBehaviour:
   heightReference: {fileID: 5856950583506127909}
   weightReference: {fileID: 5458424299114989404}
   outputTextBMR: {fileID: 1651509325810694655}
-  outputTextRatio: {fileID: 0}
   activityReference: {fileID: 1452899460476385601}
 --- !u!114 &6583187446338056069
 MonoBehaviour:
@@ -7574,7 +7573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9218146684658393668
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8617,7 +8616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8494753004891775396
 RectTransform:
   m_ObjectHideFlags: 0
