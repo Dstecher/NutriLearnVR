@@ -15,4 +15,5 @@ public class FoodProduct
     public float saturatedFat;
     public float sugar;
     public int nutriScore;
+    public string category;
 }

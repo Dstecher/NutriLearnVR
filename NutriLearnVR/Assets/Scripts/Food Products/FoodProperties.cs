@@ -19,6 +19,7 @@ public class FoodProperties : MonoBehaviour
     [SerializeField] public float saturatedFatPer100; // the amount of saturated fat for the food product per 100 g/ml
     [SerializeField] public float sugarPer100; // the amount of sugar for the food product per 100 g/ml
     [SerializeField] public int nutriScore; // the nutri score that was calculated for the given food product
+    [SerializeField] public string category; // the nutri score that was calculated for the given food product
 
     
     public int calories; // the amount of kcals for the food product
@@ -68,6 +69,7 @@ public class FoodProperties : MonoBehaviour
         setSaturatedFat(foodProduct.saturatedFat);
         setSugar(foodProduct.sugar);
         setNutriScore(foodProduct.nutriScore);
+        setCategory(foodProduct.category);
 
         // Compute specific values for the displayed (singular) food product
         setSpecificValues();
@@ -76,6 +78,11 @@ public class FoodProperties : MonoBehaviour
     public void setName(string pName)
     {
         productName = pName;
+    }
+
+    public void setCategory(string productCategory)
+    {
+        category = productCategory;
     }
 
     public void setCalories(int kcals)
@@ -141,6 +148,7 @@ public class FoodProperties : MonoBehaviour
         tempProperties.fats = foodProperties.fats;
         tempProperties.saturatedFat = foodProperties.saturatedFat;
         tempProperties.sugar = foodProperties.sugar;
+        tempProperties.category = foodProperties.category;
 
         return tempProperties;
     }

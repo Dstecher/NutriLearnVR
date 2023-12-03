@@ -44,6 +44,7 @@ public class FoodController : MonoBehaviour
                 foodProperties.setSaturatedFat(foodProductDB.saturatedFat);
                 foodProperties.setSugar(foodProductDB.sugar);
                 foodProperties.setNutriScore(foodProductDB.nutriScore);
+                foodProperties.setCategory(foodProductDB.category);
 
                 // Compute specific values for the displayed (singular) food product
                 foodProperties.setSpecificValues();
