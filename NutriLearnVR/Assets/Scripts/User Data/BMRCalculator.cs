@@ -154,6 +154,45 @@ public class BMRCalculator : MonoBehaviour
         }
     }
 
+    public float GetUserAge()
+    {
+        if (ageReference.text != "")
+        {
+            return float.Parse(ageReference.text);
+        }
+        else
+        {
+            return -1f;
+        }
+    }
+
+    public string GetUserGender()
+    {
+        switch (genderReference.value)
+        {
+            case 0:
+                return "diverse";
+            case 1:
+                return "male";
+            case 2:
+                return "female";
+            default:
+                return "[ERROR] Error determining gender";
+        }
+    }
+
+    public float GetUserHeight()
+    {
+        if (heightReference.text != "")
+        {
+            return float.Parse(heightReference.text);
+        }
+        else
+        {
+            return -1f;
+        }
+    }
+
     public float GetCarbRatio()
     {
         return fatPercentageFromTotal;
@@ -167,5 +206,10 @@ public class BMRCalculator : MonoBehaviour
     public float GetFatRatio()
     {
         return fatPercentageFromTotal;
+    }
+
+    public float GetBMRResult()
+    {
+        return Mathf.RoundToInt(bmrResult);
     }
 }
