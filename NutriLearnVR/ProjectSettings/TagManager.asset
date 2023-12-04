@@ -9,6 +9,7 @@ TagManager:
   - Hand
   - StarEmpty
   - StarFull
+  - ConsoleLogger
   layers:
   - Default
   - TransparentFX
