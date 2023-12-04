@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
+using System;
+using System.Globalization;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -38,6 +41,11 @@ public class MainMenuController : MonoBehaviour
                 sceneStart = false;
                 currentCanvas.SetActive(false);
                 uiControllerReference.ActivateSelectionCanvas(); // after finishing scene start routine, activate selectionUI 
+
+                // Start Routine had ended: Append user data to logger string for evaluation
+                BMRCalculator bMRCalculator = gameObject.GetComponent<BMRCalculator>(); // get reference to BMRCalculator script component
+                consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: User has closed User UI in start routine with the following information: Gender: {bMRCalculator.GetUserGender()}, Age: {bMRCalculator.GetUserAge()}, Weight: {bMRCalculator.GetUserWeight()}, Height: {bMRCalculator.GetUserHeight()}");
+                consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: The user has a total energy consumption of {bMRCalculator.GetBMRResult()} per day on average");
             }
             if (currentlyActiveUI == controlsUI)
             {
@@ -75,6 +83,7 @@ public class MainMenuController : MonoBehaviour
         if (userUI) userUI.SetActive(true);
         currentlyActiveUI = userUI;
         closeButtonText.text = "←   schließen";
+        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: Start Routine active in current scene: " + SceneManager.GetActiveScene());
     }
 
     public void ShowScoreUI()
@@ -84,7 +93,25 @@ public class MainMenuController : MonoBehaviour
         currentlyActiveUI = scoreUI;
         closeButtonText.text = "←   zurück";
 
-        consoleLogger.NextTry();
+        ScoreCalculator scoreCalculator = gameObject.GetComponent<ScoreCalculator>();
+
+        float nutriValue;
+        int counterFruitVeg;
+        int counterNuts;
+        int counterWholeGrain;
+        int counterDairy;
+        int currentStarScore;
+
+        scoreCalculator.GetScoreData(out nutriValue, out counterFruitVeg, out counterNuts, out counterWholeGrain, out counterDairy, out currentStarScore);
+        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: User checks current score with an average nutri value of {nutriValue}, and total amounts of {counterFruitVeg} fruits/vegetables, {counterNuts} nuts, {counterWholeGrain} whole grain products and {counterDairy} dairy products. This results in a score of {currentStarScore} stars.");
+
+        // Re-confirm user data to make sure whether information was changed in-between:
+        BMRCalculator bMRCalculator = gameObject.GetComponent<BMRCalculator>(); // get reference to BMRCalculator script component
+        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: User information before sending data to server: Gender: {bMRCalculator.GetUserGender()}, Age: {bMRCalculator.GetUserAge()}, Weight: {bMRCalculator.GetUserWeight()}, Height: {bMRCalculator.GetUserHeight()}");
+        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: The user has a total energy consumption of {bMRCalculator.GetBMRResult()} per day on average");
+
+        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: Sending data to server");
+        consoleLogger.SendDataToServer();
     }
 
     private void Awake() {
@@ -94,6 +121,7 @@ public class MainMenuController : MonoBehaviour
     public void ResetUserSelection()
     {
         if (userSelectionReference != null) userSelectionReference.GetComponent<SelectionController>().ClearSelection();
+        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: The user has reset the whole selection");
     }
 
     public void SwitchGrabRay()

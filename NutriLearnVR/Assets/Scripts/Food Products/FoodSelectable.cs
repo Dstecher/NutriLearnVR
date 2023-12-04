@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
+using System;
+using System.Globalization;
 
 public class FoodSelectable : MonoBehaviour
 {
@@ -11,9 +13,12 @@ public class FoodSelectable : MonoBehaviour
     [SerializeField] public InputActionProperty selectionButton;
     [SerializeField] public bool activateDebug = false;
 
+    [SerializeField] public ConsoleLogger consoleLogger;
+
     private XRGrabInteractable grabInteractable;
     private bool isGrabbed = false;
     public bool isSelected = false; // displays if the current object is selected
+    
 
     // Start is called before the first frame update
     void Awake()
@@ -23,18 +28,23 @@ public class FoodSelectable : MonoBehaviour
         grabInteractable.onSelectExited.AddListener(OnRelease);
 
         selectionController = GameObject.FindWithTag("UserSelection").GetComponent<SelectionController>();
+        consoleLogger = GameObject.FindWithTag("ConsoleLogger").GetComponent<ConsoleLogger>();
     }
 
     private void OnGrab(XRBaseInteractor interactor)
     {
         isGrabbed = true;
         if (activateDebug) Debug.Log("Object grabbed");
+        FoodProperties foodProperties = gameObject.GetComponent<FoodProperties>();
+        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: User has grabbed food product of category {foodProperties.category} with name: {foodProperties.productName}");
     }
 
     private void OnRelease(XRBaseInteractor interactor)
     {
         isGrabbed = false;
         if (activateDebug) Debug.Log("Object released");
+        FoodProperties foodProperties = gameObject.GetComponent<FoodProperties>();
+        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: User has released food product of category {foodProperties.category} with name: {foodProperties.productName}");
     }
 
     // Update is called once per frame
