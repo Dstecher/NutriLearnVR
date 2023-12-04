@@ -3653,7 +3653,6 @@ GameObject:
   - component: {fileID: 507228660}
   - component: {fileID: 507228659}
   - component: {fileID: 507228658}
-  - component: {fileID: 507228661}
   m_Layer: 7
   m_Name: Items
   m_TagString: Untagged
@@ -3778,18 +3777,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &507228661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507228657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4214844752bfd3c4b89c5800957503ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &513515338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3943,6 +3930,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 513515338}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &542266314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 542266316}
+  - component: {fileID: 542266315}
+  m_Layer: 0
+  m_Name: ConsoleLogger
+  m_TagString: ConsoleLogger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &542266315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542266314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4214844752bfd3c4b89c5800957503ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &542266316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542266314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &572201430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11043,7 +11074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22458684, guid: c4e389e44d96da64ea974ab237ce1a9a, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 22458684, guid: c4e389e44d96da64ea974ab237ce1a9a, type: 3}
       propertyPath: m_AnchorMax.x
@@ -15913,6 +15944,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 318367613117907019, guid: 49368f5370a86034e8efe21a9a2c2112,
         type: 3}
+      propertyPath: consoleLogger
+      value: 
+      objectReference: {fileID: 542266315}
+    - target: {fileID: 318367613117907019, guid: 49368f5370a86034e8efe21a9a2c2112,
+        type: 3}
       propertyPath: selectionTable
       value: 
       objectReference: {fileID: 1114331335}
@@ -16254,7 +16290,7 @@ PrefabInstance:
         type: 3}
       propertyPath: consoleLogger
       value: 
-      objectReference: {fileID: 507228661}
+      objectReference: {fileID: 542266315}
     - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: grabRayReference

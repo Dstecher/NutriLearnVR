@@ -8472,7 +8472,6 @@ GameObject:
   - component: {fileID: 1334105610}
   - component: {fileID: 1334105611}
   - component: {fileID: 1334105612}
-  - component: {fileID: 1334105613}
   m_Layer: 7
   m_Name: Items
   m_TagString: Untagged
@@ -8595,18 +8594,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff52825a6694ead459f4ace5e631b051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1334105613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334105609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4214844752bfd3c4b89c5800957503ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1348038482
@@ -9707,6 +9694,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1838976493}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1481135971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1481135973}
+  - component: {fileID: 1481135972}
+  m_Layer: 0
+  m_Name: ConsoleLogger
+  m_TagString: ConsoleLogger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1481135972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481135971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4214844752bfd3c4b89c5800957503ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1481135973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481135971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1491753817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9784,7 +9815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22458684, guid: c4e389e44d96da64ea974ab237ce1a9a, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 22458684, guid: c4e389e44d96da64ea974ab237ce1a9a, type: 3}
       propertyPath: m_AnchorMax.x
@@ -15831,6 +15862,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 318367613117907019, guid: 49368f5370a86034e8efe21a9a2c2112,
         type: 3}
+      propertyPath: consoleLogger
+      value: 
+      objectReference: {fileID: 1481135972}
+    - target: {fileID: 318367613117907019, guid: 49368f5370a86034e8efe21a9a2c2112,
+        type: 3}
       propertyPath: selectionTable
       value: 
       objectReference: {fileID: 1114331335}
@@ -15983,8 +16019,56 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key0.b
+      value: 0.2264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key0.g
+      value: 0.041166395
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key1.b
+      value: 0.2264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key1.g
+      value: 0.041166395
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientProtein.key1.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
       propertyPath: colorGradient.m_NumColorKeys
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key0.b
+      value: 0.2264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key0.g
+      value: 0.041166395
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key1.b
+      value: 0.2264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key1.g
+      value: 0.041166395
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039833133, guid: 1f64b56f007b43a4aa5945305d0da730, type: 3}
+      propertyPath: colorGradientFatSugar.key1.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3968472025792827744, guid: 1f64b56f007b43a4aa5945305d0da730,
         type: 3}
@@ -16084,7 +16168,7 @@ PrefabInstance:
         type: 3}
       propertyPath: consoleLogger
       value: 
-      objectReference: {fileID: 1334105613}
+      objectReference: {fileID: 1481135972}
     - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: grabRayReference
