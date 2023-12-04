@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.Globalization;
 
 public class SelectionController : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class SelectionController : MonoBehaviour
     public List<FoodProperties> userSelection;
     [SerializeField] GameObject selectionTable;
     [SerializeField] private GarbageCollector garbageCollectorReference;
+    [SerializeField] ConsoleLogger consoleLogger;
 
     // Start is called before the first frame update
     void Start()
@@ -37,11 +40,13 @@ public class SelectionController : MonoBehaviour
 
             // spawn the item somewhere on (above) the selection table
             // INFO: The spawn range should be somewhere between ([-1.5, 1.5], 2, [-0.6, 0.6])
-            currentFoodProduct = Instantiate(foodProperties.gameObject, new Vector3(selectionTable.gameObject.transform.position.x + Random.Range(-1.5f, 1.5f), selectionTable.gameObject.transform.position.y + 2, selectionTable.gameObject.transform.position.z + Random.Range(-0.6f, 0.6f)), Quaternion.identity, selectionTable.gameObject.transform) as GameObject;
+            currentFoodProduct = Instantiate(foodProperties.gameObject, new Vector3(selectionTable.gameObject.transform.position.x + UnityEngine.Random.Range(-1.5f, 1.5f), selectionTable.gameObject.transform.position.y + 2, selectionTable.gameObject.transform.position.z + UnityEngine.Random.Range(-0.6f, 0.6f)), Quaternion.identity, selectionTable.gameObject.transform) as GameObject;
             currentFoodProduct.GetComponent<Rigidbody>().useGravity = true;
             currentFoodProduct.GetComponent<FoodSelectable>().ChangeSelectionStatus(true);
 
             userSelection.Add(currentFoodProduct.GetComponent<FoodProperties>());
+
+            consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: User has added the following item of category {newProperties.category} to the selection: {newProperties.productName}");
 
             // despawn the item from the hand
             Destroy(foodProperties.gameObject);
@@ -60,7 +65,6 @@ public class SelectionController : MonoBehaviour
             {
                 selectedProperties.GetComponent<FoodSelectable>().ChangeSelectionStatus(false);
                 userSelection.Remove(selectedProperties);
-                Debug.Log("Removed properties");
                 break;
             }
         }
@@ -68,15 +72,14 @@ public class SelectionController : MonoBehaviour
         FoodProperties[] propertyComponents = GetComponents<FoodProperties>();
         foreach (FoodProperties selectedProperties in propertyComponents)
         {
-            Debug.Log("Checked the component " + selectedProperties);
             if (selectedProperties.id == foodProperties.id)
             {
                 Destroy(selectedProperties);
-                Debug.Log("Removed properties");
             }
         }
-        Debug.Log("This is the removed object: " + foodProperties.gameObject);
-        // TODO: This currently also removes the UserSelection GameObject when called from ClearSelection(), which has to be prevented
+
+        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: User has added the following item of category {foodProperties.category} to the selection: {foodProperties.productName}");
+        
         Destroy(foodProperties.gameObject); // remove the Food Product from the scene as well (should be laying on the referenced selection table)
     }
 
@@ -88,18 +91,15 @@ public class SelectionController : MonoBehaviour
             {
                 selectedProperties.GetComponent<FoodSelectable>().ChangeSelectionStatus(false);
                 userSelection.Remove(selectedProperties);
-                Debug.Log("Removed properties");
                 break;
             }
         }
         FoodProperties[] propertyComponents = GetComponents<FoodProperties>();
         foreach (FoodProperties selectedProperties in propertyComponents)
         {
-            Debug.Log("Checked the component " + selectedProperties);
             if (selectedProperties.id == foodProperties.id)
             {
                 Destroy(selectedProperties);
-                Debug.Log("Removed properties");
             }
         }
     }
@@ -131,23 +131,21 @@ public class SelectionController : MonoBehaviour
         wholeGrainCounter = 0;
         dairyCounter = 0;
 
-
         foreach (FoodProperties selectionProperties in userSelection)
         {
-            
-            if (selectionProperties.category == "Obst/Gemüse")
+            if (string.Equals(selectionProperties.category.Trim(), "Obst/Gemüse"))
             {
                 fruitVegCounter++;
             }
-            else if (selectionProperties.category == "Nüsse")
+            else if (string.Equals(selectionProperties.category.Trim(), "Nüsse"))
             {
                 nutsCounter++;
             }
-            else if (selectionProperties.category == "Vollkornprodukte")
+            else if (string.Equals(selectionProperties.category.Trim(), "Vollkornprodukte"))
             {
                 wholeGrainCounter++;
             }
-            else if (selectionProperties.category == "Milchprodukte")
+            else if (string.Equals(selectionProperties.category.Trim(), "Milchprodukte"))
             {
                 dairyCounter++;
             }
