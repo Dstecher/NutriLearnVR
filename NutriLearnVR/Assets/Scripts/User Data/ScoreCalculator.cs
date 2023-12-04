@@ -47,13 +47,9 @@ public class ScoreCalculator : MonoBehaviour
         {
             if (selectionCanvasController != null && scoreUIReference.activeSelf)
             {
-                if (selectionCanvasController.GetUserSelectionLength() > 0) CalculateNutriScoreBasedUserScore();
-                if (score == 99.0f) Debug.Log("[ERROR] There was an error trying to compute the score or an user input is missing!");
-
-                Debug.Log("[INFO] The currently achieved score is " + score);
+                if (selectionCanvasController.GetUserSelectionLength() > 0) Debug.Log("[INFO] The user has not selected any food product currently");
+                DisplayAchievedStarScore(CalculateAchievedStarScore());
             }
-
-            DisplayAchievedStarScore(CalculateAchievedStarScore());
         }
     }
 
@@ -79,33 +75,65 @@ public class ScoreCalculator : MonoBehaviour
         }
     }
 
-    void CalculateNutriScoreBasedUserScore()
-    {
-        score = selectionCanvasController.GetMeanSelectionNutriScore();
-    }
-
     int CalculateAchievedStarScore()
     {
+        int starScore = 0;
+
+        // Get score information from selection canvas controller
+        float nutriValue;
+        int counterFruitVeg;
+        int counterNuts;
+        int counterWholeGrain;
+        int counterDairy;
+
+        selectionCanvasController.GetScoreInformation(out nutriValue, out counterFruitVeg, out counterNuts, out counterWholeGrain, out counterDairy);
+
         // return an integer based on the corresponding nutri score value that would heve otherwise been achieved, (including float values here due to average calculation); e.g. A --> 5 stars, B --> 4 stars, ..., E --> 1 star
-        if (score < -0.5)
+        if (nutriValue < -0.5)
         {
-            return 5;
+            starScore++; // give 1 star score for A label
         }
-        else if (score < 2.5)
+        else if (nutriValue < 2.5)
         {
-            return 4;
+            starScore++; // give 1 star score for A label
         }
-        else if (score < 10.5)
+        else if (nutriValue < 10.5)
         {
-            return 3;
+            // no change for C label
         }
-        else if (score < 18.5)
+        else if (nutriValue < 18.5)
         {
-            return 2;
+            starScore = starScore - 1; // reduce star score by 1 for D label
         }
         else
         {
-            return 1;
+            starScore = starScore - 2; // reduce star score by 2 for E label
+        }
+
+        if (counterFruitVeg >= 5)
+        {
+            starScore++; // award additional star for at least 5 fruits and vegetables selected
+        }
+        if (counterNuts >= 1)
+        {
+            starScore++; // award additional star for at least 1 portion of nuts selected
+        }
+        if (counterWholeGrain >= 2)
+        {
+            starScore++; // award additional star for at least 2 whole grain food products selected
+        }
+        if (counterDairy >= 2)
+        {
+            starScore++; // award additional star for at least 2 dairy food products selected
+        }
+
+        if (starScore < 0)
+        {
+            return 0; // dont try to display negative star score
+        }
+        else
+        {
+            return starScore;
         }
     }
 

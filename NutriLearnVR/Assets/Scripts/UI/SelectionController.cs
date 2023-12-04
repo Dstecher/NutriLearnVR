@@ -121,25 +121,50 @@ public class SelectionController : MonoBehaviour
         garbageCollectorReference.RemoveUnselectedFoodItems();
     }
 
-    public float GetMeanSelectionNutriScore()
+    // return mean nutri score value for processed food products and counters for other categories
+    public void GetScoreInformation(out float nutriScore, out int fruitVegCounter, out int nutsCounter, out int wholeGrainCounter, out int dairyCounter)
     {
-        int foodProductCounter = 0;
+        int counterProcessedFood = 0;
         int nutriScoreSum = 0;
+        fruitVegCounter = 0;
+        nutsCounter = 0;
+        wholeGrainCounter = 0;
+        dairyCounter = 0;
+
 
         foreach (FoodProperties selectionProperties in userSelection)
         {
-            nutriScoreSum += selectionProperties.nutriScore;
-            foodProductCounter++;
+            
+            if (selectionProperties.category == "Obst/Gemüse")
+            {
+                fruitVegCounter++;
+            }
+            else if (selectionProperties.category == "Nüsse")
+            {
+                nutsCounter++;
+            }
+            else if (selectionProperties.category == "Vollkornprodukte")
+            {
+                wholeGrainCounter++;
+            }
+            else if (selectionProperties.category == "Milchprodukte")
+            {
+                dairyCounter++;
+            }
+            else
+            {
+                nutriScoreSum += selectionProperties.nutriScore;
+                counterProcessedFood++;
+            }
         }
 
-        if (foodProductCounter != 0) 
+        if (counterProcessedFood != 0) 
         {
-            float result = (float) nutriScoreSum / (float) foodProductCounter;
-            return result;
+            nutriScore = (float) nutriScoreSum / (float) counterProcessedFood;
         }
         else
         {
-            return 0; // Initial state
+            nutriScore = 11; // Initial state --> equals C label, which 0 stars are scored with
         }
     }
 }

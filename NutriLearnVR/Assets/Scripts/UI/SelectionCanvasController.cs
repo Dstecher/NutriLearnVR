@@ -129,9 +129,9 @@ public class SelectionCanvasController : MonoBehaviour
         returnFats = fatsSum;
     }
 
-    public float GetMeanSelectionNutriScore()
+    public void GetScoreInformation(out float nutriScore, out int fruitVegCounter, out int nutsCounter, out int wholeGrainCounter, out int dairyCounter)
     {
-        return selectionController.GetMeanSelectionNutriScore();
+        selectionController.GetScoreInformation(out nutriScore, out fruitVegCounter, out nutsCounter, out wholeGrainCounter, out dairyCounter);
     }
 
     public int GetUserSelectionLength()
