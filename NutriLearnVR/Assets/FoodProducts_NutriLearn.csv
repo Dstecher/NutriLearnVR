@@ -80,7 +80,7 @@
 78;Garnele, gekocht;46;0,5;1,3;9;pro 100g essbarer Anteil;Fisch/Meeresfrüchte, Krusten- und Schalentiere;;;;;
 79;Garnele, roh;56;0,6;1,2;11,4;pro 100g essbarer Anteil;Fisch/Meeresfrüchte, Krusten- und Schalentiere;;;;;
 80;Geflügelfleisch (Durchschnitt exkl. Innereien), roh;134;5,3;0,1;21,6;pro 100g essbarer Anteil;Fleisch und Innereien/Geflügel;;;;;
-81;Gehacktes (Durchschnitt aus Rind, Kalb, Schwein, Poulet), roh;143;6,2;0;21,6;pro 100g essbarer Anteil;Fleisch und Innereien/Kalb/Fleisch und Innereien/Rind/Fleisch und Innereien/Schwein/Fleisch und Innereien/Geflügel;;;;;
+81;Gehacktes (Durchschnitt aus Rind, Kalb, Schwein, Poulet), roh;143;6,2;0;21,6;pro 100g essbarer Anteil;Fleisch und Innereien/Kalb/Fleisch und Innereien/Rind/Fleisch und Innereien/Schwein/Fleisch und Innereien/Geflügel;;0,1;0,1;-4;Tierprodukte
 82;Gemüselasagne, zubereitet;133;7,6;11,2;4,4;pro 100g essbarer Anteil;Gerichte/Italienische Gerichte;;;;;
 83;Getreideriegel mit Schokoladeüberzug;459;20,2;58;8,5;pro 100g essbarer Anteil;Süssigkeiten/Riegel;;;;;
 84;Grüne Bohnen, gekocht;26;0,2;4;2;pro 100g essbarer Anteil;Gemüse/Gemüse gekocht (inkl. Konserven);;0,1;3,3;-6;Obst/Gemüse
@@ -97,7 +97,7 @@
 95;Hollandaisesauce;212;18;9,3;3;pro 100g essbarer Anteil;Verschiedenes/Saucen;;;;;
 96;Honig (Blütenhonig);306;0;76;0,4;pro 100g essbarer Anteil;Süssigkeiten/Konfitüren und süsse Brotaufstriche;1,4;0;76;13;Tierprodukte
 97;Hot Dog in Weissbrot mit Ketchup und Senf;216;6,3;29,6;9,1;pro 100g essbarer Anteil;Gerichte/Sonstige salzige/rezente Gerichte;;;;;
-98;Hühnerei, ganz, festgekocht;156;10,9;0,3;14;pro 100g essbarer Anteil;Eier;;;;;
+98;Hühnerei, ganz, festgekocht;156;10,9;0,3;14;pro 100g essbarer Anteil;Eier;;3,3;0,5;0;Tierprodukte
 99;Hühnerei, ganz, roh;140;9,8;0,3;12,6;pro 100g essbarer Anteil;Eier;;3,3;0,5;0;Tierprodukte
 100;Hummus;204;14;9,4;7,3;pro 100g essbarer Anteil;Verschiedenes/Saucen;;;;;
 101;Joghurt, nach griechischer Art, mit Rahm, nature (Durchschnitt von Markenprodukten);117;9,4;3,9;4,2;pro 100g essbarer Anteil;Milch und Milchprodukte/Joghurt und Sauermilch;;;;;
@@ -131,7 +131,7 @@
 129;Mais, roh;93;1,2;15,7;3,3;pro 100g essbarer Anteil;Gemüse/Gemüse frisch;;0,2;3,4;-5;Obst/Gemüse
 130;Mandarine, roh;47;0,2;9,2;0,8;pro 100g essbarer Anteil;Früchte/Früchte frisch;;0,01;8,6;-5;Obst/Gemüse
 131;Mandel;624;52,1;7,8;25,6;pro 100g essbarer Anteil;Nüsse, Samen und Ölfrüchte;;4,1;6,6;-3;Nüsse
-132;Mandel, geröstet, gesalzen;649;55,2;7,2;25,6;pro 100g essbarer Anteil;Salzige Snacks/Gesalzene Nüsse, Samen, Kerne;;;;;
+132;Mandel, geröstet, gesalzen;649;55,2;7,2;25,6;pro 100g essbarer Anteil;Salzige Snacks/Gesalzene Nüsse, Samen, Kerne;;4,1;6,6;-3;Nüsse
 133;Mango, roh;68;0,6;14,3;0,6;pro 100g essbarer Anteil;Früchte/Früchte frisch;;;;;
 134;Mangold, roh;23;0,2;2,7;2,1;pro 100g essbarer Anteil;Gemüse/Gemüse frisch;;;;;
 135;Margarine, 35 - 40 % Fett;357;39;1,1;0,3;pro 100g essbarer Anteil;Fette und Öle/Fette/Fette und Öle/Fette;;;;;
@@ -185,7 +185,7 @@
 183;Rapsöl;810;90;0;0;pro 100 ml;Fette und Öle/Öle;0,9;;;;
 184;Ratatouille, zubereitet;45;2,2;4;1,4;pro 100g essbarer Anteil;Gemüse/Gemüse gekocht (inkl. Konserven);;;;;
 185;Reibkäse;406;32,1;0;29,3;pro 100g essbarer Anteil;Milch und Milchprodukte/Hartkäse;;;;;
-186;Reis unpoliert, gekocht in Salzwasser (unjodiert);126;1;25,7;2,7;pro 100g essbarer Anteil;Getreideprodukte, Hülsenfrüchte und Kartoffeln/Reis;;;;;
+186;Reis unpoliert, gekocht in Salzwasser (unjodiert);126;1;25,7;2,7;pro 100g essbarer Anteil;Getreideprodukte, Hülsenfrüchte und Kartoffeln/Reis;;0,3;0,5;-4;Sonstiges
 187;Rind, Entrecôte, medium gebraten (ohne Zusatz von Fett und Salz);162;4,6;0;30,2;pro 100g essbarer Anteil;Fleisch und Innereien/Rind;;;;;
 188;Rind, Entrecôte, roh;133;4,5;0;23,2;pro 100g essbarer Anteil;Fleisch und Innereien/Rind;;;;;
 189;Rind, Filet, medium gebraten (ohne Zustatz von Fett und Salz);128;2;0;27,7;pro 100g essbarer Anteil;Fleisch und Innereien/Rind;;;;;
@@ -207,7 +207,7 @@
 205;Sauerrahm;336;35;2,8;2,4;pro 100g essbarer Anteil;Fette und Öle/Rahm/Milch und Milchprodukte/Rahm und Butter;1;15,8;2,4;13;Milchprodukte
 206;Schnittlauch, roh;30;0,6;1,9;3;pro 100g essbarer Anteil;Gemüse/Kräuter;;;;;
 207;Schnitzelbrot mit Cocktailsauce;262;11,2;25,1;14,6;pro 100g essbarer Anteil;Gerichte/Sandwiches;;;;;
-208;Schokobrötchen;409;9,9;44;6,5;pro 100g essbarer Anteil;Süssigkeiten/Schokolade und Kakaoerzeugnisse;;;;;
+208;Schokobrötchen;409;9,9;44;6,5;pro 100g essbarer Anteil;Süssigkeiten/Schokolade und Kakaoerzeugnisse;;10,2;11,2;21;Milchprodukte
 209;Schokolade, dunkel (bitter);537;31,8;53,4;5,7;pro 100g essbarer Anteil;Süssigkeiten/Schokolade und Kakaoerzeugnisse;;;;;
 210;Schokolade, weiss;567;35,2;55,8;6,7;pro 100g essbarer Anteil;Süssigkeiten/Schokolade und Kakaoerzeugnisse;;;;;
 211;Schwein, Filet, gebraten (ohne Zusatz von Fett und Salz);153;4;0;29,3;pro 100g essbarer Anteil;Fleisch und Innereien/Schwein;;;;;
