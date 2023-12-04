@@ -16,14 +16,14 @@ public class ConsoleLogger : MonoBehaviour
     {
     }
 
-    public void NextTry()
+    public void SendDataToServer()
     {
         string URL3 = "https://www.sse-testcenter.org/unity/upload";
         
         WebRequest requestS3 = (HttpWebRequest) WebRequest.Create(URL3);
 
         byte[] fileRawBytes = System.Text.Encoding.UTF8.GetBytes(sendString);
-        Debug.Log($"Packed the following string: {sendString}");
+        Debug.Log($"[INFO] Packed the following string: {sendString}");
         requestS3.ContentLength = fileRawBytes.Length;
 
         requestS3.Method = "PUT";
@@ -31,7 +31,7 @@ public class ConsoleLogger : MonoBehaviour
         Stream S3Stream = requestS3.GetRequestStream();
         S3Stream.Write(fileRawBytes, 0, fileRawBytes.Length);
 
-        Debug.Log("Sent Message to SSE");
+        Debug.Log("[INFO] Sent Message to SSE");
 
         WebResponse myResponse = requestS3.GetResponse();
 
@@ -39,18 +39,19 @@ public class ConsoleLogger : MonoBehaviour
         
         S3Stream.Close();
 
-        Debug.Log("closed s3 stream");
+        Debug.Log("[INFO] closed s3 stream");
+        sendString = "";
     }
 
     
 
     void Update()
     {
-        AppendToSendString("test" + System.DateTime.UtcNow.ToString() + "\n");
+        //AppendToSendString("test" + System.DateTime.UtcNow.ToString() + "\n");
     }
 
     public void AppendToSendString(string appendString)
     {
-        sendString += appendString;
+        sendString += appendString + "\n";
     }
 }
