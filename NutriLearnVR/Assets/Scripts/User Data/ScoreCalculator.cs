@@ -47,7 +47,7 @@ public class ScoreCalculator : MonoBehaviour
         {
             if (selectionCanvasController != null && scoreUIReference.activeSelf)
             {
-                if (selectionCanvasController.GetUserSelectionLength() > 0) Debug.Log("[INFO] The user has not selected any food product currently");
+                if (selectionCanvasController.GetUserSelectionLength() == 0) Debug.Log("[INFO] The user has not selected any food product currently");
                 DisplayAchievedStarScore(CalculateAchievedStarScore());
             }
         }
@@ -73,6 +73,12 @@ public class ScoreCalculator : MonoBehaviour
                 starFull.SetActive(false);
             }
         }
+    }
+
+    public void GetScoreData(out float nutriValue, out int counterFruitVeg, out int counterNuts, out int counterWholeGrain, out int counterDairy, out int currentStarScore)
+    {
+        currentStarScore = CalculateAchievedStarScore();
+        selectionCanvasController.GetScoreInformation(out nutriValue, out counterFruitVeg, out counterNuts, out counterWholeGrain, out counterDairy);
     }
 
     int CalculateAchievedStarScore()
