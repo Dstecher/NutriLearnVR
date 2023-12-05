@@ -2,13 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ScoreCalculator : MonoBehaviour
 {
     [SerializeField] private GameObject selectionCanvasReference;
     [SerializeField] private GameObject scoreUIReference;
 
-    [SerializeField] private Gradient colorGradient;
+    [SerializeField] private TextMeshProUGUI feedbackNutriScore;
+    [SerializeField] private TextMeshProUGUI feedbackFruitsVeg;
+    [SerializeField] private TextMeshProUGUI feedbackNuts;
+    [SerializeField] private TextMeshProUGUI feedbackWholeGrain;
+    [SerializeField] private TextMeshProUGUI feedbackDairy;
 
     private float userProteinPercentage = 0;
     private float userCarbPercentage = 0;
@@ -98,10 +103,12 @@ public class ScoreCalculator : MonoBehaviour
         if (nutriValue < -0.5)
         {
             starScore++; // give 1 star score for A label
+            feedbackNutriScore.color = Color.green;
         }
         else if (nutriValue < 2.5)
         {
             starScore++; // give 1 star score for A label
+            feedbackNutriScore.color = Color.green;
         }
         else if (nutriValue < 10.5)
         {
@@ -110,27 +117,62 @@ public class ScoreCalculator : MonoBehaviour
         else if (nutriValue < 18.5)
         {
             starScore = starScore - 1; // reduce star score by 1 for D label
+            feedbackNutriScore.color = Color.red;
         }
         else
         {
             starScore = starScore - 2; // reduce star score by 2 for E label
+            feedbackNutriScore.color = Color.red;
         }
 
         if (counterFruitVeg >= 5)
         {
             starScore++; // award additional star for at least 5 fruits and vegetables selected
+            feedbackFruitsVeg.color = Color.green;
         }
+        else
+        {
+            feedbackFruitsVeg.color = Color.red;
+        }
+
         if (counterNuts >= 1)
         {
             starScore++; // award additional star for at least 1 portion of nuts selected
+            feedbackNuts.color = Color.green;
         }
+        else
+        {
+            feedbackNuts.color = Color.red;
+        }
+
         if (counterWholeGrain >= 2)
         {
             starScore++; // award additional star for at least 2 whole grain food products selected
+            feedbackWholeGrain.color = Color.green;
         }
+        else
+        {
+            feedbackWholeGrain.color = Color.red;
+        }
+
         if (counterDairy >= 2)
         {
             starScore++; // award additional star for at least 2 dairy food products selected
+            feedbackDairy.color = Color.green;
+        }
+        else
+        {
+            feedbackDairy.color = Color.red;
+        }
+
+        // Deactivate feedback for reduced scene:
+        if (SceneManager.GetActiveScene().name == "MarketSceneReduced")
+        {
+            feedbackNutriScore.gameObject.SetActive(false);
+            feedbackFruitsVeg.gameObject.SetActive(false);
+            feedbackNuts.gameObject.SetActive(false);
+            feedbackWholeGrain.gameObject.SetActive(false);
+            feedbackDairy.gameObject.SetActive(false);
         }
 
         if (starScore < 0)
