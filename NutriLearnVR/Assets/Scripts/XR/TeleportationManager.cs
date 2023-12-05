@@ -16,7 +16,7 @@ public class TeleportationManager : MonoBehaviour
     private bool _isActive = false;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rayInteractor.enabled = false;
 
@@ -30,6 +30,20 @@ public class TeleportationManager : MonoBehaviour
 
         _thumbstick = actionAsset.FindActionMap("XRI LeftHand Locomotion").FindAction("Move");
         _thumbstick.Enable();
+    }
+
+    void OnDestroy() 
+    { 
+        var activate = actionAsset.FindActionMap("XRI LeftHand Locomotion").FindAction("Teleport Mode Activate");
+        activate.Disable();
+        activate.performed -= OnTeleportActivate;
+
+        var cancel = actionAsset.FindActionMap("XRI LeftHand Locomotion").FindAction("Teleport Mode Cancel");
+        cancel.Disable();
+        cancel.performed -= OnTeleportCancel;
+
+        _thumbstick = actionAsset.FindActionMap("XRI LeftHand Locomotion").FindAction("Move");
+        _thumbstick.Disable();
     }
 
     // Update is called once per frame
