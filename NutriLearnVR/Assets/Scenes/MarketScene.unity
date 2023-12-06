@@ -2949,6 +2949,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 419930025}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &428138442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5947950124155191289, guid: 6614c1dadcd78e44f931d62f6859217b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7505696771195261538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &437640013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3108,6 +3114,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8307275946144505968}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &447442842 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7384057941814368598, guid: 6614c1dadcd78e44f931d62f6859217b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7505696771195261538}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &460327212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16288,6 +16306,11 @@ PrefabInstance:
       objectReference: {fileID: 1955707447}
     - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
+      propertyPath: welcomeUI
+      value: 
+      objectReference: {fileID: 428138442}
+    - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
       propertyPath: consoleLogger
       value: 
       objectReference: {fileID: 542266315}
@@ -16301,6 +16324,11 @@ PrefabInstance:
       propertyPath: uiControllerReference
       value: 
       objectReference: {fileID: 838363584}
+    - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
+        type: 3}
+      propertyPath: selfAssessmentDropdown
+      value: 
+      objectReference: {fileID: 447442842}
     - target: {fileID: 4265601460820207834, guid: 6614c1dadcd78e44f931d62f6859217b,
         type: 3}
       propertyPath: userSelectionReference

@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 using System;
 using System.Globalization;
+using TMPro;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] GameObject controlsUI;
     [SerializeField] GameObject userUI;
     [SerializeField] GameObject scoreUI;
+    [SerializeField] GameObject welcomeUI;
+    [SerializeField] TMP_Dropdown selfAssessmentDropdown;
     [SerializeField] private Text closeButtonText;
     [SerializeField] GameObject userSelectionReference;
     [SerializeField] GameObject grabRayControllerReference;
@@ -33,7 +36,7 @@ public class MainMenuController : MonoBehaviour
         }
         else if (sceneStart)
         {
-            if (currentlyActiveUI == userUI)
+            if (currentlyActiveUI == welcomeUI)
             {
                 currentlyActiveUI.SetActive(false);
                 mainContentUI.SetActive(true);
@@ -46,6 +49,11 @@ public class MainMenuController : MonoBehaviour
                 BMRCalculator bMRCalculator = gameObject.GetComponent<BMRCalculator>(); // get reference to BMRCalculator script component
                 consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: User has closed User UI in start routine with the following information: Gender: {bMRCalculator.GetUserGender()}, Age: {bMRCalculator.GetUserAge()}, Weight: {bMRCalculator.GetUserWeight()}, Height: {bMRCalculator.GetUserHeight()}");
                 consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: The user has a total energy consumption of {bMRCalculator.GetBMRResult()} per day on average");
+                if (selfAssessmentDropdown) consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: The user self assesses his/her knowledge on nutrition as {selfAssessmentDropdown.value} (0: No Knowledge, 1: Basic Knowledge, 2: Extended Knowledge, 3: Professional Knowledge)"); // add user self assessment to logs
+            }
+            if (currentlyActiveUI == userUI)
+            {
+                ShowWelcomeUI();
             }
             if (currentlyActiveUI == controlsUI)
             {
@@ -77,13 +85,21 @@ public class MainMenuController : MonoBehaviour
         closeButtonText.text = "←   zurück";
     }
 
+    public void ShowWelcomeUI()
+    {
+        if (userUI) userUI.SetActive(false); // The user can only come from the User UI screen to the Welcome UI screen
+        if (welcomeUI) welcomeUI.SetActive(true);
+        currentlyActiveUI = welcomeUI;
+        closeButtonText.text = "←   schließen";
+    }
+
     public void ShowUserUIInSceneStartRoutine()
     {
         if (controlsUI) controlsUI.SetActive(false);
         if (userUI) userUI.SetActive(true);
         currentlyActiveUI = userUI;
-        closeButtonText.text = "←   schließen";
-        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: Start Routine active in current scene: " + SceneManager.GetActiveScene());
+        closeButtonText.text = "←   zurück";
+        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: Start Routine active in current scene: " + SceneManager.GetActiveScene().name);
     }
 
     public void ShowScoreUI()
