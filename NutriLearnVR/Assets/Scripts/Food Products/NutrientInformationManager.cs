@@ -43,6 +43,10 @@ public class NutrientInformationManager : MonoBehaviour
         // Create Nutrient information label for object
         canvasInstance = Instantiate(nutrientInformationCanvas, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + verticalCanvasDistance, gameObject.transform.position.z), Quaternion.identity, gameObject.transform) as GameObject;
         nutrientLabelController = GameObject.Find("Items").GetComponent<NutrientLabelController>();
+        if (!nutrientLabelController.GetDisplayLabelStatus())
+        {
+            canvasInstance.SetActive(false);
+        }
     }
 
     private void OnGrab(XRBaseInteractor interactor)
