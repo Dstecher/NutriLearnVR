@@ -17,7 +17,7 @@ Master Thesis Repository of NutriLearnVR Application in Unity
 ## Important Notes:
 
 - Within the Repository (called NutriLearnVR), there is another folder called *NutriLearnVR*. This is the actual folder of the Unity Project to open in the Unity Hub.
-- Other Supplementary material, e.g. regarding the analysis of the user test, can be found in *Supplmentary Material*
+- Other Supplementary material, e.g. regarding the analysis of the user test, can be found in *Supplmentary_Material*
 </br>
 
 - No custom KeyStore should be selected for building the application, else Unity will ask for a KeyStore passphrase for signing the application
