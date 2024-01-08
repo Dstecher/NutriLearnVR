@@ -5629,7 +5629,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mindesetens 1 Hand voll N\xFCsse"
+  m_text: "Mindestens 1 Hand voll N\xFCsse"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8288,6 +8288,8 @@ MonoBehaviour:
   controlsUI: {fileID: 5723051409278138250}
   userUI: {fileID: 8055466628282180360}
   scoreUI: {fileID: 6809621888547849108}
+  welcomeUI: {fileID: 0}
+  selfAssessmentDropdown: {fileID: 0}
   closeButtonText: {fileID: 5337671991419866220}
   userSelectionReference: {fileID: 0}
   grabRayControllerReference: {fileID: 0}

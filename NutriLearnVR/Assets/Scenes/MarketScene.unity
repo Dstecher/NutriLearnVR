@@ -3972,7 +3972,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542266314}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4214844752bfd3c4b89c5800957503ab, type: 3}
   m_Name: 
@@ -11700,12 +11700,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2a4c19cc8514e504dbe9897fba99c871, type: 2}
+      objectReference: {fileID: 2100000, guid: ecd36758654e7d348b181d2989b6eb51, type: 2}
     - target: {fileID: 5242876648116904369, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2a4c19cc8514e504dbe9897fba99c871, type: 2}
+      objectReference: {fileID: 2100000, guid: ecd36758654e7d348b181d2989b6eb51, type: 2}
     - target: {fileID: 6674076860244506684, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: m_Enabled
@@ -11720,7 +11720,7 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnObject
       value: 
-      objectReference: {fileID: 103181815720573933, guid: 74fb932540f705e4ab653b46840c356a,
+      objectReference: {fileID: 7386016666455348441, guid: a0975864bb19cc444bd3d0aa70dbe9c4,
         type: 3}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
@@ -11776,7 +11776,7 @@ PrefabInstance:
     - target: {fileID: 8009816049670309849, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: m_Name
-      value: SpawnerBox_PainAuChocolat
+      value: SpawnerBox_Nutella
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1610853951489281668, guid: 0ca0cb5b052540d4091ebef3bd178891, type: 3}
@@ -12006,12 +12006,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7564c0d3336ce2a43aa44e8516cdbba9, type: 2}
+      objectReference: {fileID: 2100000, guid: e538a8af91fcb3543800f5c6bef2bd4a, type: 2}
     - target: {fileID: 5242876648116904369, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7564c0d3336ce2a43aa44e8516cdbba9, type: 2}
+      objectReference: {fileID: 2100000, guid: e538a8af91fcb3543800f5c6bef2bd4a, type: 2}
     - target: {fileID: 6674076860244506684, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: m_Enabled
@@ -12026,7 +12026,7 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnObject
       value: 
-      objectReference: {fileID: 2590636833525105727, guid: 9aa599b9bfe583046a71f816d37016cd,
+      objectReference: {fileID: 2941155818195866783, guid: cc0571c6141e38a41a324631ba4fbc39,
         type: 3}
     - target: {fileID: 7086001737412998751, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
@@ -12082,7 +12082,7 @@ PrefabInstance:
     - target: {fileID: 8009816049670309849, guid: 0ca0cb5b052540d4091ebef3bd178891,
         type: 3}
       propertyPath: m_Name
-      value: SpawnerBox_Sugar
+      value: SpawnerBox_ToastButter
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1610853951489281668, guid: 0ca0cb5b052540d4091ebef3bd178891, type: 3}

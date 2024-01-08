@@ -107,7 +107,7 @@ public class ScoreCalculator : MonoBehaviour
         }
         else if (nutriValue < 2.5)
         {
-            starScore++; // give 1 star score for A label
+            starScore++; // give 1 star score for B label
             feedbackNutriScore.color = Color.green;
         }
         else if (nutriValue < 10.5)
@@ -121,7 +121,7 @@ public class ScoreCalculator : MonoBehaviour
         }
         else
         {
-            starScore = starScore - 2; // reduce star score by 2 for E label
+            starScore = starScore - 1; // reduce star score by 1 for E label
             feedbackNutriScore.color = Color.red;
         }
 

@@ -18,7 +18,7 @@ public class ConsoleLogger : MonoBehaviour
 
     public void SendDataToServer()
     {
-        string URL3 = "https://www.sse-testcenter.org/unity/upload";
+        string URL3 = ""; // replace this by the address to use
         
         WebRequest requestS3 = (HttpWebRequest) WebRequest.Create(URL3);
 
