@@ -18,6 +18,9 @@ public class DatabaseReader : MonoBehaviour
         ReadCSV();
     }
 
+    /// <summary>
+    /// ReadCSV() reads data from textAssetData into string array and stores food product information in foodProductList accordingly
+    /// </summary>
     void ReadCSV()
     {
         string[] data = textAssetData.text.Split(new string[] {";", "\n"}, System.StringSplitOptions.None);
@@ -64,6 +67,10 @@ public class DatabaseReader : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Return Function for foodProductList reference
+    /// </summary>
+    /// <returns>FoodProductList foodProductList</returns>
     public FoodProductList GetFoodProductList()
     {
         return foodProductList;

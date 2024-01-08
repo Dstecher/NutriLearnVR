@@ -7,6 +7,9 @@ using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 
+/// <summary>
+/// Simple class built for packing all wanted information into one string to send it to an address via PUT request
+/// </summary>
 public class ConsoleLogger : MonoBehaviour
 {
 
@@ -16,6 +19,9 @@ public class ConsoleLogger : MonoBehaviour
     {
     }
 
+    /// <summary>
+    /// Sends the data to the server and does some documentation on the console. Also outputs server response for easier debugging.
+    /// </summary>
     public void SendDataToServer()
     {
         string URL3 = ""; // replace this by the address to use
@@ -31,7 +37,7 @@ public class ConsoleLogger : MonoBehaviour
         Stream S3Stream = requestS3.GetRequestStream();
         S3Stream.Write(fileRawBytes, 0, fileRawBytes.Length);
 
-        Debug.Log("[INFO] Sent Message to SSE");
+        Debug.Log("[INFO] Sent Message to Server");
 
         WebResponse myResponse = requestS3.GetResponse();
 
@@ -43,13 +49,10 @@ public class ConsoleLogger : MonoBehaviour
         sendString = "";
     }
 
-    
-
-    void Update()
-    {
-        //AppendToSendString("test" + System.DateTime.UtcNow.ToString() + "\n");
-    }
-
+    /// <summary>
+    /// AppendToSendString() can be publically called from all other classes with a reference to this object. Used for appending new information to the stirng to send after a newline
+    /// </summary>
+    /// <param name="appendString">string to append to current string to send</param>
     public void AppendToSendString(string appendString)
     {
         sendString += appendString + "\n";

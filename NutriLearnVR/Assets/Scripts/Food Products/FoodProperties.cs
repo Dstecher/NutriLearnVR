@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
 
+/// <summary>
+/// One of the main classes of NutriLearnVR. Handles all important information about one specific food product for per 100g or per serving, respectively
+/// </summary>
 public class FoodProperties : MonoBehaviour
 {
     [SerializeField] public FoodController foodController;
@@ -51,6 +54,9 @@ public class FoodProperties : MonoBehaviour
         sugar = Mathf.Floor(weightRatio * sugarPer100 * 10) / 10;
     }
 
+    /// <summary>
+    /// Get all food product information from database reference in FoodController and set them within the product locally after instantiation
+    /// </summary>
     public void Awake()
     {
         // Set the FoodController reference

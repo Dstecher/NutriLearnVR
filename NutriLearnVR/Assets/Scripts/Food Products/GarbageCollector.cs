@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Implemented as a performance measure to automatically remove all non-grabbed or non-selected food products from the scene and remove unnecessary rendering of unused products
+/// </summary>
 public class GarbageCollector : MonoBehaviour
 {
     // Start is called before the first frame update

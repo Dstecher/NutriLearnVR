@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class FoodController has two purposes: 
+/// At scene start: find all GameObjects in scene with tag "FoodProduct" and assign all necessary properties from database
+/// At Food Product instantiation: Call method getFoodProductByID to assign all properties for a specific food product
+/// The later option is currently used for performance reasons as the scene is not populated with any food products at start.
+/// </summary>
 public class FoodController : MonoBehaviour
 {
     DatabaseReader databaseReader;

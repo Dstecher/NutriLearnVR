@@ -10,12 +10,15 @@ using UnityEngine.UIElements;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// NutrientInformationManager controls all nutrient labels within the scene
+/// </summary>
 public class NutrientInformationManager : MonoBehaviour
 {
-    [SerializeField] public Transform head;
-    [SerializeField] public float verticalCanvasDistance;
-    [SerializeField] public GameObject nutrientInformationCanvas;
-    [SerializeField] public InputActionProperty showButton;
+    [SerializeField] public Transform head; // position of the player head
+    [SerializeField] public float verticalCanvasDistance; // distance to the food product the label should be displayed above
+    [SerializeField] public GameObject nutrientInformationCanvas; // reference to template prefab of this canvas to store information to display in
+    [SerializeField] public InputActionProperty showButton; // Unity Input Action Manager reference to define interaction button for globally toggling display of nutrient labels
     [SerializeField] public bool activateDebug = false;
     private bool labelActive = false;
     private GameObject canvasInstance;
@@ -30,6 +33,9 @@ public class NutrientInformationManager : MonoBehaviour
         UpdateNutrientInformation();
     }
 
+    /// <summary>
+    /// On Awake, store all necessary information in variables and define listeners for grab events. Then instantiate canvas in scene and disable until item is grabbed
+    /// </summary>
     void Awake()
     {
         grabInteractable = gameObject.GetComponent<XRGrabInteractable>();
@@ -45,16 +51,24 @@ public class NutrientInformationManager : MonoBehaviour
         nutrientLabelController = GameObject.Find("Items").GetComponent<NutrientLabelController>();
         if (!nutrientLabelController.GetDisplayLabelStatus())
         {
-            canvasInstance.SetActive(false);
+            canvasInstance.SetActive(false); //set active to false to accomodate for labels to only be displayed when item is being grabbed
         }
     }
 
+    /// <summary>
+    /// OnGrab method is triggered with Unity Input Action Manager onSelectEntered event. Enables item grab status tracking
+    /// </summary>
+    /// <param name="interactor"></param>
     private void OnGrab(XRBaseInteractor interactor)
     {
         isGrabbed = true;
         if (activateDebug) Debug.Log("Object grabbed");
     }
 
+    /// <summary>
+    /// OnRelease method is triggered with Unity Input Action Manager onSelectExited event. Enables item grab status tracking
+    /// </summary>
+    /// <param name="interactor"></param>
     private void OnRelease(XRBaseInteractor interactor)
     {
         isGrabbed = false;
@@ -66,23 +80,27 @@ public class NutrientInformationManager : MonoBehaviour
     {
         if (activateDebug) Debug.Log($"This is the current nutrient controller object {nutrientLabelController} with the bool value {nutrientLabelController.GetDisplayLabelStatus()}");
 
-        if (showButton.action.WasPressedThisFrame()) nutrientLabelController.ChangeDisplayLabelStatus();
+        if (showButton.action.WasPressedThisFrame()) nutrientLabelController.ChangeDisplayLabelStatus(); // change global display status for all labels when corresponding button is pressed
         if (!nutrientLabelController.GetDisplayLabelStatus())
         {
-            canvasInstance.SetActive(false);
+            canvasInstance.SetActive(false); // make sure to not display the label normally
             return;
         }
 
         if (!labelActive && isGrabbed) labelActive = true;
         if (labelActive && !isGrabbed) labelActive = false;
 
-        if (SceneManager.GetActiveScene().name != "MarketSceneReduced") canvasInstance.SetActive(labelActive); // only show NutrientLabels if scene is not reduced
+        if (SceneManager.GetActiveScene().name != "MarketSceneReduced") canvasInstance.SetActive(labelActive); // only show NutrientLabels if scene is not reduced and the item is currently grabbed
 
+        // display the label above the corresponding food product instance, always facing the player
         canvasInstance.transform.position = gameObject.transform.position + new Vector3(0, verticalCanvasDistance, 0);
         canvasInstance.transform.LookAt(new Vector3(head.position.x, canvasInstance.transform.position.y, head.position.z));
         canvasInstance.transform.forward *= -1;
     }
 
+    /// <summary>
+    /// Used to fill all information from FoodProperties component into the label canvas template
+    /// </summary>
     void UpdateNutrientInformation()
     {
         // Get FoodProperties

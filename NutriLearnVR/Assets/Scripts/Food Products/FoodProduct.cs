@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Serializable class defined with the purpose of defining some properties of food products for the FoodProductList object in the DatabaseReader
+/// </summary>
 [System.Serializable]
 public class FoodProduct
 {

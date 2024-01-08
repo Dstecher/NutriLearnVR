@@ -68,13 +68,4 @@ public class SpawnerBoxController : XRBaseInteractable
         
         base.OnSelectEntered(args);
     }
-
-    private void FixedUpdate() 
-    {
-        if (updateCounter % 250 == 0)
-        {
-            if (activateDebug) debugContainer.AddDebug($"SpawnerBoxController works with current updateCounter value of {updateCounter}");
-        }
-        updateCounter++;
-    }
 }
