@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// Custom class FPS counter for performance test of individual VR headsets. Typically, all related GameObjects are deactivated.
+/// </summary>
 public class FPSCounter : MonoBehaviour
 {
     [SerializeField] public TextMeshProUGUI fpsText;

@@ -6,6 +6,9 @@ using UnityEngine.UIElements;
 using TMPro;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Adds support for displaying some console information in a separate canvas text element within builds for easier debugging.
+/// </summary>
 public class BuildDebugger : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI extendedText;
