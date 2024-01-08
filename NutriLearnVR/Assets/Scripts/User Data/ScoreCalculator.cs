@@ -4,8 +4,12 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Script used for calculating the score utilizing current star scoring function and all necessary selection or user data
+/// </summary>
 public class ScoreCalculator : MonoBehaviour
 {
+    // references to displays
     [SerializeField] private GameObject selectionCanvasReference;
     [SerializeField] private GameObject scoreUIReference;
 
@@ -15,9 +19,12 @@ public class ScoreCalculator : MonoBehaviour
     [SerializeField] private TextMeshProUGUI feedbackWholeGrain;
     [SerializeField] private TextMeshProUGUI feedbackDairy;
 
+    // References to user information
     private float userProteinPercentage = 0;
     private float userCarbPercentage = 0;
     private float userFatPercentage = 0;
+
+    // References to user selection information
     private int selectionCals = 0;
     private float selectionCarbs = 0;
     private float selectionProtein = 0;
@@ -25,6 +32,8 @@ public class ScoreCalculator : MonoBehaviour
     private float selectionCarbsRatio = 0;
     private float selectionProteinRatio = 0;
     private float selectionFatRatio = 0;
+
+    // Used for internal calculations of old scoring system
     private float carbDiff = 0;
     private float proteinDiff = 0;
     private float fatDiff = 0;
@@ -46,18 +55,21 @@ public class ScoreCalculator : MonoBehaviour
     {
         if (!foundScoreStars)
         {
-            GetStarReferences();
+            GetStarReferences(); // make sure to always have reference to the stars used for displaying the score
         }
         else
         {
             if (selectionCanvasController != null && scoreUIReference.activeSelf)
             {
                 if (selectionCanvasController.GetUserSelectionLength() == 0) Debug.Log("[INFO] The user has not selected any food product currently");
-                DisplayAchievedStarScore(CalculateAchievedStarScore());
+                DisplayAchievedStarScore(CalculateAchievedStarScore()); // display correct score if the user has selected any items and opens score screen
             }
         }
     }
 
+    /// <summary>
+    /// Find star references in scene and store them accordingly for efficient display
+    /// </summary>
     void GetStarReferences()
     {
         // If the scoreUI becomes active for the first time, store reference to score star Gameobjects
@@ -80,12 +92,25 @@ public class ScoreCalculator : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Get Score information about user selection from selection canvas
+    /// </summary>
+    /// <param name="nutriValue">the average nutri score of all selected food products having one</param>
+    /// <param name="counterFruitVeg">counter for selected food products of category fruits and vegetables</param>
+    /// <param name="counterNuts">counter for selected food products of category nuts</param>
+    /// <param name="counterWholeGrain">counter for selected food products of category whole grain products</param>
+    /// <param name="counterDairy">counter for selected food products of category dairy products</param>
+    /// <param name="currentStarScore">current star score reference</param>
     public void GetScoreData(out float nutriValue, out int counterFruitVeg, out int counterNuts, out int counterWholeGrain, out int counterDairy, out int currentStarScore)
     {
         currentStarScore = CalculateAchievedStarScore();
         selectionCanvasController.GetScoreInformation(out nutriValue, out counterFruitVeg, out counterNuts, out counterWholeGrain, out counterDairy);
     }
 
+    /// <summary>
+    /// Calculate the achieved star score based on the information received from the user selection
+    /// </summary>
+    /// <returns></returns>
     int CalculateAchievedStarScore()
     {
         int starScore = 0;
@@ -185,6 +210,11 @@ public class ScoreCalculator : MonoBehaviour
         }
     }
 
+
+    /// <summary>
+    /// Display the star score based on the received amount of achieved stars
+    /// </summary>
+    /// <param name="achievedStars"> achieved number of stars to be displayed</param>
     void DisplayAchievedStarScore(int achievedStars)
     {
         // iterate through max score
@@ -203,6 +233,7 @@ public class ScoreCalculator : MonoBehaviour
         }
     }
 
+    // Old function not used anymore in the current scoring system
     float CalculateOldScorePrototype()
     {
         userCarbPercentage = bMRCalculator.GetCarbRatio();

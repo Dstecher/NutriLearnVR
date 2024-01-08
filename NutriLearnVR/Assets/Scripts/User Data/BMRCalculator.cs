@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// Calculator class used for calculating the basal metabolic rate and average daily energy consumption based on user information
+/// </summary>
 public class BMRCalculator : MonoBehaviour
 {
 
