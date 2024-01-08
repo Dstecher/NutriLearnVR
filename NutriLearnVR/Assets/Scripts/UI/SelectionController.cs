@@ -4,13 +4,16 @@ using UnityEngine;
 using System;
 using System.Globalization;
 
+/// <summary>
+/// Controller class for managing the current user selection of food products
+/// </summary>
 public class SelectionController : MonoBehaviour
 {
 
-    public List<FoodProperties> userSelection;
-    [SerializeField] GameObject selectionTable;
+    public List<FoodProperties> userSelection; // list to store the current selection in
+    [SerializeField] GameObject selectionTable; // table behind the start posititon in the scenes to display the selection on 
     [SerializeField] private GarbageCollector garbageCollectorReference;
-    [SerializeField] ConsoleLogger consoleLogger;
+    [SerializeField] ConsoleLogger consoleLogger; // only used for user testing
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,10 @@ public class SelectionController : MonoBehaviour
         return userSelection;
     }
 
+    /// <summary>
+    /// Add item to selection by adding a copy of given food properties and creating a new instance with the corresponding information. Then remove the item from the scene.
+    /// </summary>
+    /// <param name="foodProperties"></param>
     public void AddItemToSelection(FoodProperties foodProperties)
     {
         GameObject currentFoodProduct = new GameObject();
@@ -57,6 +64,10 @@ public class SelectionController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Used for removing singular food products from the user selection. Removes all instances from the list and deletes all references. Removes the item immediately
+    /// </summary>
+    /// <param name="foodProperties"></param>
     public void RemoveItemFromSelection(FoodProperties foodProperties)
     {
         foreach (FoodProperties selectedProperties in userSelection)
@@ -78,11 +89,15 @@ public class SelectionController : MonoBehaviour
             }
         }
 
-        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: User has added the following item of category {foodProperties.category} to the selection: {foodProperties.productName}");
+        consoleLogger.AppendToSendString($"[TEST] {DateTime.UtcNow.ToString("dd-MM-yyy HH:mm:ss.ffff", CultureInfo.InvariantCulture)}: User has removed the following item of category {foodProperties.category} to the selection: {foodProperties.productName}");
         
         Destroy(foodProperties.gameObject); // remove the Food Product from the scene as well (should be laying on the referenced selection table)
     }
 
+    /// <summary>
+    /// Used for resetting current user selection. Removes all instances from the list and deletes all references.
+    /// </summary>
+    /// <param name="foodProperties"></param>
     public void RemoveItemFromSelectionForClearing(FoodProperties foodProperties)
     {
         foreach (FoodProperties selectedProperties in userSelection)
@@ -104,14 +119,11 @@ public class SelectionController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Removes all items form the current user selection by deleting references first and then calling garbage collector to delete objects from scene afterwards.
+    /// </summary>
     public void ClearSelection()
     {
-        // INFO: Technically, this could essentially be also achieved by using userSelection.Clear(), however, this would not despawn the items.
-        /**foreach (FoodProperties foodProperties in userSelection)
-        {
-            RemoveItemFromSelection(foodProperties);
-        }*/
-
         for (int i = userSelection.Count - 1; i >= 0; i--)
         {
             RemoveItemFromSelectionForClearing(userSelection[i]);

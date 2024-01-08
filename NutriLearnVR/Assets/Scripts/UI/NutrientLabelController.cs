@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Global controller used for global toggle of NutrientInformationManager instances
+/// </summary>
 public class NutrientLabelController : MonoBehaviour
 {
     // Just a global value to be adjusted by the NutrientInformationManager instances 

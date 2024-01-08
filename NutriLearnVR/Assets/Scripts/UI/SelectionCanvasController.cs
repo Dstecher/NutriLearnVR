@@ -7,9 +7,14 @@ using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Controller class for the canvas of the user selection which is used to display information about nutrients of the selection and selected food products
+/// </summary>
 public class SelectionCanvasController : MonoBehaviour
 {
-    [SerializeField] private SelectionController selectionController;
+    [SerializeField] private SelectionController selectionController; // reference to the controller of the user selection
+
+    // general information text fields for displaying sums of corresponding nutrient for entire selection
     [SerializeField] private TextMeshProUGUI calsText;
     [SerializeField] private TextMeshProUGUI carbsText;
     [SerializeField] private TextMeshProUGUI proteinText;
@@ -40,21 +45,17 @@ public class SelectionCanvasController : MonoBehaviour
     private float sugarRatio;
     private float userWeight;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (extendedSelectionButton.action.WasPressedThisFrame()) showExtendedText = !showExtendedText;
+        if (extendedSelectionButton.action.WasPressedThisFrame()) showExtendedText = !showExtendedText; // allow user to extend the canvas
 
+        // Adjust the position and rotation based on player head movement. The rest is controlled by the defined offset in the canvas prefab
         gameObject.transform.rotation = Camera.main.transform.rotation;
         gameObject.transform.position = Camera.main.transform.position;
 
-        UpdateSelectionCanvas();
+        UpdateSelectionCanvas(); // each frame, update all information to be displayed
     }
 
     /// <summary>
@@ -100,7 +101,8 @@ public class SelectionCanvasController : MonoBehaviour
         saturatedFatsText.color = colorGradientFatSugar.Evaluate(Mathf.Min((saturatedFatRatio / 0.1f), 1f)); // 10% saturated fat acids is the unhealthy threshold after which the color should be red continuously!
         if (userWeight > 0) proteinText.color = colorGradientProtein.Evaluate(proteinSum / userWeight); // if the user has provided a weight, colorize text based on selected protein in g/kg body weight
 
-        /*
+        /* 
+        ### OLD SCORE RELICT ###
         carbsDiffRatio =  Mathf.Abs((carbsSum / calsSum) - bmrCalculator.GetCarbRatio()) / bmrCalculator.GetCarbRatio();
         proteinDiffRatio =  Mathf.Abs((proteinSum / calsSum) - bmrCalculator.GetProteinRatio()) / bmrCalculator.GetProteinRatio();
         fatDiffRatio =  Mathf.Abs((fatsSum / calsSum) - bmrCalculator.GetFatRatio()) / bmrCalculator.GetFatRatio();

@@ -8,26 +8,30 @@ using System;
 using System.Globalization;
 using TMPro;
 
+/// <summary>
+/// Main Controller for the interaction with the main menu canvas, which holds the majority of UI information
+/// </summary>
 public class MainMenuController : MonoBehaviour
 {
-    [SerializeField] public Transform head;
-    [SerializeField] GameObject currentCanvas;
-    [SerializeField] GameObject mainContentUI;
-    [SerializeField] GameObject controlsUI;
-    [SerializeField] GameObject userUI;
-    [SerializeField] GameObject scoreUI;
-    [SerializeField] GameObject welcomeUI;
+    [SerializeField] public Transform head; // reference to the player head position
+    [SerializeField] GameObject currentCanvas; // canvas reference for the currently shown canvas (does not have to be actively displayed)
+    [SerializeField] GameObject mainContentUI; // reference to main menu UI
+    [SerializeField] GameObject controlsUI; // reference to controls menu UI
+    [SerializeField] GameObject userUI; // reference to user UI
+    [SerializeField] GameObject scoreUI; // reference to score UI
+    [SerializeField] GameObject welcomeUI; // part of the welcome routine, added for user testing
     [SerializeField] TMP_Dropdown selfAssessmentDropdown;
     [SerializeField] private Text closeButtonText;
     [SerializeField] GameObject userSelectionReference;
     [SerializeField] GameObject grabRayControllerReference;
     [SerializeField] private UIController uiControllerReference;
 
-    [SerializeField] private ConsoleLogger consoleLogger;
+    [SerializeField] private ConsoleLogger consoleLogger; // reference to consoleLogger
 
     private GameObject currentlyActiveUI;
     private bool sceneStart = true;
 
+    // react to user pressing close/back button on the top left according to currently displayed UI window
     public void CloseUI()
     {
         if (currentlyActiveUI == mainContentUI)
@@ -36,6 +40,7 @@ public class MainMenuController : MonoBehaviour
         }
         else if (sceneStart)
         {
+            // special case for the user test welcome screen
             if (currentlyActiveUI == welcomeUI)
             {
                 currentlyActiveUI.SetActive(false);

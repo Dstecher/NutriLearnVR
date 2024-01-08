@@ -4,6 +4,9 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Controller class for the UI window interaction. Mainly important for the interaction between selection canvas and main menu canvas
+/// </summary>
 public class UIController : MonoBehaviour
 {
     [SerializeField] public Transform head;
@@ -26,7 +29,7 @@ public class UIController : MonoBehaviour
     {
         if (showButton.action.WasPressedThisFrame())
         {
-            menuCanvas.SetActive(!menuCanvas.activeSelf);
+            menuCanvas.SetActive(!menuCanvas.activeSelf); // change main menu canvas visibility if user presses corresponding button
 
             if (menuCanvas.activeSelf)
             {
@@ -37,11 +40,12 @@ public class UIController : MonoBehaviour
                 selectionCanvas.gameObject.SetActive(true); // show selection canvas again
             }
             
+            // adjust main menu position once according to user head
             menuCanvas.transform.position = head.position + new Vector3(head.forward.x, head.forward.y, head.forward.z).normalized * menuDistance;
             menuCanvas.transform.LookAt(new Vector3(head.position.x, head.position.y, head.position.z));
             menuCanvas.transform.forward *= -1;
         }
-
+        // can be activated to adjust main menu position according to user head dynamically
         //menuCanvas.transform.position = head.position + new Vector3(head.forward.x, head.forward.y, head.forward.z).normalized * menuDistance;
         //menuCanvas.transform.LookAt(new Vector3(head.position.x, head.position.y, head.position.z));
         //menuCanvas.transform.forward *= -1;

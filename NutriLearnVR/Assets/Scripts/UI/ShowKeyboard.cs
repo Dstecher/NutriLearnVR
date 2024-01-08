@@ -6,6 +6,7 @@ using Microsoft.MixedReality.Toolkit.Experimental.UI;
 
 /// <summary>
 /// Disclaimer: This script was created with the help of the following tutorial: https://www.youtube.com/watch?v=irJm8LkkDGw
+/// Enables interaction with MRTK keybaord and opens it based on current user head position
 /// </summary>
 public class ShowKeyboard : MonoBehaviour
 {
