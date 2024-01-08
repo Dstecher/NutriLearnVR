@@ -24,6 +24,9 @@ public class ConsoleLogger : MonoBehaviour
     /// </summary>
     public void SendDataToServer()
     {
+        //The following content is commented out because it does not provide any functionality for the main usage of the application. It is only intended to be used within user testing if a connection to a server persists.
+
+        /*
         string URL3 = ""; // replace this by the address to use
         
         WebRequest requestS3 = (HttpWebRequest) WebRequest.Create(URL3);
@@ -47,6 +50,7 @@ public class ConsoleLogger : MonoBehaviour
 
         Debug.Log("[INFO] closed s3 stream");
         sendString = "";
+        */
     }
 
     /// <summary>
