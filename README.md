@@ -18,6 +18,8 @@ Master Thesis Repository of NutriLearnVR Application in Unity
 
 - Within the Repository (called NutriLearnVR), there is another folder called *NutriLearnVR*. This is the actual folder of the Unity Project to open in the Unity Hub.
 - Other Supplementary material, e.g. regarding the analysis of the user test, can be found in *Supplmentary_Material*
+  - (UPDATE 19.01.2024) The Defense presentation file *without* video can also be found in this directory.
+  - (UPDATE 19.01.2024) The Video is uploaded [here](https://drive.google.com/file/d/18fR94f952Fl-n0-POX0PGFWNha96rWbb/view?usp=sharing) due to GitHub file size limitations. (*Note*:  Some parts of the video were sped up to introduce the application visually without taking too much time)
 </br>
 
 - No custom KeyStore should be selected for building the application, else Unity will ask for a KeyStore passphrase for signing the application
